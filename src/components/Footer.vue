@@ -4,7 +4,9 @@
             <img src="@/assets/images/logo.svg" alt="DSC logo">
             <p>Developer Student Clubs, a program under the Google Developers, is an international community of students from various chapters who shares a common interest in technology.</p>
             <div class="social-icons">
-
+                <a href="#"><img src="@/assets/images/facebook.svg" alt="Facebook link"></a>
+                <a href="#"><img src="@/assets/images/twitter.svg" alt="Twitter link"></a>
+                <a href="#"><img src="@/assets/images/instagram.svg" alt="Instagram link"></a>
             </div>
         </div>
         <div class="right">
@@ -48,12 +50,29 @@ footer {
     align-items: center;
 }
 
+.left {
+    flex: 0 1 600px;
+}
+
 .left p {
     padding: 25px 0;
+    line-height: 35px;
 }
 
 .left .social-icons {
     display: flex;
+}
+
+.social-icons a {
+    border: 2px solid #2F80ED;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 .right {
