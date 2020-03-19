@@ -68,18 +68,18 @@
             </div>
             <h4>Projects</h4>
             <div class="square-list">
-                <div class="square-card">
-                    <img src="" alt="">
-                    <div>Showcase Solution Challenge Projects</div>
-                </div>
-                <div class="square-card">
-                    <img src="" alt="">
-                    <div>Showcase Solution Challenge Projects</div>
-                </div>
-                <div class="square-card">
-                    <img src="" alt="">
-                    <div>Showcase Solution Challenge Projects</div>
-                </div>
+                <router-link to="/"><div class="square-card">
+                    <img src="@/assets/images/proj-1.png" alt="Project 1">
+                    <div><p>Showcase Solution Challenge Projects</p></div>
+                </div></router-link>
+                <router-link to="/"><div class="square-card">
+                    <img src="@/assets/images/proj-2.png" alt="Project 2">
+                    <div><p>Qwiklabs Finishers</p></div>
+                </div></router-link>
+                <router-link to="/"><div class="square-card">
+                    <img src="@/assets/images/proj-3.png" alt="Project 3">
+                    <div><p>DSC AdMU Search</p></div>
+                </div></router-link>
             </div>
         </section>
     </div>
@@ -211,5 +211,26 @@ h2 {
     width: 300px;
     height: 300px;
     background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px #E0E0E0;
+}
+
+.square-card img {
+    width: 100%;
+}
+
+.square-card p {
+    position: relative;
+    height: calc(95px - 40px);
+    bottom: 95px;
+    background: rgba(47, 128, 237, 0.9);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
 }
 </style>
