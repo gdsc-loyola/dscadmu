@@ -2,7 +2,7 @@
   <div id="app">
     <Navigation />
     <router-view />
-    <Footer />
+    <Footer v-if="showFooter"  />
   </div>
 </template>
 
@@ -14,6 +14,13 @@ export default {
   components: {
     Navigation,
     Footer
+  },
+  computed: {
+    showFooter() {
+      if (this.$route.path != '/')
+        return false
+      return true
+    }
   }
 }
 </script>
