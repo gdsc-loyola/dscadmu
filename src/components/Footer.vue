@@ -12,6 +12,7 @@
         <div class="right">
             <div id="about">
                 <h4>About</h4>
+                <hr>
                 <ul>
                     <li>Vision</li>
                     <li>Mission</li>
@@ -21,12 +22,14 @@
             </div>
             <div id="event">
                 <h4>Events</h4>
+                <hr>
                 <ul>
                     <li>Featured Events</li>
                 </ul>
             </div>
             <div id="chapters">
                 <h4>Chapters</h4>
+                <hr>
                 <ul>
                     <li>DSC Chapters</li>
                 </ul>
@@ -83,8 +86,24 @@ footer {
     margin-right: 100x;
 }
 
+.right h4 {
+    font-weight: 500;
+}
+
+.right hr {
+    width: 30px;
+    margin: 15px 0 20px;
+    border: none;
+    height: 2px;
+    background: #2F80ED;
+}
+
 ul {
     list-style: none;
     line-height: 30px;
+}
+
+#about, #event {
+    margin-right: 65px;
 }
 </style>
