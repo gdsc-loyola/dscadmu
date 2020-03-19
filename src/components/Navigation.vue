@@ -27,6 +27,7 @@ nav {
   position: fixed;
   width: 100%;
   box-shadow: 0 2px 10px 0px rgba(0,0,0,.05);
+  z-index: 1;
 }
 
 #nav {
