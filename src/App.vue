@@ -54,6 +54,7 @@ export default {
   font-family: 'Google Sans', Helvetica, Arial, sans-serif;
   letter-spacing: 0.02em;
   font-size: 18px;
+  text-decoration: none;
 }
 
 body {
