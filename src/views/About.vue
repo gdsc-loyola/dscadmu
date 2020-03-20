@@ -80,7 +80,7 @@ export default {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 0 90px;
+  gap: 0 120px;
   padding: 0 200px;
   align-items: center;
   justify-content: center;
