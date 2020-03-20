@@ -1,49 +1,48 @@
 <template>
   <footer>
-    <div class="left">
-      <img src="@/assets/images/logo.svg" alt="DSC logo" />
-      <p>
-        Developer Student Clubs, a program under the Google Developers, is an
-        international community of students from various chapters who shares a
-        common interest in technology.
-      </p>
-      <div class="social-icons">
-        <a href="#"
-          ><img src="@/assets/images/facebook.svg" alt="Facebook link"
-        /></a>
-        <a href="#"
-          ><img src="@/assets/images/twitter.svg" alt="Twitter link"
-        /></a>
-        <a href="#"
-          ><img src="@/assets/images/instagram.svg" alt="Instagram link"
-        /></a>
-      </div>
-    </div>
-    <div class="right">
-      <div id="about">
-        <h4>About</h4>
-        <hr />
+    <div id="nav">
+      <div class="list">
+        <h6>About</h6>
+        <hr class="blue" />
         <ul>
           <li>Vision</li>
           <li>Mission</li>
+          <li>Types of Events</li>
+          <li>Google Technologies</li>
+        </ul>
+      </div>
+      <div class="list">
+        <h6>Events</h6>
+        <hr class="red" />
+        <ul>
+          <li>Upcoming Events</li>
+          <li>Archives</li>
+        </ul>
+      </div>
+      <div class="list">
+        <h6>Projects</h6>
+        <hr class="yellow" />
+        <ul>
+          <li>Placeholder</li>
+        </ul>
+      </div>
+      <div class="list">
+        <h6>Team</h6>
+        <hr class="green" />
+        <ul>
           <li>Executive Board</li>
-          <li>Department Structure</li>
+          <li>Departments</li>
+          <li>Core Leads</li>
         </ul>
       </div>
-      <div id="event">
-        <h4>Events</h4>
-        <hr />
-        <ul>
-          <li>Featured Events</li>
-        </ul>
-      </div>
-      <div id="chapters">
-        <h4>Chapters</h4>
-        <hr />
-        <ul>
-          <li>DSC Chapters</li>
-        </ul>
-      </div>
+    </div>
+    <hr />
+    <div id="foot">
+      <img
+        src="../assets/images/logo.svg"
+        alt="Developer Student Clubs Loyola logo"
+      />
+      <small>© 2020 Developer Student Clubs Loyola. All Rights Reserved.</small>
     </div>
   </footer>
 </template>
@@ -54,65 +53,74 @@ export default {};
 
 <style scoped>
 footer {
-  background: #fff;
-  padding: 50px 120px 65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-top: 1px solid #eaeaea;
+  padding: 40px 200px;
 }
 
-.left {
-  flex: 0 1 600px;
+div {
+  display: grid;
+  align-items: start;
 }
 
-.left p {
-  padding: 25px 0;
-  line-height: 35px;
+hr {
+  border: none;
+  height: 1px;
+  background-color: #eaeaea;
+  color: #eaeaea;
+  margin: 30px 0 40px;
 }
 
-.left .social-icons {
-  display: flex;
+#nav {
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 30px 105px;
 }
 
-.social-icons a {
-  border: 2px solid #2f80ed;
-  border-radius: 100px;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-  margin-bottom: 50px;
-}
-
-.right {
-  display: flex;
-}
-
-.right div {
-  margin-right: 100x;
-}
-
-.right h4 {
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
   font-weight: 500;
 }
 
-.right hr {
+.list hr {
+  margin: 0 0 20px;
   width: 30px;
-  margin: 15px 0 20px;
-  border: none;
-  height: 2px;
-  background: #2f80ed;
+}
+
+.blue {
+  border-bottom: 2px solid #4285f4;
+}
+
+.red {
+  border-bottom: 2px solid #ea4335;
+}
+
+.yellow {
+  border-bottom: 2px solid #fbbc04;
+}
+
+.green {
+  border-bottom: 2px solid #0f9d58;
 }
 
 ul {
   list-style: none;
-  line-height: 30px;
 }
 
-#about,
-#event {
-  margin-right: 65px;
+li {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+#foot {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+small {
+  justify-self: end;
+  align-self: center;
+  font-size: 14px;
+  color: #828282;
 }
 </style>
