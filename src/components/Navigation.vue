@@ -12,8 +12,8 @@
       <ul>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/events">Events</router-link></li>
-        <li><router-link to="/chapters">Chapters</router-link></li>
-        <li><router-link to="/contact-us">Contact Us</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
+        <li><router-link to="/team">Team</router-link></li>
       </ul>
     </div>
   </nav>
@@ -33,33 +33,32 @@ nav {
 
 #nav {
   background: #fff;
-  height: 45px;
+  height: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 120px;
+  padding: 25px 200px;
 }
 
 ul {
   list-style: none;
   display: flex;
-  font-size: 16px;
-  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 li {
-  margin-left: 32px;
+  margin-left: 30px;
 }
 
 li > a {
   color: #151522;
-  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 li > a:hover,
 li > a.router-link-active {
-  padding-bottom: 31px;
+  padding-bottom: 18px;
 }
 
 li:nth-child(1) > a:hover,
