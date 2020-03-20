@@ -1,10 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "./views/Home.vue";
-import About from "./views/About.vue";
-import Events from "./views/Events.vue";
-import Chapters from "./views/Chapters.vue";
-import Contact from "./views/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -16,19 +12,19 @@ export default new VueRouter({
     },
     {
       path: "/about",
-      component: About
+      component: () => import("./views/About.vue")
     },
     {
       path: "/events",
-      component: Events
+      component: () => import("./views/Events.vue")
     },
     {
-      path: "/chapters",
-      component: Chapters
+      path: "/projects",
+      component: () => import("./views/Projects.vue")
     },
     {
-      path: "/contact-us",
-      component: Contact
+      path: "/team",
+      component: () => import("./views/Team.vue")
     }
   ]
 });
