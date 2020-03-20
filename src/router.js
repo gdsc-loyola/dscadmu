@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "./views/Home.vue";
+// import Home from "./views/Home.vue";
+import InProgress from "./views/InProgress.vue";
 
 Vue.use(VueRouter);
 
@@ -8,7 +9,7 @@ export default new VueRouter({
   routes: [
     {
       path: "/",
-      component: Home
+      component: InProgress
     },
     {
       path: "/about",
@@ -16,15 +17,18 @@ export default new VueRouter({
     },
     {
       path: "/events",
-      component: () => import("./views/Events.vue")
+      component: InProgress
+      // component: () => import("./views/Events.vue")
     },
     {
       path: "/projects",
-      component: () => import("./views/Projects.vue")
+      component: InProgress
+      // component: () => import("./views/Projects.vue")
     },
     {
       path: "/team",
-      component: () => import("./views/Team.vue")
+      component: InProgress
+      // component: () => import("./views/Team.vue")
     }
   ]
 });
