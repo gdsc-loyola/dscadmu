@@ -2,13 +2,13 @@
   <div id="app">
     <Navigation />
     <router-view />
-    <Footer v-if="showFooter"  />
+    <Footer v-if="showFooter" />
   </div>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue'
-import Footer from '@/components/Footer.vue'
+import Navigation from "@/components/Navigation.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
@@ -17,41 +17,40 @@ export default {
   },
   computed: {
     showFooter() {
-      if (this.$route.path != '/')
-        return false
-      return true
+      if (this.$route.path != "/") return false;
+      return true;
     }
   }
-}
+};
 </script>
 
 <style>
 @font-face {
-  font-family    : 'Google Sans';
-  src            : url('./assets/fonts/googlesans-regular.woff') format('woff');
-  font-weight    : normal;
-  text-rendering : optimizeLegibility;
+  font-family: "Google Sans";
+  src: url("./assets/fonts/googlesans-regular.woff") format("woff");
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family    : 'Google Sans';
-  src            : url('./assets/fonts/googlesans-medium.woff') format('woff');
-  font-style     : normal;
-  font-weight    : 500;
-  text-rendering : optimizeLegibility;
+  font-family: "Google Sans";
+  src: url("./assets/fonts/googlesans-medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family    : 'Google Sans';
-  src            : url('./assets/fonts/googlesans-bold.woff') format('woff');
-  font-weight    : bold;
-  text-rendering : optimizeLegibility;
+  font-family: "Google Sans";
+  src: url("./assets/fonts/googlesans-bold.woff") format("woff");
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Google Sans', Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.02em;
   font-size: 18px;
   text-decoration: none;
@@ -81,7 +80,7 @@ button {
 }
 
 .blue {
-  background: #2F80ED;
+  background: #2f80ed;
   color: #fff;
 }
 
@@ -91,12 +90,12 @@ button {
 
 .blue-light {
   background: #fff;
-  border: 1px solid #2F80ED;
-  color: #2F80ED;
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
 }
 
 .blue-light:hover {
-  background: #2F80ED;
+  background: #2f80ed;
   color: #fff;
 }
 </style>
