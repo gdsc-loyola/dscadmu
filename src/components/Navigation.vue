@@ -1,19 +1,24 @@
 <template>
   <nav>
-    <div id="nav">
+    <div class="container" id="nav">
       <div id="nav-brand">
         <router-link to="/">
-          <img
-            alt="Developer Student Clubs Loyola logo"
-            src="@/assets/images/logo.svg"
-          />
+          <img alt="Developer Student Clubs Loyola logo" src="@/assets/images/logo.svg" />
         </router-link>
       </div>
       <ul>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/events">Events</router-link></li>
-        <li><router-link to="/projects">Projects</router-link></li>
-        <li><router-link to="/team">Team</router-link></li>
+        <li>
+          <router-link to="/about">About</router-link>
+        </li>
+        <li>
+          <router-link to="/events">Events</router-link>
+        </li>
+        <li>
+          <router-link to="/projects">Projects</router-link>
+        </li>
+        <li>
+          <router-link to="/team">Team</router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -29,15 +34,14 @@ nav {
   width: 100%;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.05);
   z-index: 1;
+  background: #fff;
 }
 
 #nav {
-  background: #fff;
-  height: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 200px;
+  padding: 16px 0;
 }
 
 ul {
