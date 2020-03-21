@@ -1,9 +1,6 @@
 <template>
   <div>
-    <img
-      :src="require('@/assets/images/' + image + '')"
-      :alt="title + ' image'"
-    />
+    <img :src="require('@/assets/images/' + image + '')" :alt="title + ' image'" />
     <h3>{{ title }}</h3>
     <slot></slot>
   </div>
@@ -23,6 +20,8 @@ div {
   align-items: flex-start;
   text-align: left;
   line-height: 22px;
+  max-width: 210px;
+  margin: 0 30px;
 }
 
 h3 {

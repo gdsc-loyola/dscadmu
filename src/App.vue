@@ -53,10 +53,7 @@ body {
 }
 
 section {
-  padding-top: 65px;
-  padding-bottom: 65px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 60px 0;
 }
 
 h1 {
@@ -100,6 +97,11 @@ button {
   -moz-osx-font-smoothing: grayscale;
   color: #4f4f4f;
   font-weight: normal;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
 }
 
 .grey-bg {
@@ -148,5 +150,9 @@ button {
 .white-light:hover {
   background: #fff;
   color: transparent;
+}
+
+.text-center {
+  text-align: center;
 }
 </style>
