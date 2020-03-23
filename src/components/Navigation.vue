@@ -3,7 +3,10 @@
     <div class="container" id="nav">
       <div id="nav-brand">
         <router-link to="/">
-          <img alt="Developer Student Clubs Loyola logo" src="@/assets/images/logo.svg" />
+          <img
+            alt="Developer Student Clubs Loyola logo"
+            src="@/assets/images/logo.svg"
+          />
         </router-link>
       </div>
       <ul>

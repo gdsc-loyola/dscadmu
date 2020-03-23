@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img :src="require('@/assets/images/' + image + '')" :alt="title + ' image'" />
+    <img
+      :src="require('@/assets/images/' + image + '')"
+      :alt="title + ' image'"
+    />
     <h3>{{ title }}</h3>
     <slot></slot>
   </div>
