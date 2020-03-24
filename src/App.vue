@@ -15,12 +15,6 @@ export default {
     Navigation,
     Footer
   }
-  // computed: {
-  //   showFooter() {
-  //     if (this.$route.path != "/") return false;
-  //     return true;
-  //   }
-  // }
 };
 </script>
 
@@ -48,39 +42,34 @@ export default {
   color: #4f4f4f;
 }
 
-body {
-  width: 100%;
-}
-
 section {
   padding: 60px 0;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 50px;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 32px;
   font-weight: 500;
   color: #333;
 }
 
 h4 {
+  font-size: 1.25rem;
   text-transform: uppercase;
-  color: #4285f4;
   letter-spacing: 0.1rem;
-  line-height: 25px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button {
@@ -93,15 +82,16 @@ button {
 }
 
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #4f4f4f;
-  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  width: 75%;
-  margin: auto;
+.f-even {
+  justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grey-bg {
@@ -112,6 +102,8 @@ button {
   font-size: 1.125rem;
   line-height: 28px;
 }
+
+/* BUTTONS */
 
 .blue {
   background: #2f80ed;
@@ -152,7 +144,32 @@ button {
   color: transparent;
 }
 
-.text-center {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
 }
 </style>
