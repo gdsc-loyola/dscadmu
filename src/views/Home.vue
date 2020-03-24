@@ -1,6 +1,10 @@
 <template>
   <div>
-    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
+    <section
+      id="hero"
+      :style="backgroundHero"
+      class="d-flex align-items-center"
+    >
       <div class="container">
         <div id="hero-text">
           <h1>Creating impact together</h1>
