@@ -1,21 +1,61 @@
 <template>
-  <div>
-    <h3>{{ title }}</h3>
+  <div id="event-wrap">
+    <div id="event-card" :style="backgroundImage">
+      <h3>
+        <slot></slot>
+      </h3>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["title", "image"]
+  props: ["image"],
+  data() {
+    return {
+      backgroundImage: {
+        backgroundImage:
+          "linear-gradient(0deg, rgba(24, 54, 103, 0.6), rgba(24, 54, 103, 0.6)), url(" +
+          require("@/assets/images/" + this.image + "") +
+          ")",
+        backgroundSize: "cover"
+      }
+    };
+  }
 };
 </script>
 
 <style scoped>
-div {
-  box-shadow: 2px 4px 2px #e0e0e0;
-  border-radius: 4px;
+div#event-wrap {
+  margin: 15px 0;
+}
+
+div#event-card {
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+}
+
+h3 {
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  div#event-wrap {
+    margin: 8px 0;
+  }
+
+  div#event-card {
+    height: 96px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 25px;
+  }
 }
 </style>
