@@ -29,9 +29,39 @@
       </div>
     </section>
 
-    <section>
-      <div class="contain">
+    <section id="do">
+      <div class="container">
         <h2 class="text-center">What we do</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="talks.svg" title="Talks" color="blue">
+              Listen from esteemed speakers as they share their insights,
+              experience and wisdom
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="codelabs.svg" title="Codelabs" color="red">
+              Get a chance to learn new skills through hands-on workshops and
+              study jams
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="webinars.svg" title="Webinars" color="yellow">
+              Learning never stops! Watch events online by Developer Student
+              Clubs and by Google
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card
+              image="tech-solutions.svg"
+              title="Tech Solutions"
+              color="green"
+            >
+              Use the skills you learn in our events to solve community problems
+              through projects
+            </do-card>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -67,10 +97,13 @@
       </div>
     </section>
 
-    <section class="grey-bg">
+    <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
         <p>There are 18 DSC chapters in the Philippines right now!</p>
+        <div id="chapter-scroll">
+          <circle-card></circle-card>
+        </div>
         <p>Want to start your own chapter? Apply to be a lead now!</p>
         <router-link to="/">
           <button class="blue">Apply as lead</button>
@@ -81,9 +114,16 @@
 </template>
 
 <script>
+import DoCard from "../components/DoCard.vue";
+import CircleCard from "../components/CircleCard";
+
 export default {
   mounted() {
     window.scrollTo(0, 0);
+  },
+  components: {
+    DoCard,
+    CircleCard
   },
   data() {
     return {
@@ -129,6 +169,16 @@ export default {
   color: #fff;
 }
 
+#do div.row {
+  margin-top: 48px;
+}
+
+#do div.row > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 #next-event {
   background: #fff;
   border-radius: 4px;
@@ -169,9 +219,21 @@ export default {
   margin-top: 22px;
 }
 
+#chapters button {
+  margin-top: 16px;
+}
+
+#chapter-scroll {
+  padding: 64px 0;
+}
+
 @media screen and (max-width: 768px) {
   #hero {
     margin-top: 60px;
+  }
+
+  #do {
+    padding-bottom: 20px;
   }
 
   #next-event {
