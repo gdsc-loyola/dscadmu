@@ -72,7 +72,8 @@ h4 {
   text-transform: uppercase;
 }
 
-h5 {
+h5,
+h6 {
   font-size: 1.25rem;
   font-weight: 500;
 }
