@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="row f-center f-between">
+    <div class="row align-items-center f-justify-content-between">
       <div id="nav-brand" class="col-12 col-md-6">
         <router-link to="/">
           <img
@@ -12,7 +12,7 @@
       <ul
         v-if="isDesktop"
         id="desktop-nav"
-        class="col-12 col-md-6 d-flex f-end"
+        class="col-12 col-md-6 d-flex justify-content-end"
       >
         <li>
           <router-link to="/about">About</router-link>
@@ -147,6 +147,7 @@ ul {
   width: 100%;
   bottom: 0;
   left: 0;
+  background: #fff;
 }
 
 #mobile-nav > ul {
