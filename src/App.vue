@@ -141,7 +141,7 @@ button {
 
 .white-light:hover {
   background: #fff;
-  color: transparent;
+  color: #333;
 }
 
 @media screen and (max-width: 768px) {
