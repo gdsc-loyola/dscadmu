@@ -26,12 +26,10 @@
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
           <mission-card image="empower.svg" title="Empower">
-            We empower people through technology and programming
-            education
+            We empower people through technology and programming education
           </mission-card>
           <mission-card image="enlighten.svg" title="Enlighten">
-            We enlighten people to the power of innovation and
-            problem-solving
+            We enlighten people to the power of innovation and problem-solving
           </mission-card>
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
@@ -85,13 +83,19 @@
             <img src="../assets/images/angular.svg" alt="Angular logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img src="../assets/images/google-apps.svg" alt="Google Apps logo" />
+            <img
+              src="../assets/images/google-apps.svg"
+              alt="Google Apps logo"
+            />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/android.svg" alt="Android logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img src="../assets/images/actions-on-google.svg" alt="Actions on Google logo" />
+            <img
+              src="../assets/images/actions-on-google.svg"
+              alt="Actions on Google logo"
+            />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/dialogflow.svg" alt="Dialogflow logo" />
@@ -103,7 +107,10 @@
             <img src="../assets/images/flutter.svg" alt="Flutter logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img src="../assets/images/google-cloud-platform.svg" alt="Google Cloud Platform logo" />
+            <img
+              src="../assets/images/google-cloud-platform.svg"
+              alt="Google Cloud Platform logo"
+            />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/firebase.svg" alt="Firebase logo" />
