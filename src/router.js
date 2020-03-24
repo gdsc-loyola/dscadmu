@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-// import Home from "./views/Home.vue";
 import InProgress from "./views/InProgress.vue";
 import NotFound from "./views/NotFound.vue";
 
@@ -11,7 +10,7 @@ const router = new Router({
     {
       path: "/",
       name: "home",
-      component: InProgress
+      component: () => import("./views/Home.vue")
     },
     {
       path: "/about",
