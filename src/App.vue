@@ -67,8 +67,13 @@ h3 {
 
 h4 {
   font-size: 1.25rem;
-  text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -158,7 +163,8 @@ button {
     font-size: 1.25rem;
   }
 
-  h4 {
+  h4,
+  h5 {
     font-size: 1rem;
   }
 
