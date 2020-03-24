@@ -25,14 +25,12 @@
       <div class="container">
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
-          <mission-card image="empower.svg" title="Empower"
-            >We empower people through technology and programming
-            education</mission-card
-          >
-          <mission-card image="enlighten.svg" title="Enlighten"
-            >We enlighten people to the power of innovation and
-            problem-solving</mission-card
-          >
+          <mission-card image="empower.svg" title="Empower">
+            We empower people through technology and programming education
+          </mission-card>
+          <mission-card image="enlighten.svg" title="Enlighten">
+            We enlighten people to the power of innovation and problem-solving
+          </mission-card>
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
             the community
@@ -128,6 +126,9 @@ import MissionCard from "../components/MissionCard.vue";
 import EventCard from "../components/EventCard.vue";
 
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   components: {
     MissionCard,
     EventCard
