@@ -25,12 +25,14 @@
       <div class="container">
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
-          <mission-card image="empower.svg" title="Empower">
-            We empower people through technology and programming education
-          </mission-card>
-          <mission-card image="enlighten.svg" title="Enlighten">
-            We enlighten people to the power of innovation and problem-solving
-          </mission-card>
+          <mission-card image="empower.svg" title="Empower"
+            >We empower people through technology and programming
+            education</mission-card
+          >
+          <mission-card image="enlighten.svg" title="Enlighten"
+            >We enlighten people to the power of innovation and
+            problem-solving</mission-card
+          >
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
             the community
@@ -135,7 +137,7 @@ export default {
 
 <style scoped>
 #hero {
-  margin-top: 55px;
+  margin-top: 60px;
   width: 100%;
 }
 

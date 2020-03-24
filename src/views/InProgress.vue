@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 #wip {
-  margin-top: 55px;
+  margin-top: 60px;
   width: 100%;
 }
 
