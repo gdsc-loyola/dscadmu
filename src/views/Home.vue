@@ -100,11 +100,61 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p>There are 18 DSC chapters in the Philippines right now!</p>
-        <div id="chapter-scroll">
-          <circle-card></circle-card>
+        <p style="margin-bottom: 64px">
+          There are 18 DSC chapters in the Philippines right now!
+        </p>
+        <div id="chapter-scroll-container">
+          <div id="chapter-scroll">
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+            <circle-card
+              image="chapter.png"
+              title="Name of Chapter"
+              location="Manila City, Luzon"
+            ></circle-card>
+          </div>
         </div>
-        <p>Want to start your own chapter? Apply to be a lead now!</p>
+        <p style="margin-top: 64px">
+          Want to start your own chapter? Apply to be a lead now!
+        </p>
         <router-link to="/">
           <button class="blue">Apply as lead</button>
         </router-link>
@@ -223,8 +273,19 @@ export default {
   margin-top: 16px;
 }
 
+#chapter-scroll-container {
+  width: 92vw;
+  position: relative;
+  left: -141px;
+  overflow: hidden;
+}
+
 #chapter-scroll {
-  padding: 64px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
