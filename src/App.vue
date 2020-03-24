@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #333;
+  color: #4f4f4f;
   margin-bottom: 10px;
 }
 
