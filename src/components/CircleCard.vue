@@ -33,4 +33,16 @@ h6 {
   line-height: 25px;
   margin-bottom: 4px;
 }
+
+@media screen and (max-width: 768px) {
+  div {
+    width: 140px;
+    margin: 0 20px;
+  }
+
+  h6 {
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+}
 </style>
