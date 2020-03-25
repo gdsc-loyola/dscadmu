@@ -76,9 +76,10 @@
             />
           </div>
           <div class="col-12 col-md-6">
-            <small>
-              © 2020 Developer Student Clubs Loyola. All Rights Reserved.
-            </small>
+            <small
+              >© 2020 Developer Student Clubs Loyola. All Rights
+              Reserved.</small
+            >
           </div>
         </div>
       </div>
@@ -87,7 +88,7 @@
 </template>
 
 <script>
-import SocialIcons from "./SocialIcons.vue";
+import SocialIcons from "./SocialIcons";
 
 export default {
   components: {
