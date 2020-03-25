@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Navigation from "@/components/Navigation.vue";
-import Footer from "@/components/Footer.vue";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
@@ -165,7 +165,8 @@ button {
   }
 
   h4,
-  h5 {
+  h5,
+  h6 {
     font-size: 1rem;
   }
 
