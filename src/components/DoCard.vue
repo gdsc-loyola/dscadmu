@@ -22,11 +22,9 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: left;
   line-height: 22px;
-  max-width: 215px;
-  margin: 0 40px;
+  max-width: 225px;
 }
 
 h3 {
