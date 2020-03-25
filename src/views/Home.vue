@@ -100,11 +100,12 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p style="margin-bottom: 64px">
+        <p class="bottom">
           There are 18 DSC chapters in the Philippines right now!
         </p>
         <div id="chapter-scroll-container">
           <div id="chapter-scroll">
+            <margin width="32"></margin>
             <circle-card
               image="chapter.png"
               title="Name of Chapter"
@@ -150,9 +151,10 @@
               title="Name of Chapter"
               location="Manila City, Luzon"
             ></circle-card>
+            <margin width="32"></margin>
           </div>
         </div>
-        <p style="margin-top: 64px">
+        <p class="top">
           Want to start your own chapter? Apply to be a lead now!
         </p>
         <router-link to="/">
@@ -164,8 +166,9 @@
 </template>
 
 <script>
-import DoCard from "../components/DoCard.vue";
-import CircleCard from "../components/CircleCard";
+import DoCard from "@/components/DoCard";
+import CircleCard from "@/components/CircleCard";
+import Margin from "@/components/Margin";
 
 export default {
   mounted() {
@@ -173,7 +176,8 @@ export default {
   },
   components: {
     DoCard,
-    CircleCard
+    CircleCard,
+    Margin
   },
   data() {
     return {
@@ -269,14 +273,13 @@ export default {
   margin-top: 22px;
 }
 
-#chapters button {
-  margin-top: 16px;
-}
-
 #chapter-scroll-container {
-  width: 92vw;
+  width: 100vw;
   position: relative;
-  left: -141px;
+  left: 49%;
+  right: 49%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   overflow: hidden;
 }
 
@@ -286,6 +289,18 @@ export default {
   overflow-x: scroll;
   margin-bottom: -50px;
   padding-bottom: 50px;
+}
+
+#chapters button {
+  margin-top: 16px;
+}
+
+#chapters .top {
+  margin-top: 64px;
+}
+
+#chapters .bottom {
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 768px) {
@@ -318,6 +333,14 @@ export default {
 
   #next-event span {
     padding-top: 0;
+  }
+
+  #chapters .top {
+    margin-top: 24px;
+  }
+
+  #chapters .bottom {
+    margin-bottom: 24px;
   }
 }
 </style>
