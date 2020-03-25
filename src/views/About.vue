@@ -122,8 +122,8 @@
 </template>
 
 <script>
-import MissionCard from "../components/MissionCard.vue";
-import EventCard from "../components/EventCard.vue";
+import MissionCard from "@/components/MissionCard";
+import EventCard from "@/components/EventCard";
 
 export default {
   mounted() {
