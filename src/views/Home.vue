@@ -198,9 +198,8 @@ export default {
 
 <style scoped>
 #hero {
-  margin-top: 60px;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh);
 }
 
 #hero p {
@@ -304,10 +303,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  #hero {
-    margin-top: 60px;
-  }
-
   #do {
     padding-bottom: 20px;
   }
