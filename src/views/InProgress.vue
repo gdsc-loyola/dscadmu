@@ -1,12 +1,20 @@
 <template>
   <section id="wip" class="grey-bg">
     <div class="container">
-      <h4>Oops...</h4>
-      <h1>Finishing the code soon</h1>
-      <p class="feature-text">
-        The page is not yet done but don't worry. Maybe on your next visit, the
-        page is already up and working!
-      </p>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h4>Oops...</h4>
+          <h1>Still working on it</h1>
+          <p class="feature-text">
+            The page is not yet done but don't worry.
+            <br />Maybe on your next visit, the page is already <br />up and
+            working!
+          </p>
+        </div>
+        <div class="col-12 col-md-6 feature-image">
+          <img src="../assets/images/wip.svg" alt="DSC mascot wrench" />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -25,7 +33,18 @@ export default {
   width: 100%;
 }
 
+#wip h1 {
+  margin-bottom: 16px;
+}
+
 #wip h4 {
   color: #fbbc04;
+  margin-top: 96px;
+  margin-bottom: 24px;
+}
+
+#wip .feature-image {
+  position: relative;
+  top: 60px;
 }
 </style>
