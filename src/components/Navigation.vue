@@ -1,11 +1,11 @@
 <template>
-  <nav>
+  <nav :style="isHome ? navHome : {}">
     <div class="row align-items-center f-justify-content-between">
       <div id="nav-brand" class="col-12 col-md-6">
         <router-link to="/">
           <img
             alt="Developer Student Clubs Loyola logo"
-            src="@/assets/images/logo.svg"
+            :src="require('@/assets/images/' + brand + '')"
           />
         </router-link>
       </div>
@@ -15,16 +15,24 @@
         class="col-12 col-md-6 d-flex justify-content-end"
       >
         <li>
-          <router-link to="/about">About</router-link>
+          <router-link :style="isHome ? navLink : {}" to="/about"
+            >About</router-link
+          >
         </li>
         <li>
-          <router-link to="/events">Events</router-link>
+          <router-link :style="isHome ? navLink : {}" to="/events"
+            >Events</router-link
+          >
         </li>
         <li>
-          <router-link to="/projects">Projects</router-link>
+          <router-link :style="isHome ? navLink : {}" to="/projects"
+            >Projects</router-link
+          >
         </li>
         <li>
-          <router-link to="/team">Team</router-link>
+          <router-link :style="isHome ? navLink : {}" to="/team"
+            >Team</router-link
+          >
         </li>
       </ul>
     </div>
@@ -67,9 +75,28 @@
 
 <script>
 export default {
+  created() {
+    window.onresize = () => {
+      this.width = window.innerWidth;
+    };
+
+    window.addEventListener("scroll", this.handleScroll);
+    this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
   data() {
     return {
-      width: window.innerWidth
+      width: window.innerWidth,
+      isHome: this.$route.path === "/" ? true : false,
+      brand: "logo.svg",
+      navHome: {
+        background: "transparent"
+      },
+      navLink: {
+        color: "#fff"
+      }
     };
   },
   computed: {
@@ -78,10 +105,39 @@ export default {
       return true;
     }
   },
-  created() {
-    window.onresize = () => {
-      this.width = window.innerWidth;
-    };
+  watch: {
+    // eslint-disable-next-line
+    $route(to, from) {
+      this.isHome = to.path === "/" ? true : false;
+      this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
+    }
+  },
+  methods: {
+    handleScroll() {
+      if (this.isHome) {
+        if (window.scrollY > 20) {
+          this.navHome = {
+            background: "#fff",
+            transition: "background 0.25s ease-in-out"
+          };
+          this.navLink = {
+            color: "#151522",
+            transition: "color 0.25s ease-in-out"
+          };
+          this.brand = "logo.svg";
+        } else {
+          this.navHome = {
+            background: "transparent",
+            transition: "background 0.25s ease-in-out"
+          };
+          this.navLink = {
+            color: "#fff",
+            transition: "color 0.25s ease-in-out"
+          };
+          this.brand = "logo-white.svg";
+        }
+      }
+    }
   }
 };
 </script>
@@ -94,7 +150,6 @@ nav {
   left: 0;
   z-index: 1;
   background: #fff;
-  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 16px 32px;
 }
 
