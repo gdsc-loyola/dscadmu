@@ -25,12 +25,14 @@
       <div class="container">
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
-          <mission-card image="empower.svg" title="Empower">
-            We empower people through technology and programming education
-          </mission-card>
-          <mission-card image="enlighten.svg" title="Enlighten">
-            We enlighten people to the power of innovation and problem-solving
-          </mission-card>
+          <mission-card image="empower.svg" title="Empower"
+            >We empower people through technology and programming
+            education</mission-card
+          >
+          <mission-card image="enlighten.svg" title="Enlighten"
+            >We enlighten people to the power of innovation and
+            problem-solving</mission-card
+          >
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
             the community
@@ -73,8 +75,8 @@
 
     <section id="tech" class="grey-bg">
       <div class="container">
-        <h2 class="text-center">Google Technologies</h2>
-        <p class="text-center">
+        <h2>Google Technologies</h2>
+        <p>
           We’re building solutions by learning and applying Google’s latest
           technologies.
         </p>
@@ -193,6 +195,11 @@ export default {
 
   #tech .col-lg {
     margin-bottom: 30px;
+  }
+
+  #tech h2,
+  #tech p {
+    text-align: center;
   }
 
   #tech img {
