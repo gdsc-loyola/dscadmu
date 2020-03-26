@@ -21,7 +21,7 @@
             <router-link to="/">
               <button class="blue primary">Join us</button>
             </router-link>
-            <router-link to="/">
+            <router-link to="/about">
               <button class="white-light">Learn more</button>
             </router-link>
           </div>
@@ -89,9 +89,9 @@
               <i class="material-icons">location_on</i>
               <span>Ateneo de Manila University, Loyola Schools Campus</span>
             </p>
-            <router-link to="/">
+            <a href="/">
               <button class="blue">Buy tickets</button>
-            </router-link>
+            </a>
           </div>
         </div>
       </div>
