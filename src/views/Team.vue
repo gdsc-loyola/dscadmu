@@ -36,8 +36,10 @@
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cobbie Quintos"
             image="person.png"
-            >Chief Community Development Officer & Co-Founder</team-circle
           >
+            Chief Community Development Officer
+            <br />& Co-Founder
+          </team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cedric Atienza"
@@ -48,7 +50,20 @@
       </div>
     </section>
 
-    <section></section>
+    <section id="operations" class="department" :style="ops">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Operations</h2>
+        <p>
+          Oversees and ensures all operations are executed efficiently. They are
+          responsible for cultivating member happiness, growth, and culture, as
+          well as making the organization sustainable by executing financial
+          strategies and enhancing external relations. Operations department is
+          also responsible for ensuring the events and initiatives are well
+          delivered and successful.
+        </p>
+      </div>
+    </section>
     <section>
       <div class="container">
         <div class="row">
@@ -92,7 +107,19 @@
       </div>
     </section>
 
-    <section></section>
+    <section id="technology" class="department" :style="tech">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Technology</h2>
+        <p>
+          Oversees all technological and innovation aspects brought about in the
+          organization. They are responsible for learning and training each
+          member of the organization, as well as non-DSC members. They shall
+          manage creation of technological solutions to uplift partnered
+          communities.
+        </p>
+      </div>
+    </section>
     <section>
       <div class="container">
         <div class="row">
@@ -172,7 +199,19 @@
       </div>
     </section>
 
-    <section></section>
+    <section id="community" class="department" :style="comm">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Community Development</h2>
+        <p>
+          Oversees external relations with local community partners. This
+          includes, but is not limited to, handling primary communication
+          between the organization and its partners, creating and overseeing
+          formal agreements, and managing the organization’s relationship with
+          its partners.
+        </p>
+      </div>
+    </section>
     <section>
       <div class="container">
         <div class="row">
@@ -204,7 +243,19 @@
       </div>
     </section>
 
-    <section></section>
+    <section id="creatives" class="department" :style="create">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Creatives</h2>
+        <p>
+          Oversees the growth of each member’s creativity, as well as all other
+          creative work done in the organization. They are responsible for
+          establishing the art direction of a project, developing marketing
+          strategies, and translating these ideas into creative campaigns for
+          the organization’s various projects.
+        </p>
+      </div>
+    </section>
     <section>
       <div class="container">
         <div class="row">
@@ -277,7 +328,21 @@ export default {
   data() {
     return {
       isDesktop: window.innerWidth >= 768 ? false : true,
-      leaderHead: this.isDesktop ? "Meet our leadership team" : "Meet our team"
+      leaderHead:
+        window.innerWidth >= 768 ? "Meet our leadership team" : "Meet our team",
+      ops: {
+        backgroundImage:
+          "url(" + require("@/assets/images/operations.png") + ")"
+      },
+      tech: {
+        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
+      },
+      comm: {
+        backgroundImage: "url(" + require("@/assets/images/community.png") + ")"
+      },
+      create: {
+        backgroundImage: "url(" + require("@/assets/images/creatives.png") + ")"
+      }
     };
   },
   methods: {
@@ -309,14 +374,67 @@ export default {
   color: #0f9d58;
 }
 
+#operations h4 {
+  color: #4285f4;
+}
+
+#technology h4 {
+  color: #ea4335;
+}
+
+#community h4 {
+  color: #fbbc04;
+}
+
+#creatives h4 {
+  color: #0f9d58;
+}
+
+#operations,
+#technology,
+#community,
+#creatives {
+  background-size: cover;
+  background-position: center;
+}
+
+.department {
+  height: 305px;
+}
+
+.department h2 {
+  margin: 8px 0 16px;
+  font-weight: 500;
+}
+
+.department p {
+  line-height: 24px;
+}
+
+.department h2,
+.department p {
+  color: #fff;
+}
+
 #join p {
   margin-bottom: 40px;
   line-height: 25px;
 }
 
 @media screen and (max-width: 767px) {
+  #operations,
+  #technology,
+  #community,
+  #creatives {
+    padding: 40px 0;
+  }
+
   #leader h2 {
     text-align: left;
+  }
+
+  .department {
+    height: 464px;
   }
 }
 
