@@ -17,8 +17,7 @@ const router = new Router({
     },
     {
       path: "/events",
-      component: InProgress
-      // component: () => import("./views/Events.vue")
+      component: () => import("./views/Events.vue")
     },
     {
       path: "/projects",
