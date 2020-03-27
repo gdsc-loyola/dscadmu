@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+mascot.ai
 
 # local env files
 .env.local
