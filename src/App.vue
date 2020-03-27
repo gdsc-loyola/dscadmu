@@ -151,7 +151,7 @@ button {
   color: #333;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -165,7 +165,10 @@ button {
     font-size: 1.25rem;
   }
 
-  h4,
+  h4 {
+    font-size: 0.9rem;
+  }
+
   h5,
   h6 {
     font-size: 1rem;
