@@ -1,8 +1,8 @@
 <template>
   <section id="wip" class="grey-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-6 left">
           <h4>Oh no!</h4>
           <h1>Page Not Found</h1>
           <p class="feature-text">
@@ -11,8 +11,8 @@
             removed!
           </p>
         </div>
-        <div class="col-12 col-md-6 feature-image">
-          <img src="../assets/images/err.svg" alt="DSC mascot wrench" />
+        <div class="col-12 col-md-6 right">
+          <img src="../assets/images/err.svg" alt="DSC mascot cog" />
         </div>
       </div>
     </div>
@@ -43,14 +43,23 @@ export default {
   margin-bottom: 24px;
 }
 
-#wip .feature-image {
+#wip .left {
+  max-width: 410px;
+}
+
+#wip .right {
   position: relative;
   top: 60px;
+  max-width: 400px;
+}
+
+#wip img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   #wip h4 {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }
 </style>
