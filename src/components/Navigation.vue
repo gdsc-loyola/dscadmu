@@ -76,12 +76,12 @@
 <script>
 export default {
   created() {
-    window.onresize = this.handleResizeNav;
-
+    window.addEventListener("resize", this.handleResizeNav);
     window.addEventListener("scroll", this.handleScroll);
     this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
   },
   destroyed() {
+    window.removeEventListener("resize", this.handleResizeNav);
     window.removeEventListener("scroll", this.handleScroll);
   },
   data() {
@@ -251,7 +251,7 @@ ul {
   color: #0f9d58;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   img {
     width: 100%;
   }
