@@ -25,14 +25,12 @@
       <div class="container">
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
-          <mission-card image="empower.svg" title="Empower"
-            >We empower people through technology and programming
-            education</mission-card
-          >
-          <mission-card image="enlighten.svg" title="Enlighten"
-            >We enlighten people to the power of innovation and
-            problem-solving</mission-card
-          >
+          <mission-card image="empower.svg" title="Empower">
+            We empower people through technology and programming education
+          </mission-card>
+          <mission-card image="enlighten.svg" title="Enlighten">
+            We enlighten people to the power of innovation and problem-solving
+          </mission-card>
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
             the community
@@ -47,27 +45,29 @@
         <p>Various events to empower, enlighten, and nurture members</p>
         <div class="row">
           <router-link class="col-6 col-md-6 col-lg-3" to="/">
-            <event-card image="study-jams.jpeg">Study Jams</event-card>
+            <event-category image="study-jams.jpeg">Study Jams</event-category>
           </router-link>
           <router-link class="col-6 col-md-6 col-lg-3" to="/">
-            <event-card image="workshop.jpeg">Hands-on Workshops</event-card>
+            <event-category image="workshop.jpeg"
+              >Hands-on Workshops</event-category
+            >
           </router-link>
           <router-link class="col-6 col-md-6 col-lg-3" to="/">
-            <event-card image="exploreml.jpeg">ExploreML</event-card>
+            <event-category image="exploreml.jpeg">ExploreML</event-category>
           </router-link>
           <router-link class="col-6 col-md-6 col-lg-3" to="/">
-            <event-card image="hackathon.jpeg">Hackathon</event-card>
+            <event-category image="hackathon.jpeg">Hackathon</event-category>
           </router-link>
         </div>
         <div class="row">
           <router-link class="col-6 col-md-6 col-lg-4" to="/">
-            <event-card image="talk.jpeg">Tech Talk</event-card>
+            <event-category image="talk.jpeg">Tech Talk</event-category>
           </router-link>
           <router-link class="col-6 col-md-6 col-lg-4" to="/">
-            <event-card image="bootcamp.jpeg">Bootcamp</event-card>
+            <event-category image="bootcamp.jpeg">Bootcamp</event-category>
           </router-link>
           <router-link class="col-6 col-md-6 col-lg-4" to="/">
-            <event-card image="showcase.jpeg">Showcase</event-card>
+            <event-category image="showcase.jpeg">Showcase</event-category>
           </router-link>
         </div>
       </div>
@@ -125,7 +125,7 @@
 
 <script>
 import MissionCard from "@/components/MissionCard";
-import EventCard from "@/components/EventCard";
+import EventCategory from "@/components/EventCategory";
 
 export default {
   mounted() {
@@ -133,7 +133,7 @@ export default {
   },
   components: {
     MissionCard,
-    EventCard
+    EventCategory
   }
 };
 </script>
