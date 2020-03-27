@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      :src="require('@/assets/images/' + image + '')"
+      :src="require('@/assets/images/chapter/' + image + '')"
       alt="DSC Chapter photo"
     />
     <h6>{{ title }}</h6>
