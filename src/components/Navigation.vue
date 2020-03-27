@@ -75,8 +75,8 @@
 
 <script>
 export default {
-  created() {
-    window.onresize = this.handleResize;
+  mounted() {
+    window.onresize = this.handleResizeNav;
 
     window.addEventListener("scroll", this.handleScroll);
     this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
@@ -105,9 +105,12 @@ export default {
     }
   },
   methods: {
-    handleResize() {
-      if (window.innerWidth < 768) this.isDesktop = false;
-      else this.isDesktop = true;
+    handleResizeNav() {
+      if (window.innerWidth < 768) {
+        this.isDesktop = false;
+      } else {
+        this.isDesktop = true;
+      }
     },
     handleScroll() {
       if (this.isHome) {
