@@ -76,9 +76,7 @@
 <script>
 export default {
   created() {
-    window.onresize = () => {
-      this.width = window.innerWidth;
-    };
+    window.onresize = this.isDesktop;
 
     window.addEventListener("scroll", this.handleScroll);
     this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
@@ -88,7 +86,6 @@ export default {
   },
   data() {
     return {
-      width: window.innerWidth,
       isHome: this.$route.path === "/" ? true : false,
       brand: "logo.svg",
       navHome: {
@@ -101,7 +98,7 @@ export default {
   },
   computed: {
     isDesktop() {
-      if (this.width < 768) return false;
+      if (window.innerWidth < 768) return false;
       return true;
     }
   },
