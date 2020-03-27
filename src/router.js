@@ -27,8 +27,7 @@ const router = new Router({
     },
     {
       path: "/team",
-      component: InProgress
-      // component: () => import("./views/Team.vue")
+      component: () => import("./views/Team.vue")
     },
     {
       path: "*",
