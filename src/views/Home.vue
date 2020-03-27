@@ -106,51 +106,51 @@
         <div id="chapter-scroll-container">
           <div id="chapter-scroll">
             <margin width="32"></margin>
-            <circle-card
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
-            <circle-card
+            ></chapter-circle>
+            <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
               location="Manila City, Luzon"
-            ></circle-card>
+            ></chapter-circle>
             <margin width="32"></margin>
           </div>
         </div>
@@ -167,7 +167,7 @@
 
 <script>
 import DoCard from "@/components/DoCard";
-import CircleCard from "@/components/CircleCard";
+import ChapterCircle from "@/components/ChapterCircle";
 import Margin from "@/components/Margin";
 
 export default {
@@ -176,7 +176,7 @@ export default {
   },
   components: {
     DoCard,
-    CircleCard,
+    ChapterCircle,
     Margin
   },
   data() {
