@@ -76,7 +76,7 @@
 <script>
 export default {
   created() {
-    window.onresize = this.isDesktop;
+    window.onresize = this.handleResize;
 
     window.addEventListener("scroll", this.handleScroll);
     this.brand = this.isHome ? "logo-white.svg" : "logo.svg";
@@ -87,6 +87,7 @@ export default {
   data() {
     return {
       isHome: this.$route.path === "/" ? true : false,
+      isDesktop: window.innerWidth >= 768 ? true : false,
       brand: "logo.svg",
       navHome: {
         background: "transparent"
@@ -96,12 +97,6 @@ export default {
       }
     };
   },
-  computed: {
-    isDesktop() {
-      if (window.innerWidth < 768) return false;
-      return true;
-    }
-  },
   watch: {
     // eslint-disable-next-line
     $route(to, from) {
@@ -110,6 +105,10 @@ export default {
     }
   },
   methods: {
+    handleResize() {
+      if (window.innerWidth < 768) this.isDesktop = false;
+      else this.isDesktop = true;
+    },
     handleScroll() {
       if (this.isHome) {
         if (window.scrollY > 20) {
