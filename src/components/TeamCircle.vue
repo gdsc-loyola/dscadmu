@@ -1,22 +1,28 @@
 <template>
   <div id="team-circle">
-    <div>
+    <div id="image">
       <img :src="require('@/assets/images/team/' + image + '')" :alt="name" />
     </div>
-    <div>
+    <div id="text">
       <h6>{{ name }}</h6>
       <p>
         <slot>Position</slot>
       </p>
       <div class="social">
-        <a :href="'https://fb.com/' + fb">
-          <i class="fab fa-facebook"></i>
+        <a :href="facebook">
+          <i
+            class="fab fa-facebook"
+            :class="{ disabled: facebook === null }"
+          ></i>
         </a>
-        <a :href="'https://www.linkedin.com/in/' + link">
-          <i class="fab fa-linkedin"></i>
+        <a :href="linkedin">
+          <i
+            class="fab fa-linkedin"
+            :class="{ disabled: linkedin === null }"
+          ></i>
         </a>
-        <a :href="'https://github.com/' + git">
-          <i class="fab fa-github"></i>
+        <a :href="github">
+          <i class="fab fa-github" :class="{ disabled: github === null }"></i>
         </a>
       </div>
     </div>
@@ -25,19 +31,46 @@
 
 <script>
 export default {
-  props: ["name", "image", "fb", "link", "git"]
+  created() {
+    window.onresize = this.handleResize;
+  },
+  props: ["name", "image", "fb", "link", "git"],
+  data() {
+    return {
+      facebook: this.fb ? "https://fb.com/" + this.fb : null,
+      linkedin: this.link ? "https://www.linkedin.com/in/" + this.link : null,
+      github: this.git ? "https://github.com/" + this.git : null
+    };
+  },
+  methods: {
+    handleResize() {}
+  }
 };
 </script>
 
 <style scoped>
 #team-circle {
-  margin: 0 32px;
+  margin-top: 32px;
   width: 160px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image {
+  width: 160px;
+}
+
 img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 100%;
 }
 
@@ -51,7 +84,7 @@ p {
 }
 
 .social {
-  width: 100%;
+  width: 102px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -66,5 +99,34 @@ i.fa-linkedin {
 
 i.fa-github {
   color: #333;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  #team-circle {
+    margin-top: 24px;
+    padding: 0 17px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #image {
+    width: 96px;
+  }
+
+  #text {
+    align-items: flex-start;
+    margin-left: 16px;
+    width: 170px;
+  }
+
+  .social {
+    width: 88px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 </style>
