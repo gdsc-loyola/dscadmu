@@ -8,7 +8,9 @@
       <div class="container">
         <h2>Study Jams</h2>
         <p>Community-run study groups for developers</p>
-        <div></div>
+        <div>
+          <event-card></event-card>
+        </div>
 
         <h2>Hands-on Workshops</h2>
         <p>Opportunity for community members to learn something new in tech</p>
@@ -26,10 +28,12 @@
 import SlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import EventCard from "@/components/EventCard";
 
 export default {
   components: {
-    SlickCarousel
+    SlickCarousel,
+    EventCard
   }
 };
 </script>
