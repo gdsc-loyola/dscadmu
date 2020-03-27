@@ -151,6 +151,15 @@ button {
   color: #333;
 }
 
+.green {
+  background: #0f9d58;
+  color: #fff;
+}
+
+.green:hover {
+  background: #0e9453;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
