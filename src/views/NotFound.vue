@@ -47,4 +47,10 @@ export default {
   position: relative;
   top: 60px;
 }
+
+@media screen and (max-width: 768px) {
+  #wip h4 {
+    margin-top: 32px;
+  }
+}
 </style>
