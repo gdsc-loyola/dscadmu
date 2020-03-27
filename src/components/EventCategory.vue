@@ -43,7 +43,7 @@ h3 {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   div#event-wrap {
     margin: 8px 0;
   }

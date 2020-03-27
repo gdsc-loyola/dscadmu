@@ -76,10 +76,9 @@
             />
           </div>
           <div class="col-12 col-md-6">
-            <small
-              >© 2020 Developer Student Clubs Loyola. All Rights
-              Reserved.</small
-            >
+            <small>
+              © 2020 Developer Student Clubs Loyola. All Rights Reserved.
+            </small>
           </div>
         </div>
       </div>
@@ -155,7 +154,7 @@ hr {
   text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   footer {
     padding-bottom: 100px;
   }

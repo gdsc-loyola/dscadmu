@@ -302,7 +302,7 @@ export default {
   margin-bottom: 64px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #do {
     padding-bottom: 20px;
   }

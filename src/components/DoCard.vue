@@ -45,7 +45,7 @@ h3 {
   opacity: 1 !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   div {
     align-items: center;
     text-align: center;

@@ -34,7 +34,7 @@ h6 {
   margin-bottom: 4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   div {
     width: 140px;
     margin: 0 20px;

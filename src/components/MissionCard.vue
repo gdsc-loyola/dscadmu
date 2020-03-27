@@ -32,7 +32,7 @@ h3 {
   margin: 25px 0 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   div {
     align-items: center;
     text-align: center;

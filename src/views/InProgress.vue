@@ -56,7 +56,7 @@ export default {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #wip h4 {
     margin-top: 24px;
   }
