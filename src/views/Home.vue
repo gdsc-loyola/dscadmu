@@ -104,9 +104,9 @@
           There are 18 DSC chapters in the Philippines right now!
         </p>
         <div id="chapter-scroll-container">
-          <div id="chapter-scroll">
-            <margin width="32"></margin>
-            <!-- <VueSlickCarousel v-bind="settings"> -->
+          <!-- <div id="chapter-scroll"> -->
+          <!-- <margin width="32"></margin> -->
+          <VueSlickCarousel v-bind="settings">
             <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
@@ -152,9 +152,9 @@
               title="Name of Chapter"
               location="Manila City, Luzon"
             ></chapter-circle>
-            <!-- </VueSlickCarousel> -->
-            <margin width="32"></margin>
-          </div>
+          </VueSlickCarousel>
+          <!-- <margin width="32"></margin> -->
+          <!-- </div> -->
         </div>
         <p class="top">
           Want to start your own chapter? Apply to be a lead now!
@@ -170,11 +170,11 @@
 <script>
 import DoCard from "@/components/DoCard";
 import ChapterCircle from "@/components/ChapterCircle";
-import Margin from "@/components/Margin";
-// import VueSlickCarousel from "vue-slick-carousel";
-// import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// import Margin from "@/components/Margin";
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
-// import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   mounted() {
@@ -183,8 +183,8 @@ export default {
   components: {
     DoCard,
     ChapterCircle,
-    Margin
-    // VueSlickCarousel
+    // Margin
+    VueSlickCarousel
   },
   data() {
     return {
@@ -205,27 +205,27 @@ export default {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: 4,
-              slidesToScroll: 1
+              slidesToScroll: 4
             }
           },
           {
             breakpoint: 768,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 1
+              slidesToScroll: 3
             }
           },
           {
             breakpoint: 540,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 1
+              slidesToScroll: 2
             }
           },
           {

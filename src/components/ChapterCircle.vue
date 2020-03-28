@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img :src="require('@/assets/images/chapter/' + image + '')" alt="DSC Chapter photo" />
+    <img
+      :src="require('@/assets/images/chapter/' + image + '')"
+      alt="DSC Chapter photo"
+    />
     <h6>{{ title }}</h6>
     <p>{{ location }}</p>
   </div>
@@ -15,8 +18,6 @@ export default {
 <style scoped>
 div {
   flex: 0 0 auto;
-  margin: 0 26px;
-  width: 192px;
   text-align: center;
 }
 
@@ -33,11 +34,6 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
-  div {
-    width: 140px;
-    margin: 0 20px;
-  }
-
   h6 {
     line-height: 18px;
     margin-bottom: 0;
