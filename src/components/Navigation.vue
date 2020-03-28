@@ -90,7 +90,8 @@ export default {
       isDesktop: window.innerWidth >= 768 ? true : false,
       brand: "logo.svg",
       navHome: {
-        background: "transparent"
+        background: "transparent",
+        boxShadow: "none"
       },
       navLink: {
         color: "#fff"
