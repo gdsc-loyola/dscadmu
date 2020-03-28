@@ -1,6 +1,10 @@
 <template>
   <div>
-    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
+    <section
+      id="hero"
+      :style="backgroundHero"
+      class="d-flex align-items-center"
+    >
       <div class="container">
         <div id="hero-text">
           <h1>Creating impact together</h1>
@@ -48,7 +52,11 @@
             </do-card>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <do-card image="tech-solutions.svg" title="Tech Solutions" color="green">
+            <do-card
+              image="tech-solutions.svg"
+              title="Tech Solutions"
+              color="green"
+            >
               Use the skills you learn in our events to solve community problems
               through projects
             </do-card>
@@ -92,10 +100,13 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p class="bottom">There are 18 DSC chapters in the Philippines right now!</p>
+        <p class="bottom">
+          There are 18 DSC chapters in the Philippines right now!
+        </p>
         <div id="chapter-scroll-container">
-          <margin width="32"></margin>
-          <VueSlickCarousel v-bind="settings">
+          <div id="chapter-scroll">
+            <margin width="32"></margin>
+            <!-- <VueSlickCarousel v-bind="settings"> -->
             <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
@@ -141,10 +152,13 @@
               title="Name of Chapter"
               location="Manila City, Luzon"
             ></chapter-circle>
-          </VueSlickCarousel>
-          <margin width="32"></margin>
+            <!-- </VueSlickCarousel> -->
+            <margin width="32"></margin>
+          </div>
         </div>
-        <p class="top">Want to start your own chapter? Apply to be a lead now!</p>
+        <p class="top">
+          Want to start your own chapter? Apply to be a lead now!
+        </p>
         <router-link to="/">
           <button class="blue">Apply as lead</button>
         </router-link>
@@ -157,10 +171,10 @@
 import DoCard from "@/components/DoCard";
 import ChapterCircle from "@/components/ChapterCircle";
 import Margin from "@/components/Margin";
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// import VueSlickCarousel from "vue-slick-carousel";
+// import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+// import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   mounted() {
@@ -169,8 +183,8 @@ export default {
   components: {
     DoCard,
     ChapterCircle,
-    Margin,
-    VueSlickCarousel
+    Margin
+    // VueSlickCarousel
   },
   data() {
     return {
@@ -185,6 +199,7 @@ export default {
         backgroundPosition: "center"
       },
       settings: {
+        arrows: false,
         dots: true,
         focusOnSelect: true,
         infinite: true,
@@ -284,13 +299,13 @@ export default {
   overflow: hidden;
 }
 
-/* #chapter-scroll {
+#chapter-scroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
   margin-bottom: -50px;
   padding-bottom: 50px;
-} */
+}
 
 #chapters button {
   margin-top: 16px;
