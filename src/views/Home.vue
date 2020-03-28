@@ -1,6 +1,10 @@
 <template>
   <div>
-    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
+    <section
+      id="hero"
+      :style="backgroundHero"
+      class="d-flex align-items-center"
+    >
       <div class="container">
         <div id="hero-text">
           <h1>Creating impact together</h1>
@@ -48,7 +52,11 @@
             </do-card>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <do-card image="tech-solutions.svg" title="Tech Solutions" color="green">
+            <do-card
+              image="tech-solutions.svg"
+              title="Tech Solutions"
+              color="green"
+            >
               Use the skills you learn in our events to solve community problems
               through projects
             </do-card>
@@ -92,7 +100,9 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p class="bottom">There are 18 DSC chapters in the Philippines right now!</p>
+        <p class="bottom">
+          There are 18 DSC chapters in the Philippines right now!
+        </p>
         <div id="chapter-scroll-container">
           <margin width="32"></margin>
           <VueSlickCarousel v-bind="settings">
@@ -144,7 +154,9 @@
           </VueSlickCarousel>
           <margin width="32"></margin>
         </div>
-        <p class="top">Want to start your own chapter? Apply to be a lead now!</p>
+        <p class="top">
+          Want to start your own chapter? Apply to be a lead now!
+        </p>
         <router-link to="/">
           <button class="blue">Apply as lead</button>
         </router-link>
@@ -187,11 +199,40 @@ export default {
       settings: {
         dots: true,
         focusOnSelect: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        touchThreshold: 6
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 414,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       }
     };
   }
