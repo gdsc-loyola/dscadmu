@@ -104,8 +104,9 @@
           There are 18 DSC chapters in the Philippines right now!
         </p>
         <div id="chapter-scroll-container">
-          <margin width="32"></margin>
-          <VueSlickCarousel v-bind="settings">
+          <div id="chapter-scroll">
+            <margin width="32"></margin>
+            <!-- <VueSlickCarousel v-bind="settings"> -->
             <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
@@ -151,8 +152,9 @@
               title="Name of Chapter"
               location="Manila City, Luzon"
             ></chapter-circle>
-          </VueSlickCarousel>
-          <margin width="32"></margin>
+            <!-- </VueSlickCarousel> -->
+            <margin width="32"></margin>
+          </div>
         </div>
         <p class="top">
           Want to start your own chapter? Apply to be a lead now!
@@ -169,10 +171,10 @@
 import DoCard from "@/components/DoCard";
 import ChapterCircle from "@/components/ChapterCircle";
 import Margin from "@/components/Margin";
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// import VueSlickCarousel from "vue-slick-carousel";
+// import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+// import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   mounted() {
@@ -181,8 +183,8 @@ export default {
   components: {
     DoCard,
     ChapterCircle,
-    Margin,
-    VueSlickCarousel
+    Margin
+    // VueSlickCarousel
   },
   data() {
     return {
@@ -197,6 +199,7 @@ export default {
         backgroundPosition: "center"
       },
       settings: {
+        arrows: false,
         dots: true,
         focusOnSelect: true,
         infinite: false,
@@ -325,13 +328,13 @@ export default {
   overflow: hidden;
 }
 
-/* #chapter-scroll {
+#chapter-scroll {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
   margin-bottom: -50px;
   padding-bottom: 50px;
-} */
+}
 
 #chapters button {
   margin-top: 16px;

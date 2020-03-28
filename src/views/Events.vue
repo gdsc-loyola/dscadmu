@@ -41,9 +41,6 @@ export default {
 <style scoped>
 div.slick-slider {
   margin-top: 60px;
-}
-
-h2 {
-  margin-top: 64px;
+  height: 478px;
 }
 </style>
