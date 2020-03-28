@@ -1,9 +1,6 @@
 <template>
   <div>
-    <img
-      :src="require('@/assets/images/chapter/' + image + '')"
-      alt="DSC Chapter photo"
-    />
+    <img :src="require('@/assets/images/chapter/' + image + '')" alt="DSC Chapter photo" />
     <h6>{{ title }}</h6>
     <p>{{ location }}</p>
   </div>
@@ -25,7 +22,8 @@ div {
 
 img {
   margin-bottom: 24px;
-  width: 100%;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
 }
 
