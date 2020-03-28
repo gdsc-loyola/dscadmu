@@ -202,11 +202,40 @@ export default {
         arrows: false,
         dots: true,
         focusOnSelect: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        touchThreshold: 6
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 414,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       }
     };
   }

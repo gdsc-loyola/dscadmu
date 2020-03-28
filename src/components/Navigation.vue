@@ -117,7 +117,8 @@ export default {
         if (window.scrollY > 20) {
           this.navHome = {
             background: "#fff",
-            transition: "background 0.25s ease-in-out"
+            transition: "background 0.25s ease-in-out",
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
           };
           this.navLink = {
             color: "#151522",
@@ -127,7 +128,8 @@ export default {
         } else {
           this.navHome = {
             background: "transparent",
-            transition: "background 0.25s ease-in-out"
+            transition: "background 0.25s ease-in-out",
+            boxShadow: "none"
           };
           this.navLink = {
             color: "#fff",
@@ -150,6 +152,7 @@ nav {
   z-index: 1;
   background: #fff;
   padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Desktop Nav */
