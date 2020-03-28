@@ -1,21 +1,9 @@
 <template>
-  <div>
-    <h3>{{ title }}</h3>
-  </div>
+  <div></div>
 </template>
 
 <script>
-export default {
-  props: ["title", "image"]
-};
+export default {};
 </script>
 
-<style scoped>
-div {
-  box-shadow: 2px 4px 2px #e0e0e0;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style scoped></style>

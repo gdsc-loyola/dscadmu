@@ -1,93 +1,148 @@
 <template>
   <div>
-    <section id="hero" class="grey-bg">
-      <div>
+    <section id="hero">
+      <div class="container">
         <h4>Vision</h4>
-        <h1>Uplifting communities through technology</h1>
-        <p class="feature-text">
-          We are a community of developers that are passionate about uplifting
-          communities through technology and innovation.
+        <div class="row align-items-center justify-content-between">
+          <div id="hero-text" class="col-12 col-md-6">
+            <h1>Uplifting communities through technology</h1>
+            <p class="feature-text">
+              We are a community of developers that are passionate about
+              uplifting communities through technology and innovation.
+            </p>
+            <router-link to="/">
+              <button class="blue">Join us</button>
+            </router-link>
+          </div>
+          <div id="hero-image" class="col-12 col-md-6">
+            <img src="../assets/images/feature-image.svg" alt="Feature image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="grey-bg">
+      <div class="container">
+        <h2 class="text-center">Our mission</h2>
+        <div class="row justify-content-center">
+          <mission-card image="empower.svg" title="Empower">
+            We empower people through technology and programming education
+          </mission-card>
+          <mission-card image="enlighten.svg" title="Enlighten">
+            We enlighten people to the power of innovation and problem-solving
+          </mission-card>
+          <mission-card image="social-care.svg" title="Nurture">
+            We nurture people to create meaningful technological solutions for
+            the community
+          </mission-card>
+        </div>
+      </div>
+    </section>
+
+    <section id="event">
+      <div class="container text-center">
+        <h2>Types of events</h2>
+        <p>Various events to empower, enlighten, and nurture members</p>
+        <div class="row">
+          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+            <event-category image="study-jams.jpeg">Study Jams</event-category>
+          </router-link>
+          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+            <event-category image="workshop.jpeg">
+              Hands-on
+              <br />Workshops
+            </event-category>
+          </router-link>
+          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+            <event-category image="exploreml.jpeg">ExploreML</event-category>
+          </router-link>
+          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+            <event-category image="hackathon.jpeg">Hackathon</event-category>
+          </router-link>
+        </div>
+        <div class="row">
+          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+            <event-category image="talk.jpeg">Tech Talk</event-category>
+          </router-link>
+          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+            <event-category image="bootcamp.jpeg">Bootcamp</event-category>
+          </router-link>
+          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+            <event-category image="showcase.jpeg">Showcase</event-category>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="grey-bg">
+      <div class="container">
+        <h2>Google Technologies</h2>
+        <p>
+          We’re building solutions by learning and applying Google’s latest
+          technologies.
         </p>
-        <button class="blue">Join us</button>
-      </div>
-      <div>
-        <img src="../assets/images/feature-image.svg" alt="Feature image" />
-      </div>
-    </section>
-    <section id="mission">
-      <h2>Our mission</h2>
-      <div id="mission-list">
-        <mission-card image="empower.svg" title="Empower">
-          We empower people through technology and programming education
-        </mission-card>
-        <mission-card image="enlighten.svg" title="Enlighten">
-          We enlighten people to the power of innovation and problem-solving
-        </mission-card>
-        <mission-card image="social-care.svg" title="Nurture">
-          We nurture people to create meaningful technological solutions for the
-          community
-        </mission-card>
-      </div>
-    </section>
-    <section id="events" class="grey-bg">
-      <h2>Types of events</h2>
-      <p>Various events to empower, enlighten, and nurture members</p>
-      <div class="event-list">
-        <event-card></event-card>
-      </div>
-    </section>
-    <section id="tech">
-      <h2>Google Technologies</h2>
-      <p>
-        We’re building solutions by learning and applying Google’s latest
-        technologies.
-      </p>
-      <div>
-        <img src="../assets/images/angular.svg" alt="Angular logo" />
-        <img src="../assets/images/android.svg" alt="Android logo" />
-        <img
-          src="../assets/images/actions-on-google.svg"
-          alt="Actions on Google logo"
-        />
-        <img src="../assets/images/dialogflow.svg" alt="Dialogflow logo" />
-        <img src="../assets/images/google-apps.svg" alt="Google Apps logo" />
-        <img src="../assets/images/tensorflow.svg" alt="TensorFlow logo" />
-        <img
-          src="../assets/images/google-cloud-platform.svg"
-          alt="Google Cloud Platform logo"
-        />
-        <img src="../assets/images/flutter.svg" alt="Flutter logo" />
-        <img src="../assets/images/firebase.svg" alt="Firebase logo" />
+        <div class="row align-items-center text-center">
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/angular.svg" alt="Angular logo" />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img
+              src="../assets/images/google-apps.svg"
+              alt="Google Apps logo"
+            />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/android.svg" alt="Android logo" />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img
+              src="../assets/images/actions-on-google.svg"
+              alt="Actions on Google logo"
+            />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/dialogflow.svg" alt="Dialogflow logo" />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/tensorflow.svg" alt="TensorFlow logo" />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/flutter.svg" alt="Flutter logo" />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img
+              src="../assets/images/google-cloud-platform.svg"
+              alt="Google Cloud Platform logo"
+            />
+          </div>
+          <div class="col-4 col-md-4 col-lg">
+            <img src="../assets/images/firebase.svg" alt="Firebase logo" />
+          </div>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import MissionCard from "../components/MissionCard.vue";
-import EventCard from "../components/EventCard.vue";
+import MissionCard from "@/components/MissionCard";
+import EventCategory from "@/components/EventCategory";
 
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   components: {
     MissionCard,
-    EventCard
+    EventCategory
   }
 };
 </script>
 
 <style scoped>
 #hero {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 0 120px;
-  padding: 0 200px;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero h4 {
-  margin-bottom: 25px;
+  margin-top: 60px;
+  width: 100%;
 }
 
 #hero p {
@@ -98,33 +153,58 @@ export default {
   width: 100%;
 }
 
-#mission {
-  padding-bottom: 80px;
-  text-align: center;
+#hero h4 {
+  color: #4285f4;
 }
 
-#mission h2 {
+#hero-text {
+  max-width: 500px;
+}
+
+#event p,
+#mission h2,
+#tech p {
   margin-bottom: 50px;
 }
 
-#mission-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 220px);
-  justify-content: center;
-  align-items: baseline;
-  gap: 80px;
-}
+@media screen and (max-width: 767px) {
+  #hero p {
+    margin-top: 1rem;
+  }
 
-#events {
-  text-align: center;
-}
+  #hero-image {
+    order: -1;
+  }
 
-#tech div {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
-  margin-top: 48px;
-  justify-content: center;
-  align-items: center;
+  #mission {
+    padding-bottom: 20px;
+  }
+
+  #event a {
+    padding: 0 8px;
+  }
+
+  #event p,
+  #mission h2,
+  #tech p {
+    margin-bottom: 24px;
+  }
+
+  #tech {
+    padding-bottom: 30px;
+  }
+
+  #tech .col-lg {
+    margin-bottom: 30px;
+  }
+
+  #tech h2,
+  #tech p {
+    text-align: center;
+  }
+
+  #tech img {
+    width: 100%;
+  }
 }
 </style>

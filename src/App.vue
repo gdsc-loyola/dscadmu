@@ -7,20 +7,14 @@
 </template>
 
 <script>
-import Navigation from "@/components/Navigation.vue";
-import Footer from "@/components/Footer.vue";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
     Navigation,
     Footer
   }
-  // computed: {
-  //   showFooter() {
-  //     if (this.$route.path != "/") return false;
-  //     return true;
-  //   }
-  // }
 };
 </script>
 
@@ -48,42 +42,40 @@ export default {
   color: #4f4f4f;
 }
 
-body {
-  width: 100%;
-}
-
 section {
-  padding-top: 65px;
-  padding-bottom: 65px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 60px 0;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 50px;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 2rem;
+  color: #4f4f4f;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 32px;
   font-weight: 500;
   color: #333;
 }
 
 h4 {
-  text-transform: uppercase;
-  color: #4285f4;
+  font-size: 1.25rem;
+  font-weight: 500;
   letter-spacing: 0.1rem;
-  line-height: 25px;
-  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h5,
+h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 button {
@@ -96,10 +88,17 @@ button {
 }
 
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #4f4f4f;
-  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.f-even {
+  justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grey-bg {
@@ -110,6 +109,8 @@ button {
   font-size: 1.125rem;
   line-height: 28px;
 }
+
+/* BUTTONS */
 
 .blue {
   background: #2f80ed;
@@ -147,6 +148,49 @@ button {
 
 .white-light:hover {
   background: #fff;
-  color: transparent;
+  color: #333;
+}
+
+.green {
+  background: #0f9d58;
+  color: #fff;
+}
+
+.green:hover {
+  background: #0e9453;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
 }
 </style>

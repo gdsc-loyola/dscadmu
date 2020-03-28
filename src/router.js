@@ -1,15 +1,15 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
-// import Home from "./views/Home.vue";
+import Router from "vue-router";
 import InProgress from "./views/InProgress.vue";
+import NotFound from "./views/NotFound.vue";
 
-Vue.use(VueRouter);
+Vue.use(Router);
 
-export default new VueRouter({
+const router = new Router({
   routes: [
     {
       path: "/",
-      component: InProgress
+      component: () => import("./views/Home.vue")
     },
     {
       path: "/about",
@@ -17,8 +17,7 @@ export default new VueRouter({
     },
     {
       path: "/events",
-      component: InProgress
-      // component: () => import("./views/Events.vue")
+      component: () => import("./views/Events.vue")
     },
     {
       path: "/projects",
@@ -27,8 +26,13 @@ export default new VueRouter({
     },
     {
       path: "/team",
-      component: InProgress
-      // component: () => import("./views/Team.vue")
+      component: () => import("./views/Team.vue")
+    },
+    {
+      path: "*",
+      component: NotFound
     }
   ]
 });
+
+export default router;

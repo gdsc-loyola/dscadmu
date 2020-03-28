@@ -23,10 +23,20 @@ div {
   align-items: flex-start;
   text-align: left;
   line-height: 22px;
+  max-width: 215px;
+  margin: 0 40px;
 }
 
 h3 {
   color: #2f80ed;
   margin: 25px 0 8px;
+}
+
+@media screen and (max-width: 767px) {
+  div {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 </style>
