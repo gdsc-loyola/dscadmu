@@ -38,7 +38,7 @@
         </p>
       </featured-event>
     </SlickCarousel>
-    <section class="grey-bg">
+    <section id="events" class="grey-bg">
       <div class="container">
         <h2>Study Jams</h2>
         <p>Community-run study groups for developers</p>
@@ -159,6 +159,10 @@ export default {
 </script>
 
 <style scoped>
+#events {
+  padding-bottom: calc(60px - 48px);
+}
+
 div.slick-slider {
   margin-top: 60px;
 }
