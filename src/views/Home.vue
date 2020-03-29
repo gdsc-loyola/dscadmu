@@ -104,9 +104,8 @@
           There are 18 DSC chapters in the Philippines right now!
         </p>
         <div id="chapter-scroll-container">
-          <!-- <div id="chapter-scroll"> -->
-          <!-- <margin width="32"></margin> -->
-          <VueSlickCarousel v-bind="settings">
+          <div id="chapter-scroll" v-dragscroll>
+            <margin :width="width"></margin>
             <chapter-circle
               image="chapter.png"
               title="Name of Chapter"
@@ -152,9 +151,8 @@
               title="Name of Chapter"
               location="Manila City, Luzon"
             ></chapter-circle>
-          </VueSlickCarousel>
-          <!-- <margin width="32"></margin> -->
-          <!-- </div> -->
+            <margin :width="width"></margin>
+          </div>
         </div>
         <p class="top">
           Want to start your own chapter? Apply to be a lead now!
@@ -170,24 +168,26 @@
 <script>
 import DoCard from "@/components/DoCard";
 import ChapterCircle from "@/components/ChapterCircle";
-// import Margin from "@/components/Margin";
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import Margin from "@/components/Margin";
 
 export default {
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
   mounted() {
     window.scrollTo(0, 0);
   },
   components: {
     DoCard,
     ChapterCircle,
-    // Margin
-    VueSlickCarousel
+    Margin
   },
   data() {
     return {
+      width: window.innerWidth >= 768 ? 64 : 24,
       backgroundHero: {
         backgroundImage: "url(" + require("@/assets/images/impact.png") + ")",
         backgroundSize: "cover",
@@ -197,47 +197,15 @@ export default {
         backgroundImage: "url(" + require("@/assets/images/next.png") + ")",
         backgroundSize: "cover",
         backgroundPosition: "center"
-      },
-      settings: {
-        arrows: false,
-        dots: true,
-        focusOnSelect: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          },
-          {
-            breakpoint: 540,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 414,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
       }
     };
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth < 768) {
+        this.width = 24;
+      } else this.width = 64;
+    }
   }
 };
 </script>
