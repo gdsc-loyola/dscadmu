@@ -45,7 +45,11 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="firebase-in-action.png" type="study-jam">
+            <event-card
+              image="firebase-in-action.png"
+              type="study-jam"
+              v-on:click.native="modalOpen"
+            >
               Firebase in Action
             </event-card>
             <event-card image="building-a-serverless.png" type="study-jam">
@@ -91,26 +95,14 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              Firebase in Action
+            <event-card image="solution-challenge.png" type="speaker-session">
+              Solution Challenge Info<br />Session and Design Day
             </event-card>
-            <event-card image="building-a-serverless.png" type="study-jam">
-              Building a Serverless Web<br />App using Firebase
+            <event-card image="info-session.png" type="speaker-session">
+              DSC Info Session 2019
             </event-card>
-            <event-card image="firebase-web.png" type="study-jam">
-              Firebase Web
-            </event-card>
-            <event-card image="baseline.png" type="study-jam">
-              Baseline: Deploy and<br />Develop
-            </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              BigQuery Basics for<br />Data Analysts
-            </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              Baseline: Data, ML, and AI
-            </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              GCP Essentials
+            <event-card image="google-tech.png" type="speaker-session">
+              Introduction to<br />Google Technologies
             </event-card>
           </div>
         </div>
@@ -153,6 +145,9 @@ export default {
       if (window.innerWidth < 768) {
         this.width = 24;
       } else this.width = 64;
+    },
+    modalOpen() {
+      alert("clicked");
     }
   }
 };

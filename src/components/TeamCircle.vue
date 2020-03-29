@@ -10,19 +10,13 @@
       </p>
       <div class="social">
         <a :href="facebook">
-          <i
-            class="fab fa-facebook"
-            :class="{ disabled: facebook === null }"
-          ></i>
+          <i class="fab fa-facebook" v-if="github"></i>
         </a>
         <a :href="linkedin">
-          <i
-            class="fab fa-linkedin"
-            :class="{ disabled: linkedin === null }"
-          ></i>
+          <i class="fab fa-linkedin" v-if="github"></i>
         </a>
         <a :href="github">
-          <i class="fab fa-github" :class="{ disabled: github === null }"></i>
+          <i class="fab fa-github" v-if="github"></i>
         </a>
       </div>
     </div>
@@ -99,10 +93,6 @@ i.fa-linkedin {
 
 i.fa-github {
   color: #333;
-}
-
-.disabled {
-  opacity: 0.5;
 }
 
 @media screen and (max-width: 767px) {
