@@ -38,7 +38,7 @@
         </p>
       </featured-event>
     </SlickCarousel>
-    <section class="grey-bg">
+    <section id="events" class="grey-bg">
       <div class="container">
         <h2>Study Jams</h2>
         <p>Community-run study groups for developers</p>
@@ -65,6 +65,7 @@
             </event-card>
             <event-card image="firebase-in-action.png" type="study-jam">Baseline: Data, ML, and AI</event-card>
             <event-card image="firebase-in-action.png" type="study-jam">GCP Essentials</event-card>
+            <coming-event></coming-event>
           </div>
         </div>
 
@@ -82,6 +83,7 @@
               <br />Workshop with Flutter PH
             </event-card>
             <event-card image="python.png" type="workshop">Python Workshop</event-card>
+            <coming-event></coming-event>
           </div>
         </div>
 
@@ -99,6 +101,7 @@
               Introduction to
               <br />Google Technologies
             </event-card>
+            <coming-event></coming-event>
           </div>
         </div>
       </div>
@@ -121,6 +124,7 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import FeaturedEvent from "@/components/FeaturedEvent";
 import EventCard from "@/components/EventCard";
+import ComingEvent from "@/components/ComingEvent";
 import Margin from "@/components/Margin";
 import Modal from "@/components/Modal";
 
@@ -139,6 +143,7 @@ export default {
     FeaturedEvent,
     EventCard,
     Margin,
+    ComingEvent,
     Modal
   },
   data() {
@@ -163,6 +168,10 @@ export default {
 </script>
 
 <style scoped>
+#events {
+  padding-bottom: calc(60px - 48px);
+}
+
 div.slick-slider {
   margin-top: 60px;
 }
