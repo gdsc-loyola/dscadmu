@@ -45,7 +45,11 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="firebase-in-action.png" type="study-jam">
+            <event-card
+              image="firebase-in-action.png"
+              type="study-jam"
+              v-on:click.native="modalOpen"
+            >
               Firebase in Action
             </event-card>
             <event-card image="building-a-serverless.png" type="study-jam">
@@ -141,6 +145,9 @@ export default {
       if (window.innerWidth < 768) {
         this.width = 24;
       } else this.width = 64;
+    },
+    modalOpen() {
+      alert("clicked");
     }
   }
 };
