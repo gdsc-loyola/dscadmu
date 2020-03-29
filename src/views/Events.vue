@@ -70,6 +70,7 @@
             <event-card image="firebase-in-action.png" type="study-jam">
               GCP Essentials
             </event-card>
+            <coming-event></coming-event>
           </div>
         </div>
 
@@ -87,6 +88,7 @@
             <event-card image="python.png" type="workshop">
               Python Workshop
             </event-card>
+            <coming-event></coming-event>
           </div>
         </div>
 
@@ -104,6 +106,7 @@
             <event-card image="google-tech.png" type="speaker-session">
               Introduction to<br />Google Technologies
             </event-card>
+            <coming-event></coming-event>
           </div>
         </div>
       </div>
@@ -117,6 +120,7 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import FeaturedEvent from "@/components/FeaturedEvent";
 import EventCard from "@/components/EventCard";
+import ComingEvent from "@/components/ComingEvent";
 import Margin from "@/components/Margin";
 
 export default {
@@ -133,6 +137,7 @@ export default {
     SlickCarousel,
     FeaturedEvent,
     EventCard,
+    ComingEvent,
     Margin
   },
   data() {
