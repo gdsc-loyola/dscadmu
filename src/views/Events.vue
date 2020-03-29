@@ -49,27 +49,22 @@
               image="firebase-in-action.png"
               type="study-jam"
               v-on:click.native="modalOpen"
-            >
-              Firebase in Action
-            </event-card>
+            >Firebase in Action</event-card>
             <event-card image="building-a-serverless.png" type="study-jam">
-              Building a Serverless Web<br />App using Firebase
+              Building a Serverless Web
+              <br />App using Firebase
             </event-card>
-            <event-card image="firebase-web.png" type="study-jam">
-              Firebase Web
-            </event-card>
+            <event-card image="firebase-web.png" type="study-jam">Firebase Web</event-card>
             <event-card image="baseline.png" type="study-jam">
-              Baseline: Deploy and<br />Develop
+              Baseline: Deploy and
+              <br />Develop
             </event-card>
             <event-card image="firebase-in-action.png" type="study-jam">
-              BigQuery Basics for<br />Data Analysts
+              BigQuery Basics for
+              <br />Data Analysts
             </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              Baseline: Data, ML, and AI
-            </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
-              GCP Essentials
-            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">Baseline: Data, ML, and AI</event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">GCP Essentials</event-card>
             <coming-event></coming-event>
           </div>
         </div>
@@ -80,14 +75,14 @@
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
             <event-card image="pandas.png" type="workshop">
-              Pandas, Numpy, and<br />Matplotlib Workshop
+              Pandas, Numpy, and
+              <br />Matplotlib Workshop
             </event-card>
             <event-card image="mobile-dev.png" type="workshop">
-              Mobile Development<br />Workshop with Flutter PH
+              Mobile Development
+              <br />Workshop with Flutter PH
             </event-card>
-            <event-card image="python.png" type="workshop">
-              Python Workshop
-            </event-card>
+            <event-card image="python.png" type="workshop">Python Workshop</event-card>
             <coming-event></coming-event>
           </div>
         </div>
@@ -98,19 +93,28 @@
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
             <event-card image="solution-challenge.png" type="speaker-session">
-              Solution Challenge Info<br />Session and Design Day
+              Solution Challenge Info
+              <br />Session and Design Day
             </event-card>
-            <event-card image="info-session.png" type="speaker-session">
-              DSC Info Session 2019
-            </event-card>
+            <event-card image="info-session.png" type="speaker-session">DSC Info Session 2019</event-card>
             <event-card image="google-tech.png" type="speaker-session">
-              Introduction to<br />Google Technologies
+              Introduction to
+              <br />Google Technologies
             </event-card>
             <coming-event></coming-event>
           </div>
         </div>
       </div>
     </section>
+    <modal
+      type="Study Jams"
+      title="Firebase in Action"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      datetime="April 18, 2020, 8 AM - 5 PM"
+      location="Ateneo de Manila University"
+      participants="36"
+      female="5"
+    />
   </div>
 </template>
 
@@ -122,6 +126,7 @@ import FeaturedEvent from "@/components/FeaturedEvent";
 import EventCard from "@/components/EventCard";
 import ComingEvent from "@/components/ComingEvent";
 import Margin from "@/components/Margin";
+import Modal from "@/components/Modal";
 
 export default {
   created() {
@@ -137,8 +142,9 @@ export default {
     SlickCarousel,
     FeaturedEvent,
     EventCard,
+    Margin,
     ComingEvent,
-    Margin
+    Modal
   },
   data() {
     return {
@@ -152,7 +158,10 @@ export default {
       } else this.width = 64;
     },
     modalOpen() {
-      alert("clicked");
+      this.$modal.show("hello-world");
+    },
+    modalClose() {
+      this.$modal.hide("hello-world");
     }
   }
 };
