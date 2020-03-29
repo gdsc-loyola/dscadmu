@@ -31,6 +31,9 @@ import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import EventCard from "@/components/EventCard";
 
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   components: {
     SlickCarousel,
     EventCard
