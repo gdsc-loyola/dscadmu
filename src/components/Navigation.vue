@@ -119,7 +119,7 @@ export default {
           this.navHome = {
             background: "#fff",
             transition: "background 0.25s ease-in-out",
-            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)"
           };
           this.navLink = {
             color: "#151522",
@@ -153,7 +153,7 @@ nav {
   z-index: 1;
   background: #fff;
   padding: 16px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Desktop Nav */

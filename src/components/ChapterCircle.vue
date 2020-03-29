@@ -19,12 +19,13 @@ export default {
 div {
   flex: 0 0 auto;
   text-align: center;
+  width: 192px;
+  margin: 0 26px;
 }
 
 img {
   margin-bottom: 24px;
-  width: 180px;
-  height: 180px;
+  max-width: 100%;
   border-radius: 100%;
 }
 
@@ -34,6 +35,11 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
+  div {
+    width: 140px;
+    margin: 0 20px;
+  }
+
   h6 {
     line-height: 18px;
     margin-bottom: 0;

@@ -160,6 +160,29 @@ button {
   background: #0e9453;
 }
 
+.red {
+  background: #ea4335;
+  color: #fff;
+}
+
+.red:hover {
+  background: rgb(223, 65, 50);
+}
+
+/* Slick Slider */
+.slick-dots {
+  bottom: 32px !important;
+}
+
+.slick-dots li {
+  margin: 0 2px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 1.8rem;
@@ -188,9 +211,29 @@ button {
     line-height: 1.25rem;
   }
 
+  button {
+    padding: 10px 20px;
+  }
+
   .container {
     padding-left: 32px !important;
     padding-right: 32px !important;
+  }
+
+  .slick-dots {
+    top: 24px;
+    right: 24px;
+    text-align: right !important;
+    width: auto !important;
+    height: 20px !important;
+  }
+
+  .slick-dots li {
+    margin: 0 !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px !important;
   }
 }
 </style>
