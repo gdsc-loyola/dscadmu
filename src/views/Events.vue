@@ -42,17 +42,78 @@
       <div class="container">
         <h2>Study Jams</h2>
         <p>Community-run study groups for developers</p>
-        <div>
-          <event-card></event-card>
+        <div class="list">
+          <div class="scroll" v-dragscroll>
+            <margin :width="width"></margin>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              Firebase in Action
+            </event-card>
+            <event-card image="building-a-serverless.png" type="study-jam">
+              Building a Serverless Web<br />App using Firebase
+            </event-card>
+            <event-card image="firebase-web.png" type="study-jam">
+              Firebase Web
+            </event-card>
+            <event-card image="baseline.png" type="study-jam">
+              Baseline: Deploy and<br />Develop
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              BigQuery Basics for<br />Data Analysts
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              Baseline: Data, ML, and AI
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              GCP Essentials
+            </event-card>
+          </div>
         </div>
 
         <h2>Hands-on Workshops</h2>
         <p>Opportunity for community members to learn something new in tech</p>
-        <div></div>
+        <div class="list">
+          <div class="scroll" v-dragscroll>
+            <margin :width="width"></margin>
+            <event-card image="pandas.png" type="workshop">
+              Pandas, Numpy, and<br />Matplotlib Workshop
+            </event-card>
+            <event-card image="mobile-dev.png" type="workshop">
+              Mobile Development<br />Workshop with Flutter PH
+            </event-card>
+            <event-card image="python.png" type="workshop">
+              Python Workshop
+            </event-card>
+          </div>
+        </div>
 
         <h2>Speaker Session & Tech Talk</h2>
         <p>Community-run study groups for developers</p>
-        <div></div>
+        <div class="list">
+          <div class="scroll" v-dragscroll>
+            <margin :width="width"></margin>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              Firebase in Action
+            </event-card>
+            <event-card image="building-a-serverless.png" type="study-jam">
+              Building a Serverless Web<br />App using Firebase
+            </event-card>
+            <event-card image="firebase-web.png" type="study-jam">
+              Firebase Web
+            </event-card>
+            <event-card image="baseline.png" type="study-jam">
+              Baseline: Deploy and<br />Develop
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              BigQuery Basics for<br />Data Analysts
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              Baseline: Data, ML, and AI
+            </event-card>
+            <event-card image="firebase-in-action.png" type="study-jam">
+              GCP Essentials
+            </event-card>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -64,21 +125,64 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import FeaturedEvent from "@/components/FeaturedEvent";
 import EventCard from "@/components/EventCard";
+import Margin from "@/components/Margin";
 
 export default {
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
   mounted() {
     window.scrollTo(0, 0);
   },
   components: {
     SlickCarousel,
     FeaturedEvent,
-    EventCard
+    EventCard,
+    Margin
+  },
+  data() {
+    return {
+      width: window.innerWidth >= 768 ? 64 : 24
+    };
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth < 768) {
+        this.width = 24;
+      } else this.width = 64;
+    }
   }
 };
 </script>
 
-<style>
+<style scoped>
 div.slick-slider {
   margin-top: 60px;
+}
+
+.list {
+  width: 100vw;
+  position: relative;
+  left: 49%;
+  right: 49%;
+  margin: 48px -50vw;
+  overflow: hidden;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .list {
+    margin-top: 24px;
+  }
 }
 </style>
