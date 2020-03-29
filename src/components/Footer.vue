@@ -6,7 +6,7 @@
       <social-icons color="black"></social-icons>
       <p>
         Or email us at
-        <a href="mailto:dsc.loyola@gmail.com">dsc.loyola@gmail.com</a>.
+        <a href="mailto:dsc.ateneo@gmail.com">dsc.ateneo@gmail.com</a>.
       </p>
     </section>
     <footer>
@@ -70,15 +70,10 @@
         <hr />
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6">
-            <img
-              src="../assets/images/logo.svg"
-              alt="Developer Student Clubs Loyola logo"
-            />
+            <img src="../assets/images/logo.svg" alt="Developer Student Clubs Loyola logo" />
           </div>
           <div class="col-12 col-md-6">
-            <small>
-              © 2020 Developer Student Clubs Loyola. All Rights Reserved.
-            </small>
+            <small>© 2020 Developer Student Clubs Loyola. All Rights Reserved.</small>
           </div>
         </div>
       </div>
