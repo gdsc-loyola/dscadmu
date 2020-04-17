@@ -48,23 +48,51 @@
             <event-card
               image="firebase-in-action.png"
               type="study-jam"
-              v-on:click.native="modalOpen"
-            >Firebase in Action</event-card>
-            <event-card image="building-a-serverless.png" type="study-jam">
+              @click.native="modalOpen(0)"
+              >Firebase in Action</event-card
+            >
+            <event-card
+              image="building-a-serverless.png"
+              type="study-jam"
+              @click.native="modalOpen(1)"
+            >
               Building a Serverless Web
               <br />App using Firebase
             </event-card>
-            <event-card image="firebase-web.png" type="study-jam">Firebase Web</event-card>
-            <event-card image="baseline.png" type="study-jam">
+            <event-card
+              image="firebase-web.png"
+              type="study-jam"
+              @click.native="modalOpen(2)"
+              >Firebase Web</event-card
+            >
+            <event-card
+              image="baseline.png"
+              type="study-jam"
+              @click.native="modalOpen(3)"
+            >
               Baseline: Deploy and
               <br />Develop
             </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">
+            <event-card
+              image="firebase-in-action.png"
+              type="study-jam"
+              @click.native="modalOpen(4)"
+            >
               BigQuery Basics for
               <br />Data Analysts
             </event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">Baseline: Data, ML, and AI</event-card>
-            <event-card image="firebase-in-action.png" type="study-jam">GCP Essentials</event-card>
+            <event-card
+              image="firebase-in-action.png"
+              type="study-jam"
+              @click.native="modalOpen(5)"
+              >Baseline: Data, ML, and AI</event-card
+            >
+            <event-card
+              image="firebase-in-action.png"
+              type="study-jam"
+              @click.native="modalOpen(6)"
+              >GCP Essentials</event-card
+            >
             <coming-event></coming-event>
           </div>
         </div>
@@ -74,15 +102,28 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="pandas.png" type="workshop">
+            <event-card
+              image="pandas.png"
+              type="workshop"
+              @click.native="modalOpen(7)"
+            >
               Pandas, Numpy, and
               <br />Matplotlib Workshop
             </event-card>
-            <event-card image="mobile-dev.png" type="workshop">
+            <event-card
+              image="mobile-dev.png"
+              type="workshop"
+              @click.native="modalOpen(8)"
+            >
               Mobile Development
               <br />Workshop with Flutter PH
             </event-card>
-            <event-card image="python.png" type="workshop">Python Workshop</event-card>
+            <event-card
+              image="python.png"
+              type="workshop"
+              @click.native="modalOpen(9)"
+              >Python Workshop</event-card
+            >
             <coming-event></coming-event>
           </div>
         </div>
@@ -92,12 +133,25 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="solution-challenge.png" type="speaker-session">
+            <event-card
+              image="solution-challenge.png"
+              type="speaker-session"
+              @click.native="modalOpen(10)"
+            >
               Solution Challenge Info
               <br />Session and Design Day
             </event-card>
-            <event-card image="info-session.png" type="speaker-session">DSC Info Session 2019</event-card>
-            <event-card image="google-tech.png" type="speaker-session">
+            <event-card
+              image="info-session.png"
+              type="speaker-session"
+              @click.native="modalOpen(11)"
+              >DSC Info Session 2019</event-card
+            >
+            <event-card
+              image="google-tech.png"
+              type="speaker-session"
+              @click.native="modalOpen(12)"
+            >
               Introduction to
               <br />Google Technologies
             </event-card>
@@ -106,15 +160,7 @@
         </div>
       </div>
     </section>
-    <modal
-      type="Study Jams"
-      title="Firebase in Action"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      datetime="April 18, 2020, 8 AM - 5 PM"
-      location="Ateneo de Manila University"
-      participants="36"
-      female="5"
-    />
+    <modal :info="info[event]" />
   </div>
 </template>
 
@@ -148,7 +194,140 @@ export default {
   },
   data() {
     return {
-      width: window.innerWidth >= 768 ? 64 : 24
+      width: window.innerWidth >= 768 ? 64 : 24,
+      event: 0,
+      info: [
+        {
+          type: "Study Jams",
+          title: "Firebase in Action",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "April 18, 2020, 8 AM - 5 PM",
+          location: "Ateneo de Manila University",
+          participants: "36",
+          female: "5"
+        },
+        {
+          type: "Study Jams",
+          title: "Building a Serverless Web App using Firebase",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Study Jams",
+          title: "Firebase Web",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Study Jams",
+          title: "Baseline: Deploy and Develop",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Study Jams",
+          title: "BigQuery Basics for Data Analysts",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Study Jams",
+          title: "Baseline: Data, ML, and AI",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Study Jams",
+          title: "GCP Essentials",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Hands-on Workshops",
+          title: "Pandas, Numpy, and Matplotlib Workshop",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Hands-on Workshops",
+          title: "Mobile Development Workshop with Flutter PH",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Hands-on Workshops",
+          title: "Python Workshop",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Speaker Session & Tech Talk",
+          title: "Solution Challenge Info Session and Design Day",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Speaker Session & Tech Talk",
+          title: "DSC Info Session 2019",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        },
+        {
+          type: "Speaker Session & Tech Talk",
+          title: "Introduction to Google Technologies",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          datetime: "N/A",
+          location: "Ateneo de Manila University",
+          participants: "N/A",
+          female: "N/A"
+        }
+      ]
     };
   },
   methods: {
@@ -157,11 +336,9 @@ export default {
         this.width = 24;
       } else this.width = 64;
     },
-    modalOpen() {
-      this.$modal.show("hello-world");
-    },
-    modalClose() {
-      this.$modal.hide("hello-world");
+    modalOpen(eventId) {
+      this.event = eventId;
+      this.$modal.show("event");
     }
   }
 };
