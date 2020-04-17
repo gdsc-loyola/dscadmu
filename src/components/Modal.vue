@@ -1,5 +1,5 @@
 <template>
-  <modal name="event" height="auto">
+  <modal name="event" height="auto" adaptive scrollable>
     <div class="modal">
       <div class="modal-header">
         <h2>{{ info.type }}</h2>
@@ -169,5 +169,11 @@ export default {
 .modal-footer .scroll img {
   margin-right: 24px;
   height: 240px;
+}
+
+@media screen and (max-width: 480px) {
+  .v--modal {
+    height: 20px !important;
+  }
 }
 </style>
