@@ -1,6 +1,10 @@
 <template>
   <div id="social-list">
-    <a href="https://www.facebook.com/dscloyola" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://www.facebook.com/dscloyola"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div class="icon" :class="'i-' + color">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 24">
           <path
@@ -11,7 +15,11 @@
         </svg>
       </div>
     </a>
-    <a href="https://twitter.com/DSCLoyola" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://twitter.com/DSCLoyola"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div class="icon" :class="'i-' + color">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21">
           <path
@@ -22,7 +30,11 @@
         </svg>
       </div>
     </a>
-    <a href="https://www.instagram.com/dsc.loyola/" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://www.instagram.com/dsc.loyola/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div class="icon" :class="'i-' + color">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path

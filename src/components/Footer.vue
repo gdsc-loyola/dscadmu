@@ -70,10 +70,16 @@
         <hr />
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6">
-            <img src="../assets/images/logo.svg" alt="Developer Student Clubs Loyola logo" />
+            <img
+              src="../assets/images/logo.svg"
+              alt="Developer Student Clubs Loyola logo"
+            />
           </div>
           <div class="col-12 col-md-6">
-            <small>© 2020 Developer Student Clubs Loyola. All Rights Reserved.</small>
+            <small
+              >© 2020 Developer Student Clubs Loyola. All Rights
+              Reserved.</small
+            >
           </div>
         </div>
       </div>
