@@ -36,6 +36,7 @@ export default {
   text-align: center;
   margin: 0 24px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #title {
