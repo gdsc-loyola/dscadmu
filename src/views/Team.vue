@@ -7,9 +7,14 @@
           Our lineup that empowers, enlightens, and nurtures people around the
           world.
         </p>
-        <h4>Executive Board & Co-Founders</h4>
+        <h4>Executive Board</h4>
         <div class="row">
           <team-circle
+            class="col-12 col-sm-12 col-md-4 col-lg"
+            name="Harvey Sison"
+            image="android1_blue.png"
+          >President/CEO, DSC Lead & Co-Founder</team-circle>
+          <!-- <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Harvey Sison"
             image="person.png"
@@ -19,21 +24,21 @@
           >
             President/CEO,
             <br />Co-Founder & DSC Lead
-          </team-circle>
+          </team-circle>-->
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Audrey Picar"
-            image="person.png"
+            image="android0_red.png"
           >Chief Operations Officer & Co-Founder</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Franz Cesista"
-            image="person.png"
+            image="android1_yellow.png"
           >Chief Technology Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cobbie Quintos"
-            image="person.png"
+            image="android1_red.png"
           >
             Chief Community Development Officer
             <br />& Co-Founder
@@ -41,7 +46,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cedric Atienza"
-            image="person.png"
+            image="android0_blue.png"
           >Chief Creatives Officer</team-circle>
         </div>
       </div>
@@ -67,32 +72,32 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Marion Macalalag"
-            image="person.png"
+            image="android0_blue.png"
           >Operations Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Arvin Almario"
-            image="person.png"
+            image="android1_blue.png"
           >People Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Margaux Arcinas"
-            image="person.png"
+            image="android0_blue.png"
           >People Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Tanzell Go"
-            image="person.png"
+            image="android1_blue.png"
           >Events Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Aldrich Tan"
-            image="person.png"
+            image="android0_blue.png"
           >Events Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Jeth Sia"
-            image="person.png"
+            image="android1_blue.png"
           >Finance & Externals Lead</team-circle>
         </div>
       </div>
@@ -117,7 +122,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Robin Chua"
-            image="person.png"
+            image="android0_red.png"
           >
             Data Science &
             <br />Analytics Lead
@@ -125,15 +130,15 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Miggy Pinaroc"
-            image="person.png"
+            image="android1_red.png"
           >
             Data Science &
-            <br />Analytics Lead
+            <br />Analytics Lead and Co-Founder
           </team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Jeth Sia"
-            image="person.png"
+            image="android0_red.png"
           >
             Data Science &
             <br />Analytics Lead
@@ -141,7 +146,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Samson Tan"
-            image="person.png"
+            image="android1_red.png"
           >
             Internet of Things
             <br />Lead
@@ -149,7 +154,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Carlos Aranguren"
-            image="person.png"
+            image="android0_red.png"
           >
             Internet of Things
             <br />Lead
@@ -157,7 +162,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Nicole Respecia"
-            image="person.png"
+            image="android1_red.png"
           >
             Internet of Things
             <br />Lead
@@ -165,7 +170,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Giddy Garcia"
-            image="person.png"
+            image="android0_red.png"
           >
             Software
             <br />Engineering Lead
@@ -173,15 +178,15 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Daniel del Rio"
-            image="person.png"
+            image="android1_red.png"
           >
             Software
-            <br />Engineering Lead
+            <br />Engineering Lead and Co-Founder
           </team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Jared de Guzman"
-            image="person.png"
+            image="android0_red.png"
           >
             Software
             <br />Engineering Lead
@@ -209,7 +214,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Andy Cosio"
-            image="person.png"
+            image="android0_yellow.png"
           >
             Community
             <br />Relations Lead
@@ -217,7 +222,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Matthew del Rosario"
-            image="person.png"
+            image="android1_yellow.png"
           >
             Community
             <br />Relations Lead
@@ -225,7 +230,15 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="John Matthew Reyes"
-            image="person.png"
+            image="android0_yellow.png"
+          >
+            Community
+            <br />Relations Lead
+          </team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4 col-lg-2-4"
+            name="Lois Abi To"
+            image="android1_yellow.png"
           >
             Community
             <br />Relations Lead
@@ -253,7 +266,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Miguel Uygongco"
-            image="person.png"
+            image="android0_green.png"
           >
             Social Media
             <br />Lead
@@ -261,7 +274,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Rafael Dytoc"
-            image="person.png"
+            image="android1_green.png"
           >
             Graphic Design
             <br />Lead
@@ -269,7 +282,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Gian Fausto"
-            image="person.png"
+            image="android0_green.png"
           >
             Documentations
             <br />Lead
@@ -277,7 +290,7 @@
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Samson Tan"
-            image="person.png"
+            image="android1_green.png"
           >
             Photography
             <br />Lead
@@ -290,12 +303,18 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-4">
-            <h2>Join the team!</h2>
+            <h2>Join our community!</h2>
             <p>
               Be part of the Developer Students Club Loyola circle where we
               create impact together!
             </p>
-            <button class="green">Join us</button>
+            <a
+              href="https://www.facebook.com/groups/233919568000712/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="green">Join us</button>
+            </a>
           </div>
         </div>
       </div>
