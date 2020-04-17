@@ -24,12 +24,14 @@
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Audrey Picar"
             image="person.png"
-          >Chief Operations Officer & Co-Founder</team-circle>
+            >Chief Operations Officer & Co-Founder</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Franz Cesista"
             image="person.png"
-          >Chief Technology Officer</team-circle>
+            >Chief Technology Officer</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cobbie Quintos"
@@ -42,7 +44,8 @@
             class="col-12 col-sm-12 col-md-4 col-lg"
             name="Cedric Atienza"
             image="person.png"
-          >Chief Creatives Officer</team-circle>
+            >Chief Creatives Officer</team-circle
+          >
         </div>
       </div>
     </section>
@@ -68,32 +71,38 @@
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Marion Macalalag"
             image="person.png"
-          >Operations Lead</team-circle>
+            >Operations Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Arvin Almario"
             image="person.png"
-          >People Lead</team-circle>
+            >People Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Margaux Arcinas"
             image="person.png"
-          >People Lead</team-circle>
+            >People Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Tanzell Go"
             image="person.png"
-          >Events Lead</team-circle>
+            >Events Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Aldrich Tan"
             image="person.png"
-          >Events Lead</team-circle>
+            >Events Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4 col-lg-2-4"
             name="Jeth Sia"
             image="person.png"
-          >Finance & Externals Lead</team-circle>
+            >Finance & Externals Lead</team-circle
+          >
         </div>
       </div>
     </section>

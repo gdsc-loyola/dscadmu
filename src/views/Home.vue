@@ -1,6 +1,10 @@
 <template>
   <div>
-    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
+    <section
+      id="hero"
+      :style="backgroundHero"
+      class="d-flex align-items-center"
+    >
       <div class="container">
         <div id="hero-text">
           <h1>Creating impact together</h1>
@@ -48,7 +52,11 @@
             </do-card>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <do-card image="tech-solutions.svg" title="Tech Solutions" color="green">
+            <do-card
+              image="tech-solutions.svg"
+              title="Tech Solutions"
+              color="green"
+            >
               Use the skills you learn in our events to solve community problems
               through projects
             </do-card>
@@ -64,9 +72,17 @@
         <div class="row" style="margin: 0">
           <div id="next-event" class="col-12 col-lg-9">
             <h5>Tech at Home 2020</h5>
-            <p
-              class="description"
-            >Tech at Home is a student-led online technology seminar series that teaches new technologies, especially Google technologies to a wide and diverse audience. It will be composed of various hands-on workshops and speaker engagements from esteemed professionals in the field of technology. The topics will range from data science, cloud engineering, web and mobile development and other tech-related advocacy topics. This event was crafted in light of the enhanced community quarantine (ECQ) and the desire of students and professionals to learn new skills during the pandemic.</p>
+            <p class="description">
+              Tech at Home is a student-led online technology seminar series
+              that teaches new technologies, especially Google technologies to a
+              wide and diverse audience. It will be composed of various hands-on
+              workshops and speaker engagements from esteemed professionals in
+              the field of technology. The topics will range from data science,
+              cloud engineering, web and mobile development and other
+              tech-related advocacy topics. This event was crafted in light of
+              the enhanced community quarantine (ECQ) and the desire of students
+              and professionals to learn new skills during the pandemic.
+            </p>
             <p class="datetime">
               <i class="material-icons">date_range</i>
               <span>April 21, 2020 to May 21, 2020</span>
@@ -86,7 +102,9 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p class="bottom">There are 18 other DSC chapters in the Philippines right now!</p>
+        <p class="bottom">
+          There are 18 other DSC chapters in the Philippines right now!
+        </p>
         <div id="chapter-scroll-container">
           <div id="chapter-scroll" v-dragscroll>
             <margin :width="width"></margin>
@@ -100,14 +118,26 @@
               title="De La Salle-College Of Saint Benilde"
               location="Manila"
             ></chapter-circle>
-            <chapter-circle image="chapter.png" title="National University" location="Manila"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="National University"
+              location="Manila"
+            ></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="FEU - Institute Of Technology"
               location="Manila"
             ></chapter-circle>
-            <chapter-circle image="chapter.png" title="University Of Santo Tomas" location="Manila"></chapter-circle>
-            <chapter-circle image="chapter.png" title="AMA Computer Caloocan" location="Caloocan"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Santo Tomas"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="AMA Computer Caloocan"
+              location="Caloocan"
+            ></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="St. Paul University Philippines"
@@ -133,7 +163,11 @@
               title="University of the Philippines - Cebu"
               location="Cebu City"
             ></chapter-circle>
-            <chapter-circle image="chapter.png" title="Cristal E-College" location="Panglao, Bohol"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Cristal E-College"
+              location="Panglao, Bohol"
+            ></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="University Of Negros Occidental - Recoletos"
@@ -167,8 +201,14 @@
             <margin :width="width"></margin>
           </div>
         </div>
-        <p class="top">Want to start your own chapter? Apply to be a lead now!</p>
-        <a href="https://g.co/dev/dscleads" target="_blank" rel="noopener noreferrer">
+        <p class="top">
+          Want to start your own chapter? Apply to be a lead now!
+        </p>
+        <a
+          href="https://g.co/dev/dscleads"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button class="blue">Apply as lead</button>
         </a>
       </div>

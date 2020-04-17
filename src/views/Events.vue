@@ -7,7 +7,17 @@
         datetime="April 21, 2020 to May 21, 2020"
         location="Google Meet & Youtube Live"
       >
-        <p>Tech at Home is a student-led online technology seminar series that teaches new technologies, especially Google technologies to a wide and diverse audience. It will be composed of various hands-on workshops and speaker engagements from esteemed professionals in the field of technology. The topics will range from data science, cloud engineering, web and mobile development and other tech-related advocacy topics. This event was crafted in light of the enhanced community quarantine (ECQ) and the desire of students and professionals to learn new skills during the pandemic.</p>
+        <p>
+          Tech at Home is a student-led online technology seminar series that
+          teaches new technologies, especially Google technologies to a wide and
+          diverse audience. It will be composed of various hands-on workshops
+          and speaker engagements from esteemed professionals in the field of
+          technology. The topics will range from data science, cloud
+          engineering, web and mobile development and other tech-related
+          advocacy topics. This event was crafted in light of the enhanced
+          community quarantine (ECQ) and the desire of students and
+          professionals to learn new skills during the pandemic.
+        </p>
       </featured-event>
       <!-- <featured-event
         image="feature.png"
@@ -39,7 +49,8 @@
               image="firebase-in-action.png"
               type="study-jam"
               @click.native="modalOpen(0)"
-            >Firebase in Action</event-card>
+              >Firebase in Action</event-card
+            >
             <event-card
               image="building-a-serverless.png"
               type="study-jam"
@@ -52,8 +63,13 @@
               image="firebase-web.png"
               type="study-jam"
               @click.native="modalOpen(2)"
-            >Firebase Web</event-card>
-            <event-card image="baseline.png" type="study-jam" @click.native="modalOpen(3)">
+              >Firebase Web</event-card
+            >
+            <event-card
+              image="baseline.png"
+              type="study-jam"
+              @click.native="modalOpen(3)"
+            >
               Baseline: Deploy and
               <br />Develop
             </event-card>
@@ -69,12 +85,14 @@
               image="firebase-in-action.png"
               type="study-jam"
               @click.native="modalOpen(5)"
-            >Baseline: Data, ML, and AI</event-card>
+              >Baseline: Data, ML, and AI</event-card
+            >
             <event-card
               image="firebase-in-action.png"
               type="study-jam"
               @click.native="modalOpen(6)"
-            >GCP Essentials</event-card>
+              >GCP Essentials</event-card
+            >
             <coming-event></coming-event>
           </div>
         </div>
@@ -84,11 +102,19 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="pandas.png" type="workshop" @click.native="modalOpen(7)">
+            <event-card
+              image="pandas.png"
+              type="workshop"
+              @click.native="modalOpen(7)"
+            >
               Pandas, Numpy, and
               <br />Matplotlib Workshop
             </event-card>
-            <event-card image="mobile-dev.png" type="workshop" @click.native="modalOpen(8)">
+            <event-card
+              image="mobile-dev.png"
+              type="workshop"
+              @click.native="modalOpen(8)"
+            >
               Mobile Development
               <br />Workshop with Flutter PH
             </event-card>
@@ -96,7 +122,8 @@
               image="python.png"
               type="workshop"
               @click.native="modalOpen(9)"
-            >Python Workshop</event-card>
+              >Python Workshop</event-card
+            >
             <coming-event></coming-event>
           </div>
         </div>
@@ -118,7 +145,8 @@
               image="info-session.png"
               type="speaker-session"
               @click.native="modalOpen(11)"
-            >DSC Info Session 2019</event-card>
+              >DSC Info Session 2019</event-card
+            >
             <event-card
               image="google-tech.png"
               type="speaker-session"
