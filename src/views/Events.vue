@@ -39,42 +39,31 @@
               image="firebase-in-action.png"
               type="study-jam"
               @click.native="modalOpen(0)"
-            >Firebase in Action</event-card>
+            >Firebase in Action: Actions on Google and DialogFlow</event-card>
             <event-card
               image="building-a-serverless.png"
               type="study-jam"
               @click.native="modalOpen(1)"
-            >
-              Building a Serverless Web
-              <br />App using Firebase
-            </event-card>
+            >Firebase in Action: Building a Serverless Web App using Firebase</event-card>
             <event-card
               image="firebase-web.png"
               type="study-jam"
               @click.native="modalOpen(2)"
-            >Firebase Web</event-card>
+            >Firebase in Action: Firebase Web</event-card>
             <event-card image="baseline.png" type="study-jam" @click.native="modalOpen(3)">
               Baseline: Deploy and
               <br />Develop
             </event-card>
-            <event-card
-              image="firebase-in-action.png"
-              type="study-jam"
-              @click.native="modalOpen(4)"
-            >
+            <event-card image="bigquery.jpg" type="study-jam" @click.native="modalOpen(4)">
               BigQuery Basics for
               <br />Data Analysts
             </event-card>
             <event-card
-              image="firebase-in-action.png"
+              image="aiml.jpg"
               type="study-jam"
               @click.native="modalOpen(5)"
             >Baseline: Data, ML, and AI</event-card>
-            <event-card
-              image="firebase-in-action.png"
-              type="study-jam"
-              @click.native="modalOpen(6)"
-            >GCP Essentials</event-card>
+            <event-card image="gcp.jpg" type="study-jam" @click.native="modalOpen(6)">GCP Essentials</event-card>
             <coming-event></coming-event>
           </div>
         </div>
@@ -84,7 +73,7 @@
         <div class="list">
           <div class="scroll" v-dragscroll>
             <margin :width="width"></margin>
-            <event-card image="pandas.png" type="workshop" @click.native="modalOpen(7)">
+            <event-card image="python.jpg" type="workshop" @click.native="modalOpen(7)">
               Pandas, Numpy, and
               <br />Matplotlib Workshop
             </event-card>
@@ -93,7 +82,7 @@
               <br />Workshop with Flutter PH
             </event-card>
             <event-card
-              image="python.png"
+              image="pandas.png"
               type="workshop"
               @click.native="modalOpen(9)"
             >Python Workshop</event-card>
@@ -115,14 +104,22 @@
               <br />Session and Design Day
             </event-card>
             <event-card
-              image="info-session.png"
-              type="speaker-session"
-              @click.native="modalOpen(11)"
-            >DSC Info Session 2019</event-card>
-            <event-card
               image="google-tech.png"
               type="speaker-session"
+              @click.native="modalOpen(11)"
+            >
+              DSC Loyola General Assembly 2019
+              <br />
+            </event-card>
+            <event-card
+              image="dsc-info.jpg"
+              type="speaker-session"
               @click.native="modalOpen(12)"
+            >DSC Info Session 2019</event-card>
+            <event-card
+              image="info-session.png"
+              type="speaker-session"
+              @click.native="modalOpen(13)"
             >
               Introduction to
               <br />Google Technologies
@@ -171,133 +168,144 @@ export default {
       info: [
         {
           type: "Study Jams",
-          title: "Firebase in Action",
+          title: "Firebase in Action: Actions on Google and DialogFlow",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "April 18, 2020, 8 AM - 5 PM",
+            "This is the third and final workshop we have for Firebase February. Here we did Qwiklabs Lab called Google Assistant: Build an Application with Dialogflow and Cloud Functions. It was pretty interesting and a lot of students enjoyed it. We taught Google Assistant how to do a trivia game which was pretty fun to do.",
+          datetime: "February 26, 2020",
           location: "Ateneo de Manila University",
           participants: "36",
           female: "5"
         },
         {
           type: "Study Jams",
-          title: "Building a Serverless Web App using Firebase",
+          title:
+            "Firebase in Action: Building a Serverless Web App using Firebase",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "This is our second workshop for Firebase February. Here in this event we delved into firebase by doing Qwiklab's hands-on-workshop called Building a Serverless Web app using Firebase. Here we taught students the basics of firebase and created a serverless web app to help them visualize what they can build with firebase.",
+          datetime: "February 19, 2020",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "15",
+          female: "3"
         },
         {
           type: "Study Jams",
-          title: "Firebase Web",
+          title: "Firebase in Action: Firebase Web",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "This is the first ever Firebase February Workshop wherein we accomplished the Qwiklab's hands-on tutorial called Firebase Web. Here, together with the participants, we were able to get a grasps of what firebase can do and create a real-time messaging web application.",
+          datetime: "February 19, 2020",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "15",
+          female: "3"
         },
         {
           type: "Study Jams",
           title: "Baseline: Deploy and Develop",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Loyola conducted its last Cloud Study Jam for the year 2019! We conducted the Baseline: Deploy & Develop so that students would know how to connect and deploy their existing projects to the Google Cloud Platform.",
+          datetime: "November 28, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "15",
+          female: "7"
         },
         {
           type: "Study Jams",
           title: "BigQuery Basics for Data Analysts",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Loyola hosted its 3rd Cloud Study Jams for the November 2019 and we taught BigQuery Basics for Data Analyst. We did the SQL course and the hands-on-lab on create a BigQuery Slides Presentation. This is to show the members how exciting is BigQuery and up to what extent can it do. We hope to host more BigQuery workshops in the future.",
+          datetime: "November 25, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "3",
+          female: "1"
         },
         {
           type: "Study Jams",
-          title: "Baseline: Data, ML, and AI",
+          title: "Baseline: Data, ML, and AI & Neural Networks",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Loyola conducted another Cloud Study Jams wherein we taught attendees how they can use the Google Cloud Platform for Data, Machine Learning and Artificial Intelligence. We did our best to finish the quest however due to technical difficulties, we transitioned to introduction to Neural Networks because students were interested in it.",
+          datetime: "November 11, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "21",
+          female: "6"
         },
         {
           type: "Study Jams",
           title: "GCP Essentials",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Loyola hosted its first ever Cloud Study Jams on GCP Essentials. Here we did 60% of the quest so that they can do the other 40% at home. In this event, we gave can overview of the Google Cloud Platform like what features are available in GCP. Also, we shared professional and personal projects that are already hosted in GCP to the students so that we get their attention and curiousity.",
+          datetime: "November 6, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "31",
+          female: "11"
         },
         {
           type: "Hands-on Workshops",
           title: "Pandas, Numpy, and Matplotlib Workshop",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Loyola is officially having its first event of the new decade: Pandas, Numpy, and Matplotlib Workshop! Learn more about visualizing data in Python from our very own Chief Technology Officer, Franz Louis Cesista. We used numpy and matplotlib to visualize statistical models and model the coronavirus for pandas.",
+          datetime: "January 29, 2020",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "30",
+          female: "5"
         },
         {
           type: "Hands-on Workshops",
           title: "Mobile Development Workshop with Flutter PH",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "You might have heard of Android Development with Android Studio but you might not know there's another way of building mobile apps that is hybrid. This means you can export it to Google Play and App Store. This hybrid is what we call Flutter. DSC Loyola hosts a Mobile Development Workshop with Flutter Philippines wherein Joshua and Oliver discussed about Flutter and thought us basics Flutter Development.",
+          datetime: "November 20, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "40",
+          female: "10"
         },
         {
           type: "Hands-on Workshops",
           title: "Python Workshop",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "In under 3 hours, DSC Loyola provided a hands-on workshop to teach its members and also non-dsc members to learn how to program in Python. We thought them about variable types, functions, lists and loops. We also shared Python projects that the DSC co-founders built",
+          datetime: "November 4, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "30",
+          female: "12"
         },
         {
           type: "Speaker Session & Tech Talk",
           title: "Solution Challenge Info Session and Design Day",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "Global Solutions Challenge is an international competition which invites members of DSC chapters all around the globe to develop solutions for local community problems. With that, DSC Loyola hosted a 2-in-1 workshop for the Solution Challenge wherein we shared what is Solutions Challenge all about and at the same time hosted a Design Sprint workshop to help participants in their projects.",
+          datetime: "February 13, 2020",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "10",
+          female: "1"
+        },
+        {
+          type: "Speaker Session & Tech Talk",
+          title: "DSC Loyola General Assembly 2019",
+          description:
+            "General Assembly is an info session caterred for registered members of the organization. We are happy to announce that DSC Loyola's opening was magnificent because we have a total 300+ registered members. Here in the general assembly, we pitched what is Developer Student Clubs and what benefits they get by joining the organization. We also discussed to them the mission and vision of the organization and invited them to be part of the core team. We discussed also our upcoming events and the projects they can expect with us.",
+          datetime: "October 28, 2019",
+          location: "Ateneo de Manila University",
+          participants: "69",
+          female: "16"
         },
         {
           type: "Speaker Session & Tech Talk",
           title: "DSC Info Session 2019",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "DSC Info session was catered not just for members of the organization but also open to other students interested in joining DSC. In this event, we pitched to them who we are and what we offer as an organization. We also had an ice breaker where they have to guess a Google tech through charades and also the attendees pitched possible solutionarian projects they want to work on	",
+          datetime: "October 3, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "17",
+          female: "4"
         },
         {
           type: "Speaker Session & Tech Talk",
           title: "Introduction to Google Technologies",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          datetime: "N/A",
+            "Did you know? Google Technologies such as Android Development, Angular and many more are not taught inside the Ateneo de Manila University. That is why as an organization powered by Google Developers, DSC Loyola's first ever event is to educate students on what Google Technologies that are available as of the moment. This is to help them explore and as well you these stacks in their personal projects and maybe in their academics such as their thesis.",
+          datetime: "August 3, 2019",
           location: "Ateneo de Manila University",
-          participants: "N/A",
-          female: "N/A"
+          participants: "18",
+          female: "3"
         }
       ]
     };
