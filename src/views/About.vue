@@ -1,36 +1,39 @@
 <template>
   <div>
-    <section id="hero">
-      <div class="container">
-        <h4>Vision</h4>
-        <div class="row align-items-center justify-content-between">
-          <div id="hero-text" class="col-12 col-md-6">
-            <h1>Uplifting communities through technology</h1>
-            <p class="feature-text">
-              We are a community of developers that are passionate about
-              uplifting communities through technology and innovation.
-            </p>
-            <router-link to="/">
+    <section id="vision">
+      <div id="hero">
+        <div class="container">
+          <h4>Vision</h4>
+          <div class="row align-items-center justify-content-between">
+            <div id="hero-text" class="col-12 col-md-6">
+              <h1>Uplifting communities through technology</h1>
+              <p class="feature-text">
+                We are a community of developers that are passionate about
+                uplifting communities through technology and innovation.
+              </p>
+              <!-- <a href="/" target="_blank" rel="noopener noreferrer">
               <button class="blue">Join us</button>
-            </router-link>
-          </div>
-          <div id="hero-image" class="col-12 col-md-6">
-            <img src="../assets/images/feature-image.svg" alt="Feature image" />
+              </a>-->
+            </div>
+            <div id="hero-image" class="col-12 col-md-6">
+              <img src="../assets/images/feature-image.svg" alt="Feature image" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <section id="mission" class="grey-bg">
       <div class="container">
         <h2 class="text-center">Our mission</h2>
         <div class="row justify-content-center">
-          <mission-card image="empower.svg" title="Empower">
-            We empower people through technology and programming education
-          </mission-card>
-          <mission-card image="enlighten.svg" title="Enlighten">
-            We enlighten people to the power of innovation and problem-solving
-          </mission-card>
+          <mission-card
+            image="empower.svg"
+            title="Empower"
+          >We empower people through technology and programming education</mission-card>
+          <mission-card
+            image="enlighten.svg"
+            title="Enlighten"
+          >We enlighten people to the power of innovation and problem-solving</mission-card>
           <mission-card image="social-care.svg" title="Nurture">
             We nurture people to create meaningful technological solutions for
             the community
@@ -44,32 +47,32 @@
         <h2>Types of events</h2>
         <p>Various events to empower, enlighten, and nurture members</p>
         <div class="row">
-          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+          <div class="col-6 col-md-6 col-lg-3" to="/">
             <event-category image="study-jams.jpeg">Study Jams</event-category>
-          </router-link>
-          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+          </div>
+          <div class="col-6 col-md-6 col-lg-3" to="/">
             <event-category image="workshop.jpeg">
               Hands-on
               <br />Workshops
             </event-category>
-          </router-link>
-          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+          </div>
+          <div class="col-6 col-md-6 col-lg-3" to="/">
             <event-category image="exploreml.jpeg">ExploreML</event-category>
-          </router-link>
-          <router-link class="col-6 col-md-6 col-lg-3" to="/">
+          </div>
+          <div class="col-6 col-md-6 col-lg-3" to="/">
             <event-category image="hackathon.jpeg">Hackathon</event-category>
-          </router-link>
+          </div>
         </div>
         <div class="row">
-          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+          <div class="col-6 col-md-6 col-lg-4" to="/">
             <event-category image="talk.jpeg">Tech Talk</event-category>
-          </router-link>
-          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" to="/">
             <event-category image="bootcamp.jpeg">Bootcamp</event-category>
-          </router-link>
-          <router-link class="col-6 col-md-6 col-lg-4" to="/">
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" to="/">
             <event-category image="showcase.jpeg">Showcase</event-category>
-          </router-link>
+          </div>
         </div>
       </div>
     </section>
@@ -86,19 +89,13 @@
             <img src="../assets/images/angular.svg" alt="Angular logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img
-              src="../assets/images/google-apps.svg"
-              alt="Google Apps logo"
-            />
+            <img src="../assets/images/google-apps.svg" alt="Google Apps logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/android.svg" alt="Android logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img
-              src="../assets/images/actions-on-google.svg"
-              alt="Actions on Google logo"
-            />
+            <img src="../assets/images/actions-on-google.svg" alt="Actions on Google logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/dialogflow.svg" alt="Dialogflow logo" />
@@ -110,10 +107,7 @@
             <img src="../assets/images/flutter.svg" alt="Flutter logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
-            <img
-              src="../assets/images/google-cloud-platform.svg"
-              alt="Google Cloud Platform logo"
-            />
+            <img src="../assets/images/google-cloud-platform.svg" alt="Google Cloud Platform logo" />
           </div>
           <div class="col-4 col-md-4 col-lg">
             <img src="../assets/images/firebase.svg" alt="Firebase logo" />

@@ -17,16 +17,16 @@
             <hr class="blue" />
             <ul>
               <li>
-                <router-link to="/">Vision</router-link>
+                <router-link to="/about">Vision</router-link>
               </li>
               <li>
-                <router-link to="/">Mission</router-link>
+                <router-link to="/about">Mission</router-link>
               </li>
               <li>
-                <router-link to="/">Types of Events</router-link>
+                <router-link to="/about">Types of Events</router-link>
               </li>
               <li>
-                <router-link to="/">Google Technologies</router-link>
+                <router-link to="/about">Google Technologies</router-link>
               </li>
             </ul>
           </div>
@@ -35,10 +35,10 @@
             <hr class="red" />
             <ul>
               <li>
-                <router-link to="/">Upcoming Events</router-link>
+                <router-link to="/events">Upcoming Events</router-link>
               </li>
               <li>
-                <router-link to="/">Archives</router-link>
+                <router-link to="/events">Archives</router-link>
               </li>
             </ul>
           </div>
@@ -47,7 +47,7 @@
             <hr class="yellow" />
             <ul>
               <li>
-                <router-link to="/">Placeholder</router-link>
+                <router-link to="/projects">Projects</router-link>
               </li>
             </ul>
           </div>
@@ -56,13 +56,13 @@
             <hr class="green" />
             <ul>
               <li>
-                <router-link to="/">Executive Board</router-link>
+                <router-link to="/team">Executive Board</router-link>
               </li>
               <li>
-                <router-link to="/">Departments</router-link>
+                <router-link to="/team">Departments</router-link>
               </li>
               <li>
-                <router-link to="/">Core Leads</router-link>
+                <router-link to="/team">Core Leads</router-link>
               </li>
             </ul>
           </div>
@@ -70,16 +70,13 @@
         <hr />
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6">
-            <img
-              src="../assets/images/logo.svg"
-              alt="Developer Student Clubs Loyola logo"
-            />
+            <img src="../assets/images/logo.svg" alt="Developer Student Clubs Loyola logo" />
           </div>
           <div class="col-12 col-md-6">
-            <small
-              >© 2020 Developer Student Clubs Loyola. All Rights
-              Reserved.</small
-            >
+            <small>
+              © 2020 Developer Student Clubs Loyola. All Rights
+              Reserved.
+            </small>
           </div>
         </div>
       </div>

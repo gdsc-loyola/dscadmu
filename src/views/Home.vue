@@ -1,10 +1,6 @@
 <template>
   <div>
-    <section
-      id="hero"
-      :style="backgroundHero"
-      class="d-flex align-items-center"
-    >
+    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
       <div class="container">
         <div id="hero-text">
           <h1>Creating impact together</h1>
@@ -18,9 +14,9 @@
             community.
           </p>
           <div>
-            <router-link to="/">
+            <!-- <a href="/" target="_blank" rel="noopener noreferrer">
               <button class="blue primary">Join us</button>
-            </router-link>
+            </a>-->
             <router-link to="/about">
               <button class="white-light">Learn more</button>
             </router-link>
@@ -52,11 +48,7 @@
             </do-card>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <do-card
-              image="tech-solutions.svg"
-              title="Tech Solutions"
-              color="green"
-            >
+            <do-card image="tech-solutions.svg" title="Tech Solutions" color="green">
               Use the skills you learn in our events to solve community problems
               through projects
             </do-card>
@@ -71,27 +63,21 @@
         <p>Check out the next event of DSC Loyola.</p>
         <div class="row" style="margin: 0">
           <div id="next-event" class="col-12 col-lg-9">
-            <h5>TechFest x AdMU 2020</h5>
-            <p class="description">
-              Techfest 2020 is the Developer Student Clubs’ flagship technology
-              conference organized by students. This is a one-day event that
-              aims to equip aspiring innovators with much-coveted technological
-              insights to aid them in the process of shaping the future they
-              wish to behold. In line with this, the event will be addressing 4
-              of the current hot trends in tech: Web and Mobile, Data Science
-              and Cloud, Business in Tech, and Women and Students in Tech.
-            </p>
+            <h5>Tech at Home 2020</h5>
+            <p
+              class="description"
+            >Tech at Home is a student-led online technology seminar series that teaches new technologies, especially Google technologies to a wide and diverse audience. It will be composed of various hands-on workshops and speaker engagements from esteemed professionals in the field of technology. The topics will range from data science, cloud engineering, web and mobile development and other tech-related advocacy topics. This event was crafted in light of the enhanced community quarantine (ECQ) and the desire of students and professionals to learn new skills during the pandemic.</p>
             <p class="datetime">
               <i class="material-icons">date_range</i>
-              <span>April 18, 2020, 8:00 AM - 5:00 PM</span>
+              <span>April 21, 2020 to May 21, 2020</span>
             </p>
             <p class="location">
               <i class="material-icons">location_on</i>
-              <span>Ateneo de Manila University, Loyola Schools Campus</span>
+              <span>Google Meet & Youtube Live</span>
             </p>
-            <a href="/">
+            <!-- <a href="/" target="_blank" rel="noopener noreferrer">
               <button class="blue">Buy tickets</button>
-            </a>
+            </a>-->
           </div>
         </div>
       </div>
@@ -100,66 +86,91 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p class="bottom">
-          There are 18 DSC chapters in the Philippines right now!
-        </p>
+        <p class="bottom">There are 18 other DSC chapters in the Philippines right now!</p>
         <div id="chapter-scroll-container">
           <div id="chapter-scroll" v-dragscroll>
             <margin :width="width"></margin>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="De La Salle University Manila"
+              location="Manila"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="De La Salle-College Of Saint Benilde"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="National University" location="Manila"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="FEU - Institute Of Technology"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="University Of Santo Tomas" location="Manila"></chapter-circle>
+            <chapter-circle image="chapter.png" title="AMA Computer Caloocan" location="Caloocan"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="St. Paul University Philippines"
+              location="Tuguegarao City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="University Of Saint Louis Tuguegarao"
+              location="Tuguegarao City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="Cebu Institute of Technology - University"
+              location="Cebu City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="University of San Carlos"
+              location="Cebu City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="University of the Philippines - Cebu"
+              location="Cebu City"
+            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="Cristal E-College" location="Panglao, Bohol"></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Negros Occidental - Recoletos"
+              location="Bacolod City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="University Of Saint La Salle"
+              location="Bacolod City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="Central Philippine University"
+              location="Iloilo City"
             ></chapter-circle>
             <chapter-circle
               image="chapter.png"
-              title="Name of Chapter"
-              location="Manila City, Luzon"
+              title="STI College Cagayan De Oro"
+              location="Cagayan de Oro City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Mindanao State University - Iligan Institute Of Technology"
+              location="Iligan City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Ateneo de Zamboanga University"
+              location="Zamboanga City"
             ></chapter-circle>
             <margin :width="width"></margin>
           </div>
         </div>
-        <p class="top">
-          Want to start your own chapter? Apply to be a lead now!
-        </p>
-        <router-link to="/">
+        <p class="top">Want to start your own chapter? Apply to be a lead now!</p>
+        <a href="https://g.co/dev/dscleads" target="_blank" rel="noopener noreferrer">
           <button class="blue">Apply as lead</button>
-        </router-link>
+        </a>
       </div>
     </section>
   </div>
