@@ -33,7 +33,17 @@ const router = new Router({
       path: "*",
       component: NotFound
     }
-  ]
+  ],
+  scrollBehavior: function(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        offset: { x: 0, y: 60 }
+      };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
 });
 
 export default router;
