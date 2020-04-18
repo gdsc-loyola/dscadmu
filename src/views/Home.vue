@@ -5,7 +5,7 @@
       :style="backgroundHero"
       class="d-flex align-items-center"
     >
-      <div class="container">
+      <div class="container py-5">
         <div id="hero-text">
           <h1>Creating impact together</h1>
           <p class="feature-text">
@@ -234,7 +234,7 @@ export default {
   components: {
     DoCard,
     ChapterCircle,
-    Margin
+    Margin,
   },
   data() {
     return {
@@ -242,13 +242,13 @@ export default {
       backgroundHero: {
         backgroundImage: "url(" + require("@/assets/images/impact.png") + ")",
         backgroundSize: "cover",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
       },
       backgroundNext: {
         backgroundImage: "url(" + require("@/assets/images/next.png") + ")",
         backgroundSize: "cover",
-        backgroundPosition: "center"
-      }
+        backgroundPosition: "center",
+      },
     };
   },
   methods: {
@@ -256,8 +256,8 @@ export default {
       if (window.innerWidth < 768) {
         this.width = 24;
       } else this.width = 64;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -268,7 +268,7 @@ export default {
 }
 
 #hero p {
-  padding: 15px 0 40px;
+  padding: 15px 0 30px;
 }
 
 #hero-text {
