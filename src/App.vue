@@ -13,8 +13,8 @@ import Footer from "@/components/Footer";
 export default {
   components: {
     Navigation,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
@@ -185,8 +185,8 @@ button {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -234,6 +234,11 @@ button {
 
   .slick-dots li button:before {
     font-size: 8px !important;
+  }
+
+  .feature-text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 </style>
