@@ -1,13 +1,23 @@
 <template>
   <div>
-    <SlickCarousel :arrows="false" :dots="true">
+    <SlickCarousel :arrows="false" :dots="true" id="featured">
       <featured-event
         image="feature.png"
         title="Tech at Home 2020"
         datetime="April 21, 2020 to May 21, 2020"
         location="Google Meet & Youtube Live"
       >
-        <p>Tech at Home is a student-led online technology seminar series that teaches new technologies, especially Google technologies to a wide and diverse audience. It will be composed of various hands-on workshops and speaker engagements from esteemed professionals in the field of technology. The topics will range from data science, cloud engineering, web and mobile development and other tech-related advocacy topics. This event was crafted in light of the enhanced community quarantine (ECQ) and the desire of students and professionals to learn new skills during the pandemic.</p>
+        <p>
+          Tech at Home is a student-led online technology seminar series that
+          teaches new technologies, especially Google technologies to a wide and
+          diverse audience. It will be composed of various hands-on workshops
+          and speaker engagements from esteemed professionals in the field of
+          technology. The topics will range from data science, cloud
+          engineering, web and mobile development and other tech-related
+          advocacy topics. This event was crafted in light of the enhanced
+          community quarantine (ECQ) and the desire of students and
+          professionals to learn new skills during the pandemic.
+        </p>
       </featured-event>
       <!-- <featured-event
         image="feature.png"
@@ -30,103 +40,111 @@
     </SlickCarousel>
     <section id="events" class="grey-bg">
       <div class="container">
-        <h2>Study Jams</h2>
-        <p>Community-run study groups for developers</p>
-        <div class="list">
-          <div class="scroll" v-dragscroll>
-            <margin :width="width"></margin>
-            <event-card
-              image="firebase-in-action.png"
-              type="study-jam"
-              @click.native="modalOpen(0)"
-            >Firebase in Action: Actions on Google and DialogFlow</event-card>
-            <event-card
-              image="building-a-serverless.png"
-              type="study-jam"
-              @click.native="modalOpen(1)"
-            >Firebase in Action: Building a Serverless Web App using Firebase</event-card>
-            <event-card
-              image="firebase-web.png"
-              type="study-jam"
-              @click.native="modalOpen(2)"
-            >Firebase in Action: Firebase Web</event-card>
-            <event-card image="baseline.png" type="study-jam" @click.native="modalOpen(3)">
-              Baseline: Deploy and
-              <br />Develop
-            </event-card>
-            <event-card image="bigquery.jpg" type="study-jam" @click.native="modalOpen(4)">
-              BigQuery Basics for
-              <br />Data Analysts
-            </event-card>
-            <event-card
-              image="aiml.jpg"
-              type="study-jam"
-              @click.native="modalOpen(5)"
-            >Baseline: Data, ML, and AI</event-card>
-            <event-card image="gcp.jpg" type="study-jam" @click.native="modalOpen(6)">GCP Essentials</event-card>
-            <coming-event></coming-event>
+        <section id="study-jams">
+          <h2>Study Jams</h2>
+          <p>Community-run study groups for developers</p>
+          <div class="list">
+            <div class="scroll" v-dragscroll>
+              <margin :width="width"></margin>
+              <event-card
+                image="firebase-in-action.png"
+                type="study-jam"
+                @click.native="modalOpen(0)"
+              >Firebase in Action: Actions on Google and DialogFlow</event-card>
+              <event-card
+                image="building-a-serverless.png"
+                type="study-jam"
+                @click.native="modalOpen(1)"
+              >Firebase in Action: Building a Serverless Web App using Firebase</event-card>
+              <event-card
+                image="firebase-web.png"
+                type="study-jam"
+                @click.native="modalOpen(2)"
+              >Firebase in Action: Firebase Web</event-card>
+              <event-card image="baseline.png" type="study-jam" @click.native="modalOpen(3)">
+                Baseline: Deploy and
+                <br />Develop
+              </event-card>
+              <event-card image="bigquery.jpg" type="study-jam" @click.native="modalOpen(4)">
+                BigQuery Basics for
+                <br />Data Analysts
+              </event-card>
+              <event-card
+                image="aiml.jpg"
+                type="study-jam"
+                @click.native="modalOpen(5)"
+              >Baseline: Data, ML, and AI</event-card>
+              <event-card
+                image="gcp.jpg"
+                type="study-jam"
+                @click.native="modalOpen(6)"
+              >GCP Essentials</event-card>
+              <coming-event></coming-event>
+            </div>
           </div>
-        </div>
-
-        <h2>Hands-on Workshops</h2>
-        <p>Opportunity for community members to learn something new in tech</p>
-        <div class="list">
-          <div class="scroll" v-dragscroll>
-            <margin :width="width"></margin>
-            <event-card image="python.jpg" type="workshop" @click.native="modalOpen(7)">
-              Pandas, Numpy, and
-              <br />Matplotlib Workshop
-            </event-card>
-            <event-card image="mobile-dev.png" type="workshop" @click.native="modalOpen(8)">
-              Mobile Development
-              <br />Workshop with Flutter PH
-            </event-card>
-            <event-card
-              image="pandas.png"
-              type="workshop"
-              @click.native="modalOpen(9)"
-            >Python Workshop</event-card>
-            <coming-event></coming-event>
+        </section>
+        <section id="hands-on-workshops">
+          <h2>Hands-on Workshops</h2>
+          <p>Opportunity for community members to learn something new in tech</p>
+          <div class="list">
+            <div class="scroll" v-dragscroll>
+              <margin :width="width"></margin>
+              <event-card image="python.jpg" type="workshop" @click.native="modalOpen(7)">
+                Pandas, Numpy, and
+                <br />Matplotlib Workshop
+              </event-card>
+              <event-card image="mobile-dev.png" type="workshop" @click.native="modalOpen(8)">
+                Mobile Development
+                <br />Workshop with Flutter PH
+              </event-card>
+              <event-card
+                image="pandas.png"
+                type="workshop"
+                @click.native="modalOpen(9)"
+              >Python Workshop</event-card>
+              <coming-event></coming-event>
+            </div>
           </div>
-        </div>
-
-        <h2>Speaker Session & Tech Talk</h2>
-        <p>Community-run study groups for developers</p>
-        <div class="list">
-          <div class="scroll" v-dragscroll>
-            <margin :width="width"></margin>
-            <event-card
-              image="solution-challenge.png"
-              type="speaker-session"
-              @click.native="modalOpen(10)"
-            >
-              Solution Challenge Info
-              <br />Session and Design Day
-            </event-card>
-            <event-card
-              image="google-tech.png"
-              type="speaker-session"
-              @click.native="modalOpen(11)"
-            >
-              DSC Loyola General Assembly 2019
-              <br />
-            </event-card>
-            <event-card
-              image="dsc-info.jpg"
-              type="speaker-session"
-              @click.native="modalOpen(12)"
-            >DSC Info Session 2019</event-card>
-            <event-card
-              image="info-session.png"
-              type="speaker-session"
-              @click.native="modalOpen(13)"
-            >
-              Introduction to
-              <br />Google Technologies
-            </event-card>
-            <coming-event></coming-event>
+        </section>
+        <section id="tech-talks">
+          <h2>Speaker Session & Tech Talk</h2>
+          <p>Community-run study groups for developers</p>
+          <div class="list">
+            <div class="scroll" v-dragscroll>
+              <margin :width="width"></margin>
+              <event-card
+                image="solution-challenge.png"
+                type="speaker-session"
+                @click.native="modalOpen(10)"
+              >
+                Solution Challenge Info
+                <br />Session and Design Day
+              </event-card>
+              <event-card
+                image="google-tech.png"
+                type="speaker-session"
+                @click.native="modalOpen(11)"
+              >
+                DSC Loyola General Assembly 2019
+                <br />
+              </event-card>
+              <event-card
+                image="dsc-info.jpg"
+                type="speaker-session"
+                @click.native="modalOpen(12)"
+              >DSC Info Session 2019</event-card>
+              <event-card
+                image="info-session.png"
+                type="speaker-session"
+                @click.native="modalOpen(13)"
+              >
+                Introduction to
+                <br />Google Technologies
+              </event-card>
+              <coming-event></coming-event>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
     <modal :info="info[event]" />
