@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    <section id="departments">
+    <div id="departments">
       <section id="operations" class="department" :style="ops">
         <div class="container">
           <h4>Departments</h4>
@@ -299,7 +299,7 @@
           </div>
         </div>
       </section>
-    </section>
+    </div>
 
     <section id="join" class="grey-bg">
       <div class="container">

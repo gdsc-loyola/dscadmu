@@ -40,7 +40,7 @@
     </SlickCarousel>
     <section id="events" class="grey-bg">
       <div class="container">
-        <section id="study-jams">
+        <div id="study-jams">
           <h2>Study Jams</h2>
           <p>Community-run study groups for developers</p>
           <div class="list">
@@ -82,8 +82,8 @@
               <coming-event></coming-event>
             </div>
           </div>
-        </section>
-        <section id="hands-on-workshops">
+        </div>
+        <div id="hands-on-workshops">
           <h2>Hands-on Workshops</h2>
           <p>Opportunity for community members to learn something new in tech</p>
           <div class="list">
@@ -105,8 +105,8 @@
               <coming-event></coming-event>
             </div>
           </div>
-        </section>
-        <section id="tech-talks">
+        </div>
+        <div id="tech-talks">
           <h2>Speaker Session & Tech Talk</h2>
           <p>Community-run study groups for developers</p>
           <div class="list">
@@ -144,7 +144,7 @@
               <coming-event></coming-event>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </section>
     <modal :info="info[event]" />

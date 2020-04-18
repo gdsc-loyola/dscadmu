@@ -9,30 +9,18 @@
           />
         </router-link>
       </div>
-      <ul
-        v-if="isDesktop"
-        id="desktop-nav"
-        class="col-12 col-md-6 d-flex justify-content-end"
-      >
+      <ul v-if="isDesktop" id="desktop-nav" class="col-12 col-md-6 d-flex justify-content-end">
         <li>
-          <router-link :style="isHome ? navLink : {}" to="/about"
-            >About</router-link
-          >
+          <router-link :style="isHome ? navLink : {}" to="/about">About</router-link>
         </li>
         <li>
-          <router-link :style="isHome ? navLink : {}" to="/events"
-            >Events</router-link
-          >
+          <router-link :style="isHome ? navLink : {}" to="/events">Events</router-link>
         </li>
         <li>
-          <router-link :style="isHome ? navLink : {}" to="/projects"
-            >Projects</router-link
-          >
+          <router-link :style="isHome ? navLink : {}" to="/projects">Projects</router-link>
         </li>
         <li>
-          <router-link :style="isHome ? navLink : {}" to="/team"
-            >Team</router-link
-          >
+          <router-link :style="isHome ? navLink : {}" to="/team">Team</router-link>
         </li>
       </ul>
     </div>
@@ -40,8 +28,8 @@
       <ul class="d-flex f-even">
         <li>
           <router-link to="/">
-            <i class="material-icons">dashboard</i>
-            <span>Dashboard</span>
+            <i class="material-icons">home</i>
+            <span>Home</span>
           </router-link>
         </li>
         <li>
@@ -58,7 +46,7 @@
         </li>
         <li>
           <router-link to="/projects">
-            <i class="material-icons">rounded_corner</i>
+            <i class="material-icons">dashboard</i>
             <span>Projects</span>
           </router-link>
         </li>
