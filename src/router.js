@@ -1,34 +1,49 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
-import Events from './views/Events.vue'
-import Chapters from './views/Chapters.vue'
-import Contact from './views/Contact.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import InProgress from "./views/InProgress.vue";
+import NotFound from "./views/NotFound.vue";
 
-Vue.use(VueRouter)
+Vue.use(Router);
 
-export default new VueRouter({
-    routes: [
-        {
-            path: '/',
-            component: Home
-        },
-        {
-            path: '/about',
-            component: About
-        },
-        {
-            path: '/events',
-            component: Events
-        },
-        {
-            path: '/chapters',
-            component: Chapters
-        },
-        {
-            path: '/contact-us',
-            component: Contact
-        }
-    ]
-})
+const router = new Router({
+  mode: "history",
+  routes: [
+    {
+      path: "/",
+      component: () => import("./views/Home.vue")
+    },
+    {
+      path: "/about",
+      component: () => import("./views/About.vue")
+    },
+    {
+      path: "/events",
+      component: () => import("./views/Events.vue")
+    },
+    {
+      path: "/projects",
+      component: InProgress
+      // component: () => import("./views/Projects.vue")
+    },
+    {
+      path: "/team",
+      component: () => import("./views/Team.vue")
+    },
+    {
+      path: "*",
+      component: NotFound
+    }
+  ],
+  scrollBehavior: function(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        offset: { x: 0, y: 60 }
+      };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
+});
+
+export default router;

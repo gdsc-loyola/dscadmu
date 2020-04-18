@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Developer Student Clubs Loyola</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="<%= BASE_URL %>logo-icon.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/134fbda4cd.js" crossorigin="anonymous" SameSite="secure"></script>
+
+  <meta name="description"
+    content="Developer Student Clubs Loyola is a student organization powered by
+    Google Developers that aims to build students’ skills and network by
+    giving them access to different technologies, specifically Google
+    Developer technologies. We are passionate in uplifting communities through technology and we learn together in a peer-to-peer learning environment." />
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Developer Student Clubs Loyola" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="<%= BASE_URL %>metadata.png" />
+  <meta property="og:description" content="Developer Student Clubs Loyola is a student organization powered by
+    Google Developers that aims to build students’ skills and network by
+    giving them access to different technologies, specifically Google
+    Developer technologies. We are passionate in uplifting communities through technology and we learn together in a
+    peer-to-peer learning environment." />
+
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="@DSCLoyola" />
+  <meta name="twitter:creator" content="@DSCLoyola" />
+  <meta name="twitter:title" content="Developer Student Clubs Loyola" />
+  <meta name="twitter:description" content="Developer Student Clubs Loyola is a student organization powered by
+    Google Developers that aims to build students’ skills and network by
+    giving them access to different technologies, specifically Google
+    Developer technologies. We are passionate in uplifting communities through technology and we learn together in a
+    peer-to-peer learning environment." />
+  <meta name="twitter:image" content="<%= BASE_URL %>metadata.png" />
+
+  <title>Developer Student Clubs Loyola</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- SDK -->
+  <!-- <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v6.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script> -->
+
+  <!-- Chat Code -->
+  <!-- <div class="fb-customerchat" attribution=install_email page_id="101293334597789" theme_color="#2f80ed"
+    logged_in_greeting="Hi! How can we help you? We are DSC Loyola, a student organization powered by Google Developers in the Ateneo de Manila University"
+    logged_out_greeting="Hi! Thank you very much for visiting the official website of DSC Loyola.">
+  </div> -->
+  <!-- built files will be auto injected -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</body>
+
 </html>

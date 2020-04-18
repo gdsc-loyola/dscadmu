@@ -1,236 +1,406 @@
 <template>
-    <div>
-        <section id="hero" class="grey-bg">
-            <div class="feature-text">
-                <h1>Uplifting Communities Through Technology</h1>
-                <p>Developer Student Clubs, a program under the Google Developers, is an international community of students from various chapters who shares a common interest in technology.</p>
-                <button class="blue">Lorem Ipsum</button>
-            </div>
-            <div class="feature-image">
-                <img src="@/assets/images/feature-image.svg" alt="Feature image">
-            </div>
-        </section>
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <div id="missions-list">
-                <div class="mission-card">
-                    <img src="@/assets/images/empower.svg" alt="Empower image">
-                    <h3>Empower</h3>
-                    <p>We empower people through technology and programming education</p>
-                </div>
-                <div class="mission-card">
-                    <img src="@/assets/images/enlighten.svg" alt="Enlighten image">
-                    <h3>Enlighten</h3>
-                    <p> We enlighten people to the power of innovation and problem-solving</p>
-                </div>
-                <div class="mission-card">
-                    <img src="../assets/images/social-care.svg" alt="Nurture image">
-                    <h3>Nurture</h3>
-                    <p>We nurture people to create meaningful technological solutions for the community</p>
-                </div>
-            </div>
-            <button class="blue-light">Learn More</button>
-        </section>
-        <section id="projects" class="grey-bg"  >
-            <h2>Events and Projects</h2>
-            <h4>Featured Events</h4>
-            <div class="rectangle-list">
-                <div class="rectangle-card">
-                    <div class="inner-img">
-                        <img src="" alt="event photo">
-                    </div>
-                    <div class="inner-text">
-                        <h5>TechFest</h5>
-                        <p id="event-date">January 1, 2020 - January 7, 2020</p>
-                        <p id="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet.</p>
-                    </div>
-                </div>
-                <div class="rectangle-card">
-                    <div class="inner-img">
-                        <img src="" alt="event photo">
-                    </div>
-                    <div class="inner-text">
-                        <h5>DSC Week</h5>
-                        <p id="event-date">January 1, 2020 - January 7, 2020</p>
-                        <p id="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet.</p>
-                    </div>
-                </div>
-                <div class="rectangle-card">
-                    <div class="inner-img">
-                        <img src="" alt="event photo">
-                    </div>
-                    <div class="inner-text">
-                        <h5>Solution Challenge</h5>
-                        <p id="event-date">January 1, 2020 - January 7, 2020</p>
-                        <p id="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ac ut consequat semper viverra nam libero justo laoreet.</p>
-                    </div>
-                </div>
-            </div>
-            <h4>Projects</h4>
-            <div class="square-list">
-                <router-link to="/"><div class="square-card">
-                    <img src="@/assets/images/proj-1.png" alt="Project 1">
-                    <div><p>Showcase Solution Challenge Projects</p></div>
-                </div></router-link>
-                <router-link to="/"><div class="square-card">
-                    <img src="@/assets/images/proj-2.png" alt="Project 2">
-                    <div><p>Qwiklabs Finishers</p></div>
-                </div></router-link>
-                <router-link to="/"><div class="square-card">
-                    <img src="@/assets/images/proj-3.png" alt="Project 3">
-                    <div><p>DSC AdMU Search</p></div>
-                </div></router-link>
-            </div>
-        </section>
-    </div>
+  <div>
+    <section
+      id="hero"
+      :style="backgroundHero"
+      class="d-flex align-items-center"
+    >
+      <div class="container">
+        <div id="hero-text">
+          <h1>Creating impact together</h1>
+          <p class="feature-text">
+            Developer Student Clubs Loyola is a student organization powered by
+            Google Developers that aims to build students’ skills and network by
+            giving them access to different technologies, specifically Google
+            Developer technologies like Android, Firebase, Angular, Flutter,
+            Google Cloud Platform and many more. Together, we learn in a
+            peer-to-peer learning environment and build solutions for the
+            community.
+          </p>
+          <div>
+            <!-- <a href="/" target="_blank" rel="noopener noreferrer">
+              <button class="blue primary">Join us</button>
+            </a>-->
+            <router-link to="/about">
+              <button class="white-light">Learn more</button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="do">
+      <div class="container">
+        <h2 class="text-center">What we do</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="talks.svg" title="Talks" color="blue">
+              Listen from esteemed speakers as they share their insights,
+              experience and wisdom
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="codelabs.svg" title="Codelabs" color="red">
+              Get a chance to learn new skills through hands-on workshops and
+              study jams
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card image="webinars.svg" title="Webinars" color="yellow">
+              Learning never stops! Watch events online by Developer Student
+              Clubs and by Google
+            </do-card>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <do-card
+              image="tech-solutions.svg"
+              title="Tech Solutions"
+              color="green"
+            >
+              Use the skills you learn in our events to solve community problems
+              through projects
+            </do-card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="next" :style="backgroundNext">
+      <div class="container">
+        <h2>What's coming next?</h2>
+        <p>Check out the next event of DSC Loyola.</p>
+        <div class="row" style="margin: 0">
+          <div id="next-event" class="col-12 col-lg-9">
+            <h5>Tech at Home 2020</h5>
+            <p class="description">
+              Tech at Home is a student-led online technology seminar series
+              that teaches new technologies, especially Google technologies to a
+              wide and diverse audience. It will be composed of various hands-on
+              workshops and speaker engagements from esteemed professionals in
+              the field of technology. The topics will range from data science,
+              cloud engineering, web and mobile development and other
+              tech-related advocacy topics. This event was crafted in light of
+              the enhanced community quarantine (ECQ) and the desire of students
+              and professionals to learn new skills during the pandemic.
+            </p>
+            <p class="datetime">
+              <i class="material-icons">date_range</i>
+              <span>April 21, 2020 to May 21, 2020</span>
+            </p>
+            <p class="location">
+              <i class="material-icons">location_on</i>
+              <span>Google Meet & Youtube Live</span>
+            </p>
+            <!-- <a href="/" target="_blank" rel="noopener noreferrer">
+              <button class="blue">Buy tickets</button>
+            </a>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chapters" class="grey-bg">
+      <div class="container">
+        <h2>Check out other chapters.</h2>
+        <p class="bottom">
+          There are 18 other DSC chapters in the Philippines right now!
+        </p>
+        <div id="chapter-scroll-container">
+          <div id="chapter-scroll" v-dragscroll>
+            <margin :width="width"></margin>
+            <chapter-circle
+              image="chapter.png"
+              title="De La Salle University Manila"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="De La Salle-College Of Saint Benilde"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="National University"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="FEU - Institute Of Technology"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Santo Tomas"
+              location="Manila"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="AMA Computer Caloocan"
+              location="Caloocan"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="St. Paul University Philippines"
+              location="Tuguegarao City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Saint Louis Tuguegarao"
+              location="Tuguegarao City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Cebu Institute of Technology - University"
+              location="Cebu City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University of San Carlos"
+              location="Cebu City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University of the Philippines - Cebu"
+              location="Cebu City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Cristal E-College"
+              location="Panglao, Bohol"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Negros Occidental - Recoletos"
+              location="Bacolod City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="University Of Saint La Salle"
+              location="Bacolod City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Central Philippine University"
+              location="Iloilo City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="STI College Cagayan De Oro"
+              location="Cagayan de Oro City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Mindanao State University - Iligan Institute Of Technology"
+              location="Iligan City"
+            ></chapter-circle>
+            <chapter-circle
+              image="chapter.png"
+              title="Ateneo de Zamboanga University"
+              location="Zamboanga City"
+            ></chapter-circle>
+            <margin :width="width"></margin>
+          </div>
+        </div>
+        <p class="top">
+          Want to start your own chapter? Apply to be a lead now!
+        </p>
+        <a
+          href="https://g.co/dev/dscleads"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="blue">Apply as lead</button>
+        </a>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
+import DoCard from "@/components/DoCard";
+import ChapterCircle from "@/components/ChapterCircle";
+import Margin from "@/components/Margin";
+
 export default {
-    
-}
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+  components: {
+    DoCard,
+    ChapterCircle,
+    Margin
+  },
+  data() {
+    return {
+      width: window.innerWidth >= 768 ? 64 : 24,
+      backgroundHero: {
+        backgroundImage: "url(" + require("@/assets/images/impact.png") + ")",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      },
+      backgroundNext: {
+        backgroundImage: "url(" + require("@/assets/images/next.png") + ")",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }
+    };
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth < 768) {
+        this.width = 24;
+      } else this.width = 64;
+    }
+  }
+};
 </script>
 
 <style scoped>
-section {
-    min-height: 100vh;
-    display: flex;
-    padding: 0 120px;
-    align-items: center;
-}
-
-h2 {
-    font-weight: normal;
-    font-size: 36px;
-}
-
 #hero {
-    justify-content: space-between;
+  width: 100%;
+  height: calc(100vh);
 }
 
-.feature-text h1 {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 46px;
-    max-width: 500px;
+#hero p {
+  padding: 15px 0 40px;
 }
 
-.feature-text p {
-    line-height: 35px;
-    margin: 40px 0;
-    max-width: 600px;
+#hero-text {
+  max-width: 720px;
 }
 
-#mission, #projects {
-    flex-direction: column;
-    justify-content: center;
+#hero .primary {
+  border: 2px solid #2f80ed;
+  margin-right: 20px;
 }
 
-#missions-list {
-    padding: 90px 0;
-    display: flex;
+#hero h1,
+#hero p,
+#next h2,
+#next p {
+  color: #fff;
 }
 
-.mission-card {
-    padding: 0 120px;
+#do div.row {
+  margin-top: 48px;
 }
 
-.mission-card h3 {
-    font-size: 30px;
-    color: #2F80ED;
-    margin: 10px 0 35px;
+#do div.row > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.mission-card p {
-    line-height: 35px;
+#next-event {
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  padding: 32px 40px;
+  margin-top: 48px;
 }
 
-#projects {
-    width: 100%;
-    padding: 100px 0 200px;
+#next-event h5 {
+  margin-bottom: 16px;
 }
 
-#projects h4 {
-    margin-top: 80px;
-    color: #2F80ED;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-weight: 500;
+#next-event p {
+  color: #4f4f4f;
 }
 
-.rectangle-list {
-    padding: 0 200px;
+#next-event .description {
+  margin-bottom: 25px;
+  line-height: 1.5rem;
 }
 
-.rectangle-card {
-    display: flex;
-    margin-top: 40px;
-    background: #fff;
-    box-shadow: 3px 3px 3px 0px rgba(0,0,0,.1);
+#next-event .datetime,
+#next-event .location {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.rectangle-card .inner-img {
-    min-width: 400px;
-    max-width: 400px;
-    height: 300px;
+#next-event i {
+  margin-right: 26px;
 }
 
-.rectangle-card .inner-img img {
-    width: 100%;
+#next-event span {
+  padding-top: 5px;
 }
 
-.rectangle-card .inner-text {
-    padding: 40px 60px;
+#next-event button {
+  margin-top: 22px;
 }
 
-.rectangle-card .inner-text h5 {
-    font-size: 24px;
-    color: #2F80ED;
-    font-weight: 500;
+#chapter-scroll-container {
+  width: 100vw;
+  position: relative;
+  left: 49%;
+  right: 49%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
 }
 
-.inner-text #event-date {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #828282;
+#chapter-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
 }
 
-.inner-text #event-description {
-    line-height: 30px;
-    margin-top: 25px;
+#chapters button {
+  margin-top: 16px;
 }
 
-.square-list {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 400px);
+#chapters .top {
+  margin-top: 64px;
 }
 
-.square-card {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 2px 4px 2px #E0E0E0;
+#chapters .bottom {
+  margin-bottom: 64px;
 }
 
-.square-card img {
-    width: 100%;
-}
+@media screen and (max-width: 767px) {
+  #do {
+    padding-bottom: 20px;
+  }
 
-.square-card p {
-    position: relative;
-    height: calc(95px - 40px);
-    bottom: 95px;
-    background: rgba(47, 128, 237, 0.9);
-    backdrop-filter: blur(4px);
+  #next-event {
     padding: 20px;
-    text-align: center;
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    margin-top: 40px;
+  }
+
+  #next-event .description {
+    line-height: 1.2rem;
+  }
+
+  #next-event .datetime,
+  #next-event .location {
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+
+  #next-event i {
+    margin-right: 16px;
+  }
+
+  #next-event span {
+    padding-top: 0;
+  }
+
+  #chapters .top {
+    margin-top: 24px;
+  }
+
+  #chapters .bottom {
+    margin-bottom: 24px;
+  }
 }
 </style>
