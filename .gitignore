@@ -1,3 +1,6 @@
+/.firebase
+.firebase/hosting.ZGlzdA.cache.
+firebase-debug.log
 .DS_Store
 node_modules
 /dist
