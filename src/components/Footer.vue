@@ -35,10 +35,16 @@
             <hr class="red" />
             <ul>
               <li>
-                <router-link to="/events">Upcoming Events</router-link>
+                <router-link to="/events#featured">Featured Events</router-link>
               </li>
               <li>
-                <router-link to="/events">Archives</router-link>
+                <router-link to="/events#study-jams">Study Jams</router-link>
+              </li>
+              <li>
+                <router-link to="/events#hands-on-workshops">Hands-on Workshops</router-link>
+              </li>
+              <li>
+                <router-link to="/events#tech-talks">Tech Talks</router-link>
               </li>
             </ul>
           </div>
@@ -56,13 +62,13 @@
             <hr class="green" />
             <ul>
               <li>
-                <router-link to="/team">Executive Board</router-link>
+                <router-link to="/team#executive-board">Executive Board</router-link>
               </li>
               <li>
-                <router-link to="/team">Departments</router-link>
+                <router-link to="/team#departments">Departments</router-link>
               </li>
               <li>
-                <router-link to="/team">Core Leads</router-link>
+                <router-link to="/team#join">Join Us</router-link>
               </li>
             </ul>
           </div>
@@ -70,16 +76,15 @@
         <hr />
         <div class="row align-items-center justify-content-between">
           <div class="col-12 col-md-6">
-            <img
-              src="../assets/images/logo.svg"
-              alt="Developer Student Clubs Loyola logo"
-            />
+            <router-link to="/">
+              <img src="../assets/images/logo.svg" alt="Developer Student Clubs Loyola logo" />
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <small
-              >© 2020 Developer Student Clubs Loyola. All Rights
-              Reserved.</small
-            >
+            <small>
+              © 2020 Developer Student Clubs Loyola. All Rights
+              Reserved.
+            </small>
           </div>
         </div>
       </div>
