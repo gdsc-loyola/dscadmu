@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="modal-footer">
+    <!-- <div class="modal-footer">
       <div class="scroll" v-dragscroll>
         <margin :width="width"></margin>
         <img
@@ -52,18 +52,18 @@
         />
         <margin :width="width - 24"></margin>
       </div>
-    </div>
+    </div>-->
   </modal>
 </template>
 
 <script>
-import Margin from "@/components/Margin";
+// import Margin from "@/components/Margin";
 
 export default {
   props: ["info"],
-  components: {
-    Margin
-  },
+  // components: {
+  //   Margin
+  // },
   data() {
     return {
       width: window.innerWidth >= 768 ? 48 : 24

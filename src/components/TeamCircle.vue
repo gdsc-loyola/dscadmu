@@ -66,6 +66,9 @@ export default {
 img {
   width: 100%;
   border-radius: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
 }
 
 h6 {

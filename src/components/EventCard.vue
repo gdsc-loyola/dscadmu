@@ -1,7 +1,9 @@
 <template>
   <div id="card" :style="backgroundImage">
     <div id="title">
-      <h6><slot></slot></h6>
+      <h6>
+        <slot></slot>
+      </h6>
     </div>
   </div>
 </template>
@@ -20,7 +22,8 @@ export default {
             this.image +
             "") +
           ")",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        backgroundPosition: "center center"
       }
     };
   }
