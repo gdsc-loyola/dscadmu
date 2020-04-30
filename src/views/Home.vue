@@ -1,15 +1,11 @@
 <template>
   <div>
-    <section
-      id="hero"
-      :style="backgroundHero"
-      class="d-flex align-items-center"
-    >
+    <section id="hero" :style="backgroundHero" class="d-flex align-items-center">
       <div class="container py-5">
         <div id="hero-text">
           <h1>Creating impact together</h1>
           <p class="feature-text">
-            Developer Student Clubs Loyola is a student organization powered by
+            Developer Student Clubs Loyola is a student organization in the Ateneo de Manila University powered by
             Google Developers that aims to build students’ skills and network by
             giving them access to different technologies, specifically Google
             Developer technologies like Android, Firebase, Angular, Flutter,
@@ -52,11 +48,7 @@
             </do-card>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <do-card
-              image="tech-solutions.svg"
-              title="Tech Solutions"
-              color="green"
-            >
+            <do-card image="tech-solutions.svg" title="Tech Solutions" color="green">
               Use the skills you learn in our events to solve community problems
               through projects
             </do-card>
@@ -102,9 +94,7 @@
     <section id="chapters" class="grey-bg">
       <div class="container">
         <h2>Check out other chapters.</h2>
-        <p class="bottom">
-          There are 18 other DSC chapters in the Philippines right now!
-        </p>
+        <p class="bottom">There are 18 other DSC chapters in the Philippines right now!</p>
         <div id="chapter-scroll-container">
           <div id="chapter-scroll" v-dragscroll>
             <margin :width="width"></margin>
@@ -118,26 +108,14 @@
               title="De La Salle-College Of Saint Benilde"
               location="Manila"
             ></chapter-circle>
-            <chapter-circle
-              image="chapter.png"
-              title="National University"
-              location="Manila"
-            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="National University" location="Manila"></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="FEU - Institute Of Technology"
               location="Manila"
             ></chapter-circle>
-            <chapter-circle
-              image="chapter.png"
-              title="University Of Santo Tomas"
-              location="Manila"
-            ></chapter-circle>
-            <chapter-circle
-              image="chapter.png"
-              title="AMA Computer Caloocan"
-              location="Caloocan"
-            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="University Of Santo Tomas" location="Manila"></chapter-circle>
+            <chapter-circle image="chapter.png" title="AMA Computer Caloocan" location="Caloocan"></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="St. Paul University Philippines"
@@ -163,11 +141,7 @@
               title="University of the Philippines - Cebu"
               location="Cebu City"
             ></chapter-circle>
-            <chapter-circle
-              image="chapter.png"
-              title="Cristal E-College"
-              location="Panglao, Bohol"
-            ></chapter-circle>
+            <chapter-circle image="chapter.png" title="Cristal E-College" location="Panglao, Bohol"></chapter-circle>
             <chapter-circle
               image="chapter.png"
               title="University Of Negros Occidental - Recoletos"
@@ -201,14 +175,8 @@
             <margin :width="width"></margin>
           </div>
         </div>
-        <p class="top">
-          Want to start your own chapter? Apply to be a lead now!
-        </p>
-        <a
-          href="https://g.co/dev/dscleads"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <p class="top">Want to start your own chapter? Apply to be a lead now!</p>
+        <a href="https://g.co/dev/dscleads" target="_blank" rel="noopener noreferrer">
           <button class="blue">Apply as lead</button>
         </a>
       </div>
@@ -234,7 +202,7 @@ export default {
   components: {
     DoCard,
     ChapterCircle,
-    Margin,
+    Margin
   },
   data() {
     return {
@@ -242,13 +210,13 @@ export default {
       backgroundHero: {
         backgroundImage: "url(" + require("@/assets/images/impact.png") + ")",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center"
       },
       backgroundNext: {
         backgroundImage: "url(" + require("@/assets/images/next.png") + ")",
         backgroundSize: "cover",
-        backgroundPosition: "center",
-      },
+        backgroundPosition: "center"
+      }
     };
   },
   methods: {
@@ -256,8 +224,8 @@ export default {
       if (window.innerWidth < 768) {
         this.width = 24;
       } else this.width = 64;
-    },
-  },
+    }
+  }
 };
 </script>
 
