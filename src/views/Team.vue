@@ -8,46 +8,62 @@
           world.
         </p>
         <h4>Executive Board</h4>
-        <div class="row">
+        <div class="row justify-content-center">
           <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
+            class="col-12 col-sm-12 col-md-4"
             name="Harvey Sison"
-            image="android1_blue.png"
-          >President/CEO, DSC Lead & Co-Founder</team-circle>
-          <!-- <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Harvey Sison"
-            image="person.png"
+            image="harvey.png"
             fb="harveymile"
             link="harveyjaysison"
             git="Hjkun77"
           >
-            President/CEO,
-            <br />Co-Founder & DSC Lead
-          </team-circle>-->
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Audrey Picar"
-            image="android0_red.png"
-          >Chief Operations Officer & Co-Founder</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Franz Cesista"
-            image="android1_yellow.png"
-          >Chief Technology Officer</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Cobbie Quintos"
-            image="android1_red.png"
-          >
-            Chief Community Development Officer
-            <br />& Co-Founder
+            President &
+            <br />Chief Exective Officer
           </team-circle>
           <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
+            class="col-12 col-sm-12 col-md-4"
+            name="Audrey Picar"
+            image="audrey.jpg"
+            fb="audrey.picar"
+            git="audreypicar"
+            link="audreypicar"
+          >Chief Operations Officer</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Franz Taborlupa"
+            image="franz.jpg"
+            fb="franz.taborlupa.9"
+            link="franztaborlupa"
+            git="Znarfois"
+          >Chief Technology Officer</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
             name="Cedric Atienza"
-            image="android0_blue.png"
-          >Chief Creatives Officer</team-circle>
+            image="ceej.jpg"
+            fb="cj.atienza.611"
+            link="cedricatienza"
+          >Chief Chief Communications Officer</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Jethro Sia"
+            image="jethro.jpg"
+            facebook="jethsia"
+            link="jethrocullensia"
+            git="JethSia"
+          >
+            Chief Finance &
+            <br />Externals Officer
+          </team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Polly Baterna"
+            image="polly.jpg"
+            link="mpmbaterna"
+            fb="pollybaterna"
+          >
+            Chief Human
+            <br />Resources Officer
+          </team-circle>
         </div>
       </div>
     </section>
@@ -69,38 +85,7 @@
       </section>
       <section>
         <div class="container">
-          <div class="row">
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Marion Macalalag"
-              image="android0_blue.png"
-            >Operations Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Arvin Almario"
-              image="android1_blue.png"
-            >People Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Margaux Arcinas"
-              image="android0_blue.png"
-            >People Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Tanzell Go"
-              image="android1_blue.png"
-            >Events Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Aldrich Tan"
-              image="android0_blue.png"
-            >Events Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Jeth Sia"
-              image="android1_blue.png"
-            >Finance & Externals Lead</team-circle>
-          </div>
+          <div class="row"></div>
         </div>
       </section>
 
@@ -119,132 +104,7 @@
       </section>
       <section>
         <div class="container">
-          <div class="row">
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Robin Chua"
-              image="android0_red.png"
-            >
-              Data Science &
-              <br />Analytics Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Miggy Pinaroc"
-              image="android1_red.png"
-            >
-              Data Science &
-              <br />Analytics Lead and Co-Founder
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Jeth Sia"
-              image="android0_red.png"
-            >
-              Data Science &
-              <br />Analytics Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Samson Tan"
-              image="android1_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Carlos Aranguren"
-              image="android0_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Nicole Respecia"
-              image="android1_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Giddy Garcia"
-              image="android0_red.png"
-            >
-              Software
-              <br />Engineering Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Daniel del Rio"
-              image="android1_red.png"
-            >
-              Software
-              <br />Engineering Lead and Co-Founder
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Jared de Guzman"
-              image="android0_red.png"
-            >
-              Software
-              <br />Engineering Lead
-            </team-circle>
-          </div>
-        </div>
-      </section>
-
-      <section id="community" class="department" :style="comm">
-        <div class="container">
-          <h4>Departments</h4>
-          <h2>Community Development</h2>
-          <p>
-            Oversees external relations with local community partners. This
-            includes, but is not limited to, handling primary communication
-            between the organization and its partners, creating and overseeing
-            formal agreements, and managing the organization’s relationship with
-            its partners.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="row">
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Andy Cosio"
-              image="android0_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Matthew del Rosario"
-              image="android1_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="John Matthew Reyes"
-              image="android0_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Lois Abi To"
-              image="android1_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-          </div>
+          <div class="row"></div>
         </div>
       </section>
 
@@ -263,43 +123,29 @@
       </section>
       <section>
         <div class="container">
-          <div class="row">
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Miguel Uygongco"
-              image="android0_green.png"
-            >
-              Social Media
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Rafael Dytoc"
-              image="android1_green.png"
-            >
-              Graphic Design
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Gian Fausto"
-              image="android0_green.png"
-            >
-              Documentations
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Samson Tan"
-              image="android1_green.png"
-            >
-              Photography
-              <br />Lead
-            </team-circle>
-          </div>
+          <div class="row"></div>
         </div>
       </section>
     </div>
+
+    <section id="community" class="department" :style="comm">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Community Development</h2>
+        <p>
+          Oversees external relations with local community partners. This
+          includes, but is not limited to, handling primary communication
+          between the organization and its partners, creating and overseeing
+          formal agreements, and managing the organization’s relationship with
+          its partners.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
 
     <section id="join" class="grey-bg">
       <div class="container">
@@ -383,7 +229,7 @@ export default {
 
 #executive-board h4 {
   margin: 48px 0 0;
-  color: #0f9d58;
+  /* color: #0f9d58; */
 }
 
 #operations h4 {
@@ -395,11 +241,11 @@ export default {
 }
 
 #community h4 {
-  color: #fbbc04;
+  color: #0f9d58;
 }
 
 #creatives h4 {
-  color: #0f9d58;
+  color: #fbbc04;
 }
 
 #operations,
