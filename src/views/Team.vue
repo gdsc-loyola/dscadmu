@@ -42,12 +42,12 @@
             image="ceej.jpg"
             fb="cj.atienza.611"
             link="cedricatienza"
-          >Chief Chief Communications Officer</team-circle>
+          >Chief Communications Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Jethro Sia"
             image="jethro.jpg"
-            facebook="jethsia"
+            fb="jethsia"
             link="jethrocullensia"
             git="JethSia"
           >
@@ -233,11 +233,11 @@ export default {
 }
 
 #operations h4 {
-  color: #4285f4;
+  color: #ea4335;
 }
 
 #technology h4 {
-  color: #ea4335;
+  color: #4285f4;
 }
 
 #community h4 {
