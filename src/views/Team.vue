@@ -150,10 +150,10 @@
         </div>
       </section>
 
-      <section id="creatives" class="department" :style="create">
+      <section id="communications" class="department" :style="comm">
         <div class="container">
           <h4>Departments</h4>
-          <h2>Creatives</h2>
+          <h2>Communications</h2>
           <p>
             Oversees the growth of each member’s creativity, as well as all other
             creative work done in the organization. They are responsible for
@@ -165,12 +165,23 @@
       </section>
       <section>
         <div class="container">
-          <div class="row"></div>
+          <div class="row">
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Ces Ong"
+              image="ces.jpg"
+            >Creatives & Branding Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Miguel Uygongco"
+              image="miguel.jpeg"
+            >Promotions Lead</team-circle>
+          </div>
         </div>
       </section>
     </div>
 
-    <section id="community" class="department" :style="comm">
+    <section id="hr" class="department" :style="hr">
       <div class="container">
         <h4>Departments</h4>
         <h2>Community Development</h2>
@@ -237,11 +248,11 @@ export default {
       tech: {
         backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
       },
-      comm: {
+      hr: {
         backgroundImage:
           "url(" + require("@/assets/images/human-resources.png") + ")"
       },
-      create: {
+      comm: {
         backgroundImage:
           "url(" + require("@/assets/images/communications.png") + ")"
       }
@@ -294,8 +305,8 @@ export default {
 
 #operations,
 #technology,
-#community,
-#creatives {
+#communications,
+#hr {
   background-size: cover;
   background-position: center;
 }
