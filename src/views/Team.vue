@@ -120,7 +120,33 @@
       </section>
       <section>
         <div class="container">
-          <div class="row"></div>
+          <div class="row">
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Tanzell Go"
+              image="tanzell.jpg"
+            >Web Engineering Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Rhed Atienza "
+              image="rhed.jpg"
+            >Mobile Engineering Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Jared de Guzman"
+              image="jared.jpg"
+            >AI Engineering Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Giddy Garcia"
+              image="giddy.jpg"
+            >Cloud Engineering Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Rafa Dytoc"
+              image="rafa.jpg"
+            >UX/UI Design Lead</team-circle>
+          </div>
         </div>
       </section>
 
