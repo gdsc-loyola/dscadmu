@@ -184,7 +184,7 @@
     <section id="hr" class="department" :style="hr">
       <div class="container">
         <h4>Departments</h4>
-        <h2>Community Development</h2>
+        <h2>Human Resources</h2>
         <p>
           Oversees external relations with local community partners. This
           includes, but is not limited to, handling primary communication
@@ -196,7 +196,18 @@
     </section>
     <section>
       <div class="container">
-        <div class="row"></div>
+        <div class="row">
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Bianca Benipayo"
+            image="bianca.jpg"
+          >External Community Relations Lead</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Allen Chuanico"
+            image="allen.jpg"
+          >Member Evaluations Lead</team-circle>
+        </div>
       </div>
     </section>
 
