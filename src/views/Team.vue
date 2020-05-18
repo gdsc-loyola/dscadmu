@@ -85,7 +85,23 @@
       </section>
       <section>
         <div class="container">
-          <div class="row"></div>
+          <div class="row">
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Allyn Pagatayan"
+              image="al.jpg"
+            >Lead Secretariat</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Marion Macalalag"
+              image="marion.jpg"
+            >Events Lead</team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Paolo Fuentes"
+              image="pao.jpg"
+            >Events Lead</team-circle>
+          </div>
         </div>
       </section>
 
@@ -196,10 +212,12 @@ export default {
         backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
       },
       comm: {
-        backgroundImage: "url(" + require("@/assets/images/community.png") + ")"
+        backgroundImage:
+          "url(" + require("@/assets/images/human-resources.png") + ")"
       },
       create: {
-        backgroundImage: "url(" + require("@/assets/images/creatives.png") + ")"
+        backgroundImage:
+          "url(" + require("@/assets/images/communications.png") + ")"
       }
     };
   },
@@ -237,11 +255,11 @@ export default {
 }
 
 #technology h4 {
-  color: #4285f4;
+  color: #0f9d58;
 }
 
 #community h4 {
-  color: #0f9d58;
+  color: #4285f4;
 }
 
 #creatives h4 {
