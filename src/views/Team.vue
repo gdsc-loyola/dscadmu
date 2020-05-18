@@ -211,6 +211,35 @@
       </div>
     </section>
 
+    <section id="finance-externals" class="department" :style="finEx">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Finance and Externals</h2>
+        <p>Oversees all the financial aspect inside the organization. The department is also tasked to reach out to companies for sponsorships as well as to organizations and schools for partnerships.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Erick Asence"
+            image="erick.jpg"
+          >Finance Lead</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Mon Lagustan"
+            image="mon.jpg"
+          >Corporate Relations Lead</team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Carl Marcelo"
+            image="carl.jpg"
+          >External Relations Lead</team-circle>
+        </div>
+      </div>
+    </section>
+
     <section id="join" class="grey-bg">
       <div class="container">
         <div class="row">
@@ -266,6 +295,10 @@ export default {
       comm: {
         backgroundImage:
           "url(" + require("@/assets/images/communications.png") + ")"
+      },
+      finEx: {
+        backgroundImage:
+          "url(" + require("@/assets/images/communications.png") + ")"
       }
     };
   },
@@ -314,10 +347,15 @@ export default {
   color: #fbbc04;
 }
 
+#finance-externals h4 {
+  color: #e37400;
+}
+
 #operations,
 #technology,
 #communications,
-#hr {
+#hr,
+#finance-externals {
   background-size: cover;
   background-position: center;
 }
