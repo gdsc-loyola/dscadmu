@@ -168,22 +168,22 @@ ul {
 
 #desktop-nav li:nth-child(1) > a:hover,
 #desktop-nav li:nth-child(1) > a.router-link-active {
-  border-bottom: 4px solid #4285f4;
+  border-bottom: 6px solid #4285f4;
 }
 
 #desktop-nav li:nth-child(2) > a:hover,
 #desktop-nav li:nth-child(2) > a.router-link-active {
-  border-bottom: 4px solid #ea4335;
+  border-bottom: 6px solid #ea4335;
 }
 
 #desktop-nav li:nth-child(3) > a:hover,
 #desktop-nav li:nth-child(3) > a.router-link-active {
-  border-bottom: 4px solid #fbbc04;
+  border-bottom: 6px solid #fbbc04;
 }
 
 #desktop-nav li:nth-child(4) > a:hover,
 #desktop-nav li:nth-child(4) > a.router-link-active {
-  border-bottom: 4px solid #0f9d58;
+  border-bottom: 6px solid #0f9d58;
 }
 
 /* Mobile Nav */

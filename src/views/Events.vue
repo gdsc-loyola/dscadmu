@@ -4,8 +4,10 @@
       <featured-event
         image="feature.png"
         title="Tech at Home 2020"
-        datetime="April 21, 2020 to May 21, 2020"
-        location="Google Meet & Youtube Live"
+        datetime="April 21, 2020 to May 30, 2020"
+        location="Facebook Live, Youtube Live & Google Meet"
+        linkTo="https://bit.ly/TechAtHome2020"
+        linkText="Subscribe Now!"
       >
         <p>
           Tech at Home is a student-led online technology seminar series that
@@ -19,24 +21,6 @@
           professionals to learn new skills during the pandemic.
         </p>
       </featured-event>
-      <!-- <featured-event
-        image="feature.png"
-        title="TechFest x ADMU 2020"
-        datetime="April 18, 2020, 8 AM - 5 PM"
-        location="Ateneo de Manila University"
-        buy="/buy"
-        learn="/learn"
-      >
-        <p>
-          Techfest 2020 is the Developer Student Clubs’ flagship technology
-          conference organized by students. This is a one-day event that aims to
-          equip aspiring innovators with much-coveted technological insights to
-          aid them in the process of shaping the future they wish to behold. In
-          line with this, the event will be addressing 4 of the current hot
-          trends in tech: Web and Mobile, Data Science and Cloud, Business in
-          Tech, and Women and Students in Tech.
-        </p>
-      </featured-event>-->
     </SlickCarousel>
     <section id="events" class="grey-bg">
       <div class="container">

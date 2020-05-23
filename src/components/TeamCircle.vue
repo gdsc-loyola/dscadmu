@@ -1,7 +1,7 @@
 <template>
   <div id="team-circle">
     <div id="image">
-      <img :src="require('@/assets/images/team/' + image + '')" :alt="name" />
+      <img :src="require('@/assets/images/team/2020-2021/' + image + '')" :alt="name" />
     </div>
     <div id="text">
       <h6>{{ name }}</h6>
@@ -9,13 +9,13 @@
         <slot>Position</slot>
       </p>
       <div class="social">
-        <a :href="facebook">
-          <i class="fab fa-facebook" v-if="github"></i>
+        <a :href="facebook" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook" v-if="facebook"></i>
         </a>
-        <a :href="linkedin">
-          <i class="fab fa-linkedin" v-if="github"></i>
+        <a :href="linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin" v-if="linkedin"></i>
         </a>
-        <a :href="github">
+        <a :href="github" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github" v-if="github"></i>
         </a>
       </div>
@@ -44,8 +44,8 @@ export default {
 
 <style scoped>
 #team-circle {
-  margin-top: 32px;
-  width: 160px;
+  margin: 30px 0 0 0;
+  width: 200px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@ export default {
 }
 
 #image {
-  width: 160px;
+  width: 200px;
 }
 
 img {
