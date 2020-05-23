@@ -8,46 +8,65 @@
           world.
         </p>
         <h4>Executive Board</h4>
-        <div class="row">
+        <div class="row justify-content-center">
           <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
+            class="col-12 col-sm-12 col-md-4"
             name="Harvey Sison"
-            image="android1_blue.png"
-          >President/CEO, DSC Lead & Co-Founder</team-circle>
-          <!-- <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Harvey Sison"
-            image="person.png"
+            image="harvey.png"
             fb="harveymile"
             link="harveyjaysison"
             git="Hjkun77"
           >
-            President/CEO,
-            <br />Co-Founder & DSC Lead
-          </team-circle>-->
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Audrey Picar"
-            image="android0_red.png"
-          >Chief Operations Officer & Co-Founder</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Franz Cesista"
-            image="android1_yellow.png"
-          >Chief Technology Officer</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
-            name="Cobbie Quintos"
-            image="android1_red.png"
-          >
-            Chief Community Development Officer
-            <br />& Co-Founder
+            President &
+            <br />Chief Exective Officer
           </team-circle>
           <team-circle
-            class="col-12 col-sm-12 col-md-4 col-lg"
+            class="col-12 col-sm-12 col-md-4"
+            name="Audrey Picar"
+            image="audrey.jpg"
+            fb="audrey.picar"
+            git="audreypicar"
+            link="audreypicar"
+            >Chief Operations Officer</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Franz Taborlupa"
+            image="franz.jpg"
+            fb="franz.taborlupa.9"
+            link="franztaborlupa"
+            git="Znarfois"
+            >Chief Technology Officer</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
             name="Cedric Atienza"
-            image="android0_blue.png"
-          >Chief Creatives Officer</team-circle>
+            image="ceej.jpg"
+            fb="cj.atienza.611"
+            link="cedricatienza"
+            >Chief Communications Officer</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Jethro Sia"
+            image="jethro.jpg"
+            fb="jethsia"
+            link="jethrocullensia"
+            git="JethSia"
+          >
+            Chief Finance &
+            <br />Externals Officer
+          </team-circle>
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Polly Baterna"
+            image="polly.jpg"
+            link="mpmbaterna"
+            fb="pollybaterna"
+          >
+            Chief Human
+            <br />Resources Officer
+          </team-circle>
         </div>
       </div>
     </section>
@@ -58,12 +77,11 @@
           <h4>Departments</h4>
           <h2>Operations</h2>
           <p>
-            Oversees and ensures all operations are executed efficiently. They are
-            responsible for cultivating member happiness, growth, and culture, as
-            well as making the organization sustainable by executing financial
-            strategies and enhancing external relations. Operations department is
-            also responsible for ensuring the events and initiatives are well
-            delivered and successful.
+            The Operations is the internals manager of the organization. The
+            department oversees and ensures that the events and initiatives are
+            well delivered and successful. Moreover, the operations team is
+            in-charge of project management, document organization and legal
+            concerns.
           </p>
         </div>
       </section>
@@ -71,35 +89,23 @@
         <div class="container">
           <div class="row">
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
+              class="col-12 col-sm-12 col-md-4"
+              name="Allyn Pagatayan"
+              image="al.jpg"
+              >Lead Secretariat</team-circle
+            >
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
               name="Marion Macalalag"
-              image="android0_blue.png"
-            >Operations Lead</team-circle>
+              image="marion.jpg"
+              >Events Lead</team-circle
+            >
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Arvin Almario"
-              image="android1_blue.png"
-            >People Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Margaux Arcinas"
-              image="android0_blue.png"
-            >People Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Tanzell Go"
-              image="android1_blue.png"
-            >Events Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Aldrich Tan"
-              image="android0_blue.png"
-            >Events Lead</team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Jeth Sia"
-              image="android1_blue.png"
-            >Finance & Externals Lead</team-circle>
+              class="col-12 col-sm-12 col-md-4"
+              name="Paolo Fuentes"
+              image="pao.jpg"
+              >Events Lead</team-circle
+            >
           </div>
         </div>
       </section>
@@ -109,11 +115,12 @@
           <h4>Departments</h4>
           <h2>Technology</h2>
           <p>
-            Oversees all technological and innovation aspects brought about in the
-            organization. They are responsible for learning and training each
-            member of the organization, as well as non-DSC members. They shall
-            manage creation of technological solutions to uplift partnered
-            communities.
+            The Technology department is a group of passionate students that are
+            responsible for the planning, design, and implementation of various
+            activities such as Workshops and Client/Internal projects in
+            different aspects of software and technology namely: Web Design,
+            Mobile App Development, UX/UI, AI, ML, Data Science, and Cloud
+            Engineering.
           </p>
         </div>
       </section>
@@ -121,91 +128,49 @@
         <div class="container">
           <div class="row">
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Robin Chua"
-              image="android0_red.png"
+              class="col-12 col-sm-12 col-md-4"
+              name="Tanzell Go"
+              image="tanzell.jpg"
+              >Web Engineering Lead</team-circle
             >
-              Data Science &
-              <br />Analytics Lead
-            </team-circle>
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Miggy Pinaroc"
-              image="android1_red.png"
+              class="col-12 col-sm-12 col-md-4"
+              name="Rhed Atienza "
+              image="rhed.jpg"
+              >Mobile Engineering Lead</team-circle
             >
-              Data Science &
-              <br />Analytics Lead and Co-Founder
-            </team-circle>
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Jeth Sia"
-              image="android0_red.png"
-            >
-              Data Science &
-              <br />Analytics Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Samson Tan"
-              image="android1_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Carlos Aranguren"
-              image="android0_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Nicole Respecia"
-              image="android1_red.png"
-            >
-              Internet of Things
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Giddy Garcia"
-              image="android0_red.png"
-            >
-              Software
-              <br />Engineering Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Daniel del Rio"
-              image="android1_red.png"
-            >
-              Software
-              <br />Engineering Lead and Co-Founder
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
+              class="col-12 col-sm-12 col-md-4"
               name="Jared de Guzman"
-              image="android0_red.png"
+              image="jared.jpg"
+              >AI Engineering Lead</team-circle
             >
-              Software
-              <br />Engineering Lead
-            </team-circle>
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Giddy Garcia"
+              image="giddy.jpg"
+              >Cloud Engineering Lead</team-circle
+            >
+            <team-circle
+              class="col-12 col-sm-12 col-md-4"
+              name="Rafa Dytoc"
+              image="rafa.jpg"
+              >UX/UI Design Lead</team-circle
+            >
           </div>
         </div>
       </section>
 
-      <section id="community" class="department" :style="comm">
+      <section id="communications" class="department" :style="comm">
         <div class="container">
           <h4>Departments</h4>
-          <h2>Community Development</h2>
+          <h2>Communications</h2>
           <p>
-            Oversees external relations with local community partners. This
-            includes, but is not limited to, handling primary communication
-            between the organization and its partners, creating and overseeing
-            formal agreements, and managing the organization’s relationship with
-            its partners.
+            The Communications Department is in charge of planning, developing,
+            and implementing the marketing and communication strategies of the
+            organization. The department makes sure that the organization’s
+            messages are clearly distributed and communicated through channels
+            towards the targeted audience.
           </p>
         </div>
       </section>
@@ -213,93 +178,92 @@
         <div class="container">
           <div class="row">
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Andy Cosio"
-              image="android0_yellow.png"
+              class="col-12 col-sm-12 col-md-4"
+              name="Ces Ong"
+              image="ces.jpg"
+              >Creatives & Branding Lead</team-circle
             >
-              Community
-              <br />Relations Lead
-            </team-circle>
             <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Matthew del Rosario"
-              image="android1_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="John Matthew Reyes"
-              image="android0_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Lois Abi To"
-              image="android1_yellow.png"
-            >
-              Community
-              <br />Relations Lead
-            </team-circle>
-          </div>
-        </div>
-      </section>
-
-      <section id="creatives" class="department" :style="create">
-        <div class="container">
-          <h4>Departments</h4>
-          <h2>Creatives</h2>
-          <p>
-            Oversees the growth of each member’s creativity, as well as all other
-            creative work done in the organization. They are responsible for
-            establishing the art direction of a project, developing marketing
-            strategies, and translating these ideas into creative campaigns for
-            the organization’s various projects.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="row">
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
+              class="col-12 col-sm-12 col-md-4"
               name="Miguel Uygongco"
-              image="android0_green.png"
+              image="miguel.jpeg"
+              >Promotions Lead</team-circle
             >
-              Social Media
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Rafael Dytoc"
-              image="android1_green.png"
-            >
-              Graphic Design
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Gian Fausto"
-              image="android0_green.png"
-            >
-              Documentations
-              <br />Lead
-            </team-circle>
-            <team-circle
-              class="col-12 col-sm-12 col-md-4 col-lg-2-4"
-              name="Samson Tan"
-              image="android1_green.png"
-            >
-              Photography
-              <br />Lead
-            </team-circle>
           </div>
         </div>
       </section>
     </div>
+
+    <section id="hr" class="department" :style="hr">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Human Resources</h2>
+        <p>
+          The Human Resources department is the community builder of the
+          organization. The department assesses the performances of the members
+          and encourages an environment that is collaborative and growth-minded,
+          while also strengthening the organization's relationships with
+          community partners.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Bianca Benipayo"
+            image="bianca.jpg"
+            >External Community Relations Lead</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Allen Chuanico"
+            image="allen.jpg"
+            >Member Evaluations Lead</team-circle
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="finance-externals" class="department" :style="finEx">
+      <div class="container">
+        <h4>Departments</h4>
+        <h2>Finance and Externals</h2>
+        <p>
+          The Finance and Externals is the money manager and externals
+          spokesperson of DSC Loyola. The department oversees all the financial
+          aspect and is in charge of reaching out to companies for sponsorship
+          deals as well as strengthen the relationship of DSC Loyola with
+          corporations. In addition, the department reach outs to organizations
+          and schools for event and marketing partnerships/collabroation.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Erick Asence"
+            image="erick.jpg"
+            >Finance Lead</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Mon Lagustan"
+            image="mon.jpg"
+            >Corporate Relations Lead</team-circle
+          >
+          <team-circle
+            class="col-12 col-sm-12 col-md-4"
+            name="Carl Marcelo"
+            image="carl.jpg"
+            >External Relations Lead</team-circle
+          >
+        </div>
+      </div>
+    </section>
 
     <section id="join" class="grey-bg">
       <div class="container">
@@ -335,7 +299,7 @@ export default {
     window.removeEventListener("resize", this.handleResizeTeam);
   },
   components: {
-    TeamCircle
+    TeamCircle,
   },
   data() {
     return {
@@ -344,17 +308,23 @@ export default {
         window.innerWidth >= 768 ? "Meet our leadership team" : "Meet our team",
       ops: {
         backgroundImage:
-          "url(" + require("@/assets/images/operations.png") + ")"
+          "url(" + require("@/assets/images/operations.png") + ")",
       },
       tech: {
-        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
+        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")",
+      },
+      hr: {
+        backgroundImage:
+          "url(" + require("@/assets/images/human-resources.png") + ")",
       },
       comm: {
-        backgroundImage: "url(" + require("@/assets/images/community.png") + ")"
+        backgroundImage:
+          "url(" + require("@/assets/images/communications.png") + ")",
       },
-      create: {
-        backgroundImage: "url(" + require("@/assets/images/creatives.png") + ")"
-      }
+      finEx: {
+        backgroundImage:
+          "url(" + require("@/assets/images/communications.png") + ")",
+      },
     };
   },
   methods: {
@@ -366,8 +336,8 @@ export default {
         this.isDesktop = false;
         this.leaderHead = "Meet our leadership team";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -383,29 +353,34 @@ export default {
 
 #executive-board h4 {
   margin: 48px 0 0;
-  color: #0f9d58;
+  /* color: #0f9d58; */
 }
 
 #operations h4 {
-  color: #4285f4;
-}
-
-#technology h4 {
   color: #ea4335;
 }
 
+#technology h4 {
+  color: #0f9d58;
+}
+
 #community h4 {
-  color: #fbbc04;
+  color: #4285f4;
 }
 
 #creatives h4 {
-  color: #0f9d58;
+  color: #fbbc04;
+}
+
+#finance-externals h4 {
+  color: #e37400;
 }
 
 #operations,
 #technology,
-#community,
-#creatives {
+#communications,
+#hr,
+#finance-externals {
   background-size: cover;
   background-position: center;
 }

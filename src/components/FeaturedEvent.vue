@@ -19,11 +19,11 @@
         </div>
       </div>
       <div class="buttons">
-        <router-link :to="buy">
-          <button class="red primary">Buy Ticket</button>
-        </router-link>
-        <router-link :to="learn">
-          <button class="white-light">Learn more</button>
+        <a :href="linkTo" target="_blank" rel="noopener noreferrer">
+          <button class="red primary">{{ this.linkText }}</button>
+        </a>
+        <router-link :to="buttonUrl">
+          <button class="white-light">{{ this.buttonText }}</button>
         </router-link>
       </div>
     </div>
@@ -32,7 +32,16 @@
 
 <script>
 export default {
-  props: ["image", "title", "datetime", "location", "buy", "learn"],
+  props: [
+    "image",
+    "title",
+    "datetime",
+    "location",
+    "linkTo",
+    "linkText",
+    "buttonUrl",
+    "buttonText"
+  ],
   data() {
     return {
       backgroundImage: {
