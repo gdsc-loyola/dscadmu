@@ -27,7 +27,8 @@
             fb="audrey.picar"
             git="audreypicar"
             link="audreypicar"
-          >Chief Operations Officer</team-circle>
+            >Chief Operations Officer</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Franz Taborlupa"
@@ -35,14 +36,16 @@
             fb="franz.taborlupa.9"
             link="franztaborlupa"
             git="Znarfois"
-          >Chief Technology Officer</team-circle>
+            >Chief Technology Officer</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Cedric Atienza"
             image="ceej.jpg"
             fb="cj.atienza.611"
             link="cedricatienza"
-          >Chief Communications Officer</team-circle>
+            >Chief Communications Officer</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Jethro Sia"
@@ -74,12 +77,11 @@
           <h4>Departments</h4>
           <h2>Operations</h2>
           <p>
-            Oversees and ensures all operations are executed efficiently. They are
-            responsible for cultivating member happiness, growth, and culture, as
-            well as making the organization sustainable by executing financial
-            strategies and enhancing external relations. Operations department is
-            also responsible for ensuring the events and initiatives are well
-            delivered and successful.
+            The Operations is the internals manager of the organization. The
+            department oversees and ensures that the events and initiatives are
+            well delivered and successful. Moreover, the operations team is
+            in-charge of project management, document organization and legal
+            concerns.
           </p>
         </div>
       </section>
@@ -90,17 +92,20 @@
               class="col-12 col-sm-12 col-md-4"
               name="Allyn Pagatayan"
               image="al.jpg"
-            >Lead Secretariat</team-circle>
+              >Lead Secretariat</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Marion Macalalag"
               image="marion.jpg"
-            >Events Lead</team-circle>
+              >Events Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Paolo Fuentes"
               image="pao.jpg"
-            >Events Lead</team-circle>
+              >Events Lead</team-circle
+            >
           </div>
         </div>
       </section>
@@ -110,11 +115,12 @@
           <h4>Departments</h4>
           <h2>Technology</h2>
           <p>
-            Oversees all technological and innovation aspects brought about in the
-            organization. They are responsible for learning and training each
-            member of the organization, as well as non-DSC members. They shall
-            manage creation of technological solutions to uplift partnered
-            communities.
+            The Technology department is a group of passionate students that are
+            responsible for the planning, design, and implementation of various
+            activities such as Workshops and Client/Internal projects in
+            different aspects of software and technology namely: Web Design,
+            Mobile App Development, UX/UI, AI, ML, Data Science, and Cloud
+            Engineering.
           </p>
         </div>
       </section>
@@ -125,27 +131,32 @@
               class="col-12 col-sm-12 col-md-4"
               name="Tanzell Go"
               image="tanzell.jpg"
-            >Web Engineering Lead</team-circle>
+              >Web Engineering Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rhed Atienza "
               image="rhed.jpg"
-            >Mobile Engineering Lead</team-circle>
+              >Mobile Engineering Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Jared de Guzman"
               image="jared.jpg"
-            >AI Engineering Lead</team-circle>
+              >AI Engineering Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Giddy Garcia"
               image="giddy.jpg"
-            >Cloud Engineering Lead</team-circle>
+              >Cloud Engineering Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rafa Dytoc"
               image="rafa.jpg"
-            >UX/UI Design Lead</team-circle>
+              >UX/UI Design Lead</team-circle
+            >
           </div>
         </div>
       </section>
@@ -155,11 +166,11 @@
           <h4>Departments</h4>
           <h2>Communications</h2>
           <p>
-            Oversees the growth of each member’s creativity, as well as all other
-            creative work done in the organization. They are responsible for
-            establishing the art direction of a project, developing marketing
-            strategies, and translating these ideas into creative campaigns for
-            the organization’s various projects.
+            The Communications Department is in charge of planning, developing,
+            and implementing the marketing and communication strategies of the
+            organization. The department makes sure that the organization’s
+            messages are clearly distributed and communicated through channels
+            towards the targeted audience.
           </p>
         </div>
       </section>
@@ -170,12 +181,14 @@
               class="col-12 col-sm-12 col-md-4"
               name="Ces Ong"
               image="ces.jpg"
-            >Creatives & Branding Lead</team-circle>
+              >Creatives & Branding Lead</team-circle
+            >
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Miguel Uygongco"
               image="miguel.jpeg"
-            >Promotions Lead</team-circle>
+              >Promotions Lead</team-circle
+            >
           </div>
         </div>
       </section>
@@ -186,11 +199,11 @@
         <h4>Departments</h4>
         <h2>Human Resources</h2>
         <p>
-          Oversees external relations with local community partners. This
-          includes, but is not limited to, handling primary communication
-          between the organization and its partners, creating and overseeing
-          formal agreements, and managing the organization’s relationship with
-          its partners.
+          The Human Resources department is the community builder of the
+          organization. The department assesses the performances of the members
+          and encourages an environment that is collaborative and growth-minded,
+          while also strengthening the organization's relationships with
+          community partners.
         </p>
       </div>
     </section>
@@ -201,12 +214,14 @@
             class="col-12 col-sm-12 col-md-4"
             name="Bianca Benipayo"
             image="bianca.jpg"
-          >External Community Relations Lead</team-circle>
+            >External Community Relations Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Allen Chuanico"
             image="allen.jpg"
-          >Member Evaluations Lead</team-circle>
+            >Member Evaluations Lead</team-circle
+          >
         </div>
       </div>
     </section>
@@ -215,7 +230,14 @@
       <div class="container">
         <h4>Departments</h4>
         <h2>Finance and Externals</h2>
-        <p>Oversees all the financial aspect inside the organization. The department is also tasked to reach out to companies for sponsorships as well as to organizations and schools for partnerships.</p>
+        <p>
+          The Finance and Externals is the money manager and externals
+          spokesperson of DSC Loyola. The department oversees all the financial
+          aspect and is in charge of reaching out to companies for sponsorship
+          deals as well as strengthen the relationship of DSC Loyola with
+          corporations. In addition, the department reach outs to organizations
+          and schools for event and marketing partnerships/collabroation.
+        </p>
       </div>
     </section>
     <section>
@@ -225,17 +247,20 @@
             class="col-12 col-sm-12 col-md-4"
             name="Erick Asence"
             image="erick.jpg"
-          >Finance Lead</team-circle>
+            >Finance Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Mon Lagustan"
             image="mon.jpg"
-          >Corporate Relations Lead</team-circle>
+            >Corporate Relations Lead</team-circle
+          >
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Carl Marcelo"
             image="carl.jpg"
-          >External Relations Lead</team-circle>
+            >External Relations Lead</team-circle
+          >
         </div>
       </div>
     </section>
@@ -274,7 +299,7 @@ export default {
     window.removeEventListener("resize", this.handleResizeTeam);
   },
   components: {
-    TeamCircle
+    TeamCircle,
   },
   data() {
     return {
@@ -283,23 +308,23 @@ export default {
         window.innerWidth >= 768 ? "Meet our leadership team" : "Meet our team",
       ops: {
         backgroundImage:
-          "url(" + require("@/assets/images/operations.png") + ")"
+          "url(" + require("@/assets/images/operations.png") + ")",
       },
       tech: {
-        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
+        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")",
       },
       hr: {
         backgroundImage:
-          "url(" + require("@/assets/images/human-resources.png") + ")"
+          "url(" + require("@/assets/images/human-resources.png") + ")",
       },
       comm: {
         backgroundImage:
-          "url(" + require("@/assets/images/communications.png") + ")"
+          "url(" + require("@/assets/images/communications.png") + ")",
       },
       finEx: {
         backgroundImage:
-          "url(" + require("@/assets/images/communications.png") + ")"
-      }
+          "url(" + require("@/assets/images/communications.png") + ")",
+      },
     };
   },
   methods: {
@@ -311,8 +336,8 @@ export default {
         this.isDesktop = false;
         this.leaderHead = "Meet our leadership team";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
