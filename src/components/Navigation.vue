@@ -163,7 +163,7 @@ ul {
 
 #desktop-nav li > a:hover,
 #desktop-nav li > a.router-link-active {
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 #desktop-nav li:nth-child(1) > a:hover,
