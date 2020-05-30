@@ -4,10 +4,10 @@
       <featured-event
         image="feature.png"
         title="Tech at Home 2020"
-        datetime="April 21, 2020 to May 30, 2020"
+        datetime="April 21, 2020 to May 28, 2020"
         location="Facebook Live, Youtube Live & Google Meet"
-        linkTo="https://bit.ly/TechAtHome2020"
-        linkText="Subscribe Now!"
+        linkTo="https://www.youtube.com/playlist?list=PL1hGGdX7S9aSC9WKruRWudglqhmMsUIj5"
+        linkText="Rewatch now!"
       >
         <p>
           Tech at Home is a student-led online technology seminar series that
