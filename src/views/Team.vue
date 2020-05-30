@@ -274,7 +274,7 @@ export default {
     window.removeEventListener("resize", this.handleResizeTeam);
   },
   components: {
-    TeamCircle
+    TeamCircle,
   },
   data() {
     return {
@@ -283,10 +283,14 @@ export default {
         window.innerWidth >= 768 ? "Meet our leadership team" : "Meet our team",
       ops: {
         backgroundImage:
-          "url(" + require("@/assets/images/operations.png") + ")"
+          "url(" + require("@/assets/images/operations.png") + ")",
       },
       tech: {
-        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")"
+        backgroundImage: "url(" + require("@/assets/images/tech.png") + ")",
+      },
+      hr: {
+        backgroundImage:
+          "url(" + require("@/assets/images/human-resources.png") + ")",
       },
       hr: {
         backgroundImage:
@@ -311,8 +315,8 @@ export default {
         this.isDesktop = false;
         this.leaderHead = "Meet our leadership team";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
