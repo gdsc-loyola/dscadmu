@@ -1,7 +1,10 @@
 <template>
   <div id="team-circle">
     <div id="image">
-      <img :src="require('@/assets/images/team/2020-2021/' + image + '')" :alt="name" />
+      <img
+        :src="require('@/assets/images/team/2020-2021/' + image + '')"
+        :alt="name"
+      />
     </div>
     <div id="text">
       <h6>{{ name }}</h6>

@@ -34,22 +34,35 @@
                 image="firebase-in-action.png"
                 type="study-jam"
                 @click.native="modalOpen(0)"
-              >Firebase in Action: Actions on Google and DialogFlow</event-card>
+                >Firebase in Action: Actions on Google and
+                DialogFlow</event-card
+              >
               <event-card
                 image="building-a-serverless.png"
                 type="study-jam"
                 @click.native="modalOpen(1)"
-              >Firebase in Action: Building a Serverless Web App using Firebase</event-card>
+                >Firebase in Action: Building a Serverless Web App using
+                Firebase</event-card
+              >
               <event-card
                 image="firebase-web.png"
                 type="study-jam"
                 @click.native="modalOpen(2)"
-              >Firebase in Action: Firebase Web</event-card>
-              <event-card image="baseline.png" type="study-jam" @click.native="modalOpen(3)">
+                >Firebase in Action: Firebase Web</event-card
+              >
+              <event-card
+                image="baseline.png"
+                type="study-jam"
+                @click.native="modalOpen(3)"
+              >
                 Baseline: Deploy and
                 <br />Develop
               </event-card>
-              <event-card image="bigquery.jpg" type="study-jam" @click.native="modalOpen(4)">
+              <event-card
+                image="bigquery.jpg"
+                type="study-jam"
+                @click.native="modalOpen(4)"
+              >
                 BigQuery Basics for
                 <br />Data Analysts
               </event-card>
@@ -57,27 +70,39 @@
                 image="aiml.jpg"
                 type="study-jam"
                 @click.native="modalOpen(5)"
-              >Baseline: Data, ML, and AI</event-card>
+                >Baseline: Data, ML, and AI</event-card
+              >
               <event-card
                 image="gcp.jpg"
                 type="study-jam"
                 @click.native="modalOpen(6)"
-              >GCP Essentials</event-card>
+                >GCP Essentials</event-card
+              >
               <coming-event></coming-event>
             </div>
           </div>
         </div>
         <div id="hands-on-workshops">
           <h2>Hands-on Workshops</h2>
-          <p>Opportunity for community members to learn something new in tech</p>
+          <p>
+            Opportunity for community members to learn something new in tech
+          </p>
           <div class="list">
             <div class="scroll" v-dragscroll>
               <margin :width="width"></margin>
-              <event-card image="python.jpg" type="workshop" @click.native="modalOpen(7)">
+              <event-card
+                image="python.jpg"
+                type="workshop"
+                @click.native="modalOpen(7)"
+              >
                 Pandas, Numpy, and
                 <br />Matplotlib Workshop
               </event-card>
-              <event-card image="mobile-dev.png" type="workshop" @click.native="modalOpen(8)">
+              <event-card
+                image="mobile-dev.png"
+                type="workshop"
+                @click.native="modalOpen(8)"
+              >
                 Mobile Development
                 <br />Workshop with Flutter PH
               </event-card>
@@ -85,7 +110,8 @@
                 image="pandas.png"
                 type="workshop"
                 @click.native="modalOpen(9)"
-              >Python Workshop</event-card>
+                >Python Workshop</event-card
+              >
               <coming-event></coming-event>
             </div>
           </div>
@@ -116,7 +142,8 @@
                 image="dsc-info.jpg"
                 type="speaker-session"
                 @click.native="modalOpen(12)"
-              >DSC Info Session 2019</event-card>
+                >DSC Info Session 2019</event-card
+              >
               <event-card
                 image="info-session.png"
                 type="speaker-session"
