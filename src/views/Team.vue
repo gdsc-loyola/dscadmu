@@ -27,8 +27,7 @@
             fb="audrey.picar"
             git="audreypicar"
             link="audreypicar"
-            >Chief Operations Officer</team-circle
-          >
+          >Chief Operations Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Franz Taborlupa"
@@ -36,16 +35,14 @@
             fb="franz.taborlupa.9"
             link="franztaborlupa"
             git="Znarfois"
-            >Chief Technology Officer</team-circle
-          >
+          >Chief Technology Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Cedric Atienza"
             image="ceej.jpg"
             fb="cj.atienza.611"
             link="cedricatienza"
-            >Chief Communications Officer</team-circle
-          >
+          >Chief Communications Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Jethro Sia"
@@ -92,20 +89,17 @@
               class="col-12 col-sm-12 col-md-4"
               name="Allyn Pagatayan"
               image="al.jpg"
-              >Lead Secretariat</team-circle
-            >
+            >Lead Secretariat</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Marion Macalalag"
               image="marion.jpg"
-              >Events Lead</team-circle
-            >
+            >Events Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Paolo Fuentes"
               image="pao.jpg"
-              >Events Lead</team-circle
-            >
+            >Events Lead</team-circle>
           </div>
         </div>
       </section>
@@ -131,32 +125,27 @@
               class="col-12 col-sm-12 col-md-4"
               name="Tanzell Go"
               image="tanzell.jpg"
-              >Web Engineering Lead</team-circle
-            >
+            >Web Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rhed Atienza "
               image="rhed.jpg"
-              >Mobile Engineering Lead</team-circle
-            >
+            >Mobile Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Jared de Guzman"
               image="jared.jpg"
-              >AI Engineering Lead</team-circle
-            >
+            >AI Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Giddy Garcia"
               image="giddy.jpg"
-              >Cloud Engineering Lead</team-circle
-            >
+            >Cloud Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rafa Dytoc"
               image="rafa.jpg"
-              >UX/UI Design Lead</team-circle
-            >
+            >UX/UI Design Lead</team-circle>
           </div>
         </div>
       </section>
@@ -181,14 +170,12 @@
               class="col-12 col-sm-12 col-md-4"
               name="Ces Ong"
               image="ces.jpg"
-              >Creatives & Branding Lead</team-circle
-            >
+            >Creatives & Branding Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Miguel Uygongco"
               image="miguel.jpeg"
-              >Promotions Lead</team-circle
-            >
+            >Promotions Lead</team-circle>
           </div>
         </div>
       </section>
@@ -214,14 +201,12 @@
             class="col-12 col-sm-12 col-md-4"
             name="Bianca Benipayo"
             image="bianca.jpg"
-            >External Community Relations Lead</team-circle
-          >
+          >External Community Relations Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Allen Chuanico"
             image="allen.jpg"
-            >Member Evaluations Lead</team-circle
-          >
+          >Member Evaluations Lead</team-circle>
         </div>
       </div>
     </section>
@@ -230,14 +215,7 @@
       <div class="container">
         <h4>Departments</h4>
         <h2>Finance and Externals</h2>
-        <p>
-          The Finance and Externals is the money manager and externals
-          spokesperson of DSC Loyola. The department oversees all the financial
-          aspect and is in charge of reaching out to companies for sponsorship
-          deals as well as strengthen the relationship of DSC Loyola with
-          corporations. In addition, the department reach outs to organizations
-          and schools for event and marketing partnerships/collabroation.
-        </p>
+        <p>The Finance and Externals Department is the funding and partnerships arm of DSC Loyola. The department manages the organization's funds making sure there is always enough financial resources for its projects and activities. It also builds strong relationships with various institutions, such as businesses, schools, and organizations.</p>
       </div>
     </section>
     <section>
@@ -247,20 +225,17 @@
             class="col-12 col-sm-12 col-md-4"
             name="Erick Asence"
             image="erick.jpg"
-            >Finance Lead</team-circle
-          >
+          >Finance Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Mon Lagustan"
             image="mon.jpg"
-            >Corporate Relations Lead</team-circle
-          >
+          >Corporate Relations Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Carl Marcelo"
             image="carl.jpg"
-            >External Relations Lead</team-circle
-          >
+          >External Relations Lead</team-circle>
         </div>
       </div>
     </section>
@@ -317,14 +292,18 @@ export default {
         backgroundImage:
           "url(" + require("@/assets/images/human-resources.png") + ")",
       },
+      hr: {
+        backgroundImage:
+          "url(" + require("@/assets/images/human-resources.png") + ")"
+      },
       comm: {
         backgroundImage:
-          "url(" + require("@/assets/images/communications.png") + ")",
+          "url(" + require("@/assets/images/communications.png") + ")"
       },
       finEx: {
         backgroundImage:
-          "url(" + require("@/assets/images/communications.png") + ")",
-      },
+          "url(" + require("@/assets/images/communications.png") + ")"
+      }
     };
   },
   methods: {

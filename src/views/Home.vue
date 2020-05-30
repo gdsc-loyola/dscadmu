@@ -77,15 +77,19 @@
             </p>
             <p class="datetime">
               <i class="material-icons">date_range</i>
-              <span>April 21, 2020 to May 21, 2020</span>
+              <span>April 21, 2020 to May 28, 2020</span>
             </p>
             <p class="location">
               <i class="material-icons">location_on</i>
               <span>Google Meet & Youtube Live</span>
             </p>
-            <!-- <a href="/" target="_blank" rel="noopener noreferrer">
-              <button class="blue">Buy tickets</button>
-            </a>-->
+            <a
+              href="https://www.youtube.com/playlist?list=PL1hGGdX7S9aSC9WKruRWudglqhmMsUIj5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="blue">Rewatch now!</button>
+            </a>
           </div>
         </div>
       </div>
