@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>logo-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/134fbda4cd.js"
+      crossorigin="anonymous"
+      SameSite="secure"
+    ></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <link rel="icon" href="<%= BASE_URL %>logo-icon.png" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/134fbda4cd.js" crossorigin="anonymous" SameSite="secure"></script>
-
-  <meta name="description"
-    content="Developer Student Clubs Loyola is a student organization powered by
+    <meta
+      name="description"
+      content="Developer Student Clubs Loyola is a student organization powered by
     Google Developers that aims to build students’ skills and network by
     giving them access to different technologies, specifically Google
-    Developer technologies. We are passionate in uplifting communities through technology and we learn together in a peer-to-peer learning environment." />
+    Developer technologies. We are passionate in uplifting communities through technology and we learn together in a peer-to-peer learning environment."
+    />
 
-  <!-- Facebook Meta -->
-  <meta property="og:title" content="Developer Student Clubs Loyola" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="<%= BASE_URL %>metadata.png" />
-  <meta property="og:description" content="Developer Student Clubs Loyola is a student organization powered by
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="Developer Student Clubs Loyola" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="<%= BASE_URL %>metadata.png" />
+    <meta
+      property="og:description"
+      content="Developer Student Clubs Loyola is a student organization powered by
     Google Developers that aims to build students’ skills and network by
     giving them access to different technologies, specifically Google
     Developer technologies. We are passionate in uplifting communities through technology and we learn together in a
-    peer-to-peer learning environment." />
+    peer-to-peer learning environment."
+    />
 
-  <meta name="twitter:card" content="" />
-  <meta name="twitter:site" content="@DSCLoyola" />
-  <meta name="twitter:creator" content="@DSCLoyola" />
-  <meta name="twitter:title" content="Developer Student Clubs Loyola" />
-  <meta name="twitter:description" content="Developer Student Clubs Loyola is a student organization in the Ateneo de Manila University powered by
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="@DSCLoyola" />
+    <meta name="twitter:creator" content="@DSCLoyola" />
+    <meta name="twitter:title" content="Developer Student Clubs Loyola" />
+    <meta
+      name="twitter:description"
+      content="Developer Student Clubs Loyola is a student organization in the Ateneo de Manila University powered by
     Google Developers that aims to build students’ skills and network by
     giving them access to different technologies, specifically Google
     Developer technologies. We are passionate in uplifting communities through technology and we learn together in a
-    peer-to-peer learning environment." />
-  <meta name="twitter:image" content="<%= BASE_URL %>metadata.png" />
+    peer-to-peer learning environment."
+    />
+    <meta name="twitter:image" content="<%= BASE_URL %>metadata.png" />
 
-  <title>Developer Student Clubs Loyola</title>
-</head>
+    <title>Developer Student Clubs Loyola</title>
+  </head>
 
-<body>
-  <div id="app"></div>
-  <!-- SDK -->
-  <!-- <div id="fb-root"></div>
+  <body>
+    <div id="app"></div>
+    <!-- SDK -->
+    <!-- <div id="fb-root"></div>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -62,8 +76,8 @@
       })(document, "script", "facebook-jssdk");
     </script> -->
 
-  <!-- Chat Code -->
-  <!-- <div
+    <!-- Chat Code -->
+    <!-- <div
       class="fb-customerchat"
       attribution="install_email"
       page_id="101293334597789"
@@ -71,18 +85,30 @@
       logged_in_greeting="Hi! How can we help you? We are DSC Loyola, a student organization powered by Google Developers in the Ateneo de Manila University"
       logged_out_greeting="Hi! Thank you very much for visiting the official website of DSC Loyola."
     ></div> -->
-  <!-- built files will be auto injected -->
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <!-- built files will be auto injected -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    !-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
 
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-  <script>
-    firebase.analytics()
-  </script>
-</body>
-
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDCG_NW0-VXjG98jwhAxfk1Sslq3WfVzyM",
+        authDomain: "dscadmu.firebaseapp.com",
+        databaseURL: "https://dscadmu.firebaseio.com",
+        projectId: "dscadmu",
+        storageBucket: "dscadmu.appspot.com",
+        messagingSenderId: "984531054480",
+        appId: "1:984531054480:web:8fc8800cf573c6f441cd15",
+        measurementId: "G-3ZF5G2RM7E",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
 </html>
