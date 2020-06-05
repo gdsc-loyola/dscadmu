@@ -4,16 +4,18 @@ import router from "./router";
 import VueDragscroll from "vue-dragscroll";
 import VModal from "vue-js-modal";
 import "@/assets/bootstrap-grid.css";
-import VueFire from "vuefire";
+import { firestorePlugin } from "vuefire";
 import firebase from "firebase/app";
 import "firebase/firestore";
 
-Vue.use(VueFire);
+
+
 firebase.initializeApp({
   projectId: "dscadmu",
   databaseURL: "https://dscadmu.firebaseio.com"
 });
 
+Vue.use(firestorePlugin);
 Vue.config.productionTip = false;
 Vue.use(VueDragscroll);
 Vue.use(VModal);
