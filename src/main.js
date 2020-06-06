@@ -37,7 +37,7 @@ const firebaseConfig = {
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const flamelinkApp = flamelink({
+export const app = flamelink({
   firebaseApp, // required
   dbType: "cf", // can be either 'rtdb' or 'cf' for Realtime DB or Cloud Firestore
   env: "production", // optional, default shown
@@ -53,9 +53,3 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount("#app");
-
-flamelinkApp.content
-  .get({ schemaKey: "teamPage" })
-  .then(teamPage => console.log(teamPage))
-  .catch(error => console.log(error))
-

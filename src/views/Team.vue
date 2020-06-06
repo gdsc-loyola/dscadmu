@@ -2,14 +2,21 @@
   <div>
     <section id="executive-board" class="grey-bg">
       <div class="container">
-        <h2>{{ leaderHead }}</h2>
-        <p v-if="isDesktop" class="feature-text">
-          Our lineup that empowers, enlightens, and nurtures people around the
-          world.
-        </p>
+        <h2>{{ teamPage.title }}</h2>
+        <p class="feature-text">{{ teamPage.description }}</p>
         <h4>Executive Board</h4>
         <div class="row justify-content-center">
           <team-circle
+            v-for="board in teamPage.executiveBoard"
+            :key="board.title"
+            class="col-12 col-sm-12 col-md-4"
+            :name="board.title"
+            :image="board.image"
+            :facebook="board.facebook"
+            :linkedin="board.linkedin"
+            :github="board.github"
+          >{{ board.position }}</team-circle>
+          <!-- <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Harvey Sison"
             image="harvey.png"
@@ -27,8 +34,7 @@
             fb="audrey.picar"
             git="audreypicar"
             link="audreypicar"
-            >Chief Operations Officer</team-circle
-          >
+          >Chief Operations Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Franz Taborlupa"
@@ -36,16 +42,14 @@
             fb="franz.taborlupa.9"
             link="franztaborlupa"
             git="Znarfois"
-            >Chief Technology Officer</team-circle
-          >
+          >Chief Technology Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Cedric Atienza"
             image="ceej.jpg"
             fb="cj.atienza.611"
             link="cedricatienza"
-            >Chief Communications Officer</team-circle
-          >
+          >Chief Communications Officer</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Jethro Sia"
@@ -66,7 +70,7 @@
           >
             Chief Human
             <br />Resources Officer
-          </team-circle>
+          </team-circle>-->
         </div>
       </div>
     </section>
@@ -88,24 +92,21 @@
       <section>
         <div class="container">
           <div class="row">
-            <team-circle
+            <!-- <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Allyn Pagatayan"
               image="al.jpg"
-              >Lead Secretariat</team-circle
-            >
+            >Lead Secretariat</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Marion Macalalag"
               image="marion.jpg"
-              >Events Lead</team-circle
-            >
+            >Events Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Paolo Fuentes"
               image="pao.jpg"
-              >Events Lead</team-circle
-            >
+            >Events Lead</team-circle>-->
           </div>
         </div>
       </section>
@@ -127,36 +128,31 @@
       <section>
         <div class="container">
           <div class="row">
-            <team-circle
+            <!-- <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Tanzell Go"
               image="tanzell.jpg"
-              >Web Engineering Lead</team-circle
-            >
+            >Web Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rhed Atienza "
               image="rhed.jpg"
-              >Mobile Engineering Lead</team-circle
-            >
+            >Mobile Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Jared de Guzman"
               image="jared.jpg"
-              >AI Engineering Lead</team-circle
-            >
+            >AI Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Giddy Garcia"
               image="giddy.jpg"
-              >Cloud Engineering Lead</team-circle
-            >
+            >Cloud Engineering Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Rafa Dytoc"
               image="rafa.jpg"
-              >UX/UI Design Lead</team-circle
-            >
+            >UX/UI Design Lead</team-circle>-->
           </div>
         </div>
       </section>
@@ -177,18 +173,16 @@
       <section>
         <div class="container">
           <div class="row">
-            <team-circle
+            <!-- <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Ces Ong"
               image="ces.jpg"
-              >Creatives & Branding Lead</team-circle
-            >
+            >Creatives & Branding Lead</team-circle>
             <team-circle
               class="col-12 col-sm-12 col-md-4"
               name="Miguel Uygongco"
               image="miguel.jpeg"
-              >Promotions Lead</team-circle
-            >
+            >Promotions Lead</team-circle>-->
           </div>
         </div>
       </section>
@@ -210,18 +204,16 @@
     <section>
       <div class="container">
         <div class="row">
-          <team-circle
+          <!-- <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Bianca Benipayo"
             image="bianca.jpg"
-            >External Community Relations Lead</team-circle
-          >
+          >External Community Relations Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Allen Chuanico"
             image="allen.jpg"
-            >Member Evaluations Lead</team-circle
-          >
+          >Member Evaluations Lead</team-circle>-->
         </div>
       </div>
     </section>
@@ -242,24 +234,21 @@
     <section>
       <div class="container">
         <div class="row">
-          <team-circle
+          <!-- <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Erick Asence"
             image="erick.jpg"
-            >Finance Lead</team-circle
-          >
+          >Finance Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Mon Lagustan"
             image="mon.jpg"
-            >Corporate Relations Lead</team-circle
-          >
+          >Corporate Relations Lead</team-circle>
           <team-circle
             class="col-12 col-sm-12 col-md-4"
             name="Carl Marcelo"
             image="carl.jpg"
-            >External Relations Lead</team-circle
-          >
+          >External Relations Lead</team-circle>-->
         </div>
       </div>
     </section>
@@ -289,22 +278,21 @@
 
 <script>
 import TeamCircle from "@/components/TeamCircle";
+import { app } from "../main";
 
 export default {
-  created() {
-    window.addEventListener("resize", this.handleResizeTeam);
-  },
-  destroyed() {
-    window.removeEventListener("resize", this.handleResizeTeam);
+  async created() {
+    app.content
+      .get({ schemaKey: "teamPage", populate: ["image"] })
+      .then(teamPage => (this.teamPage = teamPage))
+      .catch(error => console.log(error));
   },
   components: {
     TeamCircle
   },
   data() {
     return {
-      isDesktop: window.innerWidth >= 768 ? false : true,
-      leaderHead:
-        window.innerWidth >= 768 ? "Meet our leadership team" : "Meet our team",
+      teamPage: [],
       ops: {
         backgroundImage:
           "url(" + require("@/assets/images/operations.png") + ")"
@@ -325,17 +313,6 @@ export default {
           "url(" + require("@/assets/images/communications.png") + ")"
       }
     };
-  },
-  methods: {
-    handleResizeTeam() {
-      if (window.innerWidth < 768) {
-        this.isDesktop = true;
-        this.leaderHead = "Meet our team";
-      } else {
-        this.isDesktop = false;
-        this.leaderHead = "Meet our leadership team";
-      }
-    }
   }
 };
 </script>
@@ -407,6 +384,9 @@ export default {
   line-height: 25px;
 }
 
+.feature-text {
+  text-align: center;
+}
 @media screen and (max-width: 767px) {
   #operations,
   #technology,
@@ -421,6 +401,10 @@ export default {
 
   .department {
     height: 464px;
+  }
+
+  .feature-text {
+    text-align: left;
   }
 }
 

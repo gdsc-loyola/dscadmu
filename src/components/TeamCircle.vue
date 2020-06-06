@@ -1,10 +1,7 @@
 <template>
   <div id="team-circle">
     <div id="image">
-      <img
-        :src="require('@/assets/images/team/2020-2021/' + image + '')"
-        :alt="name"
-      />
+      <img :src="image" :alt="name" />
     </div>
     <div id="text">
       <h6>{{ name }}</h6>
@@ -28,20 +25,7 @@
 
 <script>
 export default {
-  created() {
-    window.onresize = this.handleResize;
-  },
-  props: ["name", "image", "fb", "link", "git"],
-  data() {
-    return {
-      facebook: this.fb ? "https://fb.com/" + this.fb : null,
-      linkedin: this.link ? "https://www.linkedin.com/in/" + this.link : null,
-      github: this.git ? "https://github.com/" + this.git : null
-    };
-  },
-  methods: {
-    handleResize() {}
-  }
+  props: ["name", "image", "facebook", "linkedin", "github"]
 };
 </script>
 
