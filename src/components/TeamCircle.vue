@@ -1,7 +1,7 @@
 <template>
   <div id="team-circle">
     <div id="image">
-      <img :src="image" :alt="name" />
+      <img :src="img" :alt="name" />
     </div>
     <div id="text">
       <h6>{{ name }}</h6>
@@ -24,8 +24,25 @@
 </template>
 
 <script>
+import { app } from "../main";
 export default {
-  props: ["name", "image", "facebook", "linkedin", "github"]
+  props: ["name", "image", "facebook", "linkedin", "github"],
+  created() {
+    app.storage
+      .getURL({
+        fileId: this.image.split("/")[1]
+      })
+      .then(image => {
+        this.img = image;
+      })
+      .catch(error => console.log(error));
+    console.log(this.image, this.img);
+  },
+  data() {
+    return {
+      img: null
+    };
+  }
 };
 </script>
 

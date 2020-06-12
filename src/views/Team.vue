@@ -11,7 +11,7 @@
             :key="board.title"
             class="col-12 col-sm-12 col-md-4"
             :name="board.title"
-            :image="board.image"
+            :image="board.image[0].image[0].path"
             :facebook="board.facebook"
             :linkedin="board.linkedin"
             :github="board.github"
@@ -283,8 +283,31 @@ import { app } from "../main";
 export default {
   async created() {
     app.content
-      .get({ schemaKey: "teamPage", populate: ["image"] })
-      .then(teamPage => (this.teamPage = teamPage))
+      .get({
+        schemaKey: "teamPage",
+        populate: [
+          {
+            field: "title"
+          },
+          {
+            field: "description"
+          },
+          {
+            field: "executiveBoard",
+            fields: [
+              "title",
+              "position",
+              "image",
+              "facebook",
+              "github",
+              "linkedin"
+            ]
+          }
+        ]
+      })
+      .then(teamPage => {
+        this.teamPage = teamPage;
+      })
       .catch(error => console.log(error));
   },
   components: {
