@@ -36,7 +36,6 @@ export default {
         this.img = image;
       })
       .catch(error => console.log(error));
-    console.log(this.image, this.img);
   },
   data() {
     return {

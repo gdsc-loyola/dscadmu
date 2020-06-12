@@ -3,7 +3,7 @@
     <section class="department" v-bind:style="{ backgroundImage: 'url(' + img + ')' }">
       <div class="container">
         <h4 v-bind:style="{ color: color }">Departments</h4>
-        <h2>{{ title }}</h2>
+        <h2>{{ name }}</h2>
         <p>{{ description }}</p>
       </div>
     </section>
@@ -12,9 +12,9 @@
         <div class="row">
           <team-circle
             v-for="lead in leads"
-            :key="lead.title"
+            :key="lead.name"
             class="col-12 col-sm-12 col-md-4"
-            :name="lead.title"
+            :name="lead.name"
             :image="lead.image[0].image[0].path"
             :facebook="lead.facebook"
             :linkedin="lead.linkedin"
@@ -29,7 +29,7 @@
 import TeamCircle from "./TeamCircle";
 import { app } from "../main";
 export default {
-  props: ["title", "image", "description", "leads", "color"],
+  props: ["name", "image", "description", "leads", "color"],
   created() {
     app.storage
       .getURL({

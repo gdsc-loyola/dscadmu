@@ -8,77 +8,22 @@
         <div class="row justify-content-center">
           <team-circle
             v-for="board in teamPage.executiveBoard"
-            :key="board.title"
+            :key="board.name"
             class="col-12 col-sm-12 col-md-4"
-            :name="board.title"
+            :name="board.name"
             :image="board.image[0].image[0].path"
             :facebook="board.facebook"
             :linkedin="board.linkedin"
             :github="board.github"
           >{{ board.position }}</team-circle>
-          <!-- <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Harvey Sison"
-            image="harvey.png"
-            fb="harveymile"
-            link="harveyjaysison"
-            git="Hjkun77"
-          >
-            President &
-            <br />Chief Exective Officer
-          </team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Audrey Picar"
-            image="audrey.jpg"
-            fb="audrey.picar"
-            git="audreypicar"
-            link="audreypicar"
-          >Chief Operations Officer</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Franz Taborlupa"
-            image="franz.jpg"
-            fb="franz.taborlupa.9"
-            link="franztaborlupa"
-            git="Znarfois"
-          >Chief Technology Officer</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Cedric Atienza"
-            image="ceej.jpg"
-            fb="cj.atienza.611"
-            link="cedricatienza"
-          >Chief Communications Officer</team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Jethro Sia"
-            image="jethro.jpg"
-            fb="jethsia"
-            link="jethrocullensia"
-            git="JethSia"
-          >
-            Chief Finance &
-            <br />Externals Officer
-          </team-circle>
-          <team-circle
-            class="col-12 col-sm-12 col-md-4"
-            name="Polly Baterna"
-            image="polly.jpg"
-            link="mpmbaterna"
-            fb="pollybaterna"
-          >
-            Chief Human
-            <br />Resources Officer
-          </team-circle>-->
         </div>
       </div>
     </section>
 
     <department
       v-for="department in teamPage.departments"
-      :key="department.title"
-      :title="department.title"
+      :key="department.name"
+      :name="department.name"
       :image="department.image[0].image[0].path"
       :description="department.description"
       :color="department.color"
@@ -89,16 +34,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-4">
-            <h2>Join our community!</h2>
-            <p>
-              Be part of the Developer Students Club Loyola circle where we
-              create impact together!
-            </p>
-            <a
-              href="https://www.facebook.com/groups/233919568000712/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <h2>{{ teamPage.joinSection.title }}</h2>
+            <p>{{ teamPage.joinSection.description }}</p>
+            <a :href="teamPage.joinSection.link" target="_blank" rel="noopener noreferrer">
               <button class="green">Join us</button>
             </a>
           </div>
@@ -128,18 +66,26 @@ export default {
           {
             field: "executiveBoard",
             fields: [
-              "title",
+              "name",
               "position",
               "image",
               "facebook",
               "github",
               "linkedin"
             ]
+          },
+          {
+            field: "departments",
+            fields: ["name", "image", "description", "color", "leads"]
+          },
+          {
+            field: "joinSection"
           }
         ]
       })
       .then(teamPage => {
         this.teamPage = teamPage;
+        console.log(this.teamPage.joinSection.title);
       })
       .catch(error => console.log(error));
   },
