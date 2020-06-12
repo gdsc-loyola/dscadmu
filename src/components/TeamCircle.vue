@@ -1,10 +1,7 @@
 <template>
   <div id="team-circle">
     <div id="image">
-      <img
-        :src="require('@/assets/images/team/2020-2021/' + image + '')"
-        :alt="name"
-      />
+      <img :src="img" :alt="name" />
     </div>
     <div id="text">
       <h6>{{ name }}</h6>
@@ -27,20 +24,23 @@
 </template>
 
 <script>
+import { app } from "../main";
 export default {
+  props: ["name", "image", "facebook", "linkedin", "github"],
   created() {
-    window.onresize = this.handleResize;
+    app.storage
+      .getURL({
+        fileId: this.image.split("/")[1]
+      })
+      .then(image => {
+        this.img = image;
+      })
+      .catch(error => console.log(error));
   },
-  props: ["name", "image", "fb", "link", "git"],
   data() {
     return {
-      facebook: this.fb ? "https://fb.com/" + this.fb : null,
-      linkedin: this.link ? "https://www.linkedin.com/in/" + this.link : null,
-      github: this.git ? "https://github.com/" + this.git : null
+      img: null
     };
-  },
-  methods: {
-    handleResize() {}
   }
 };
 </script>
