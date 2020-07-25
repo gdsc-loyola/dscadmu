@@ -1,29 +1,36 @@
 <template>
   <div>
     <section class="featured">
-      <div class="featured-content">
-        <h5>FEATURED</h5>
-        <h1 class="featured-name">DSC Loyola Website</h1>
-        <p class="description">
-          Oat cake I love marshmallow candy canes pie fruitcake I love. Pastry
-          cheesecake dragée pastry I love jelly chocolate bar jelly beans carrot
-          cake. Gingerbread apple pie halvah danish donut jujubes sugar dessert.
-          dessert. Biscuit brownie powder bonbon I love. Topping liquorice
-          biscuit liquorice.
-        </p>
-        <p class="contributors">
-          Contributors: <span>Harvey Jay Sison, Rafael Dytoc, Bea Sison</span> 
-        </p>
-        <div class="buttons">
-          <a href="#" class="visit-btn"> Visit site </a>
-          <a href="#" class="read-btn"> Read Article </a>
+      <div class="scroll-indicator">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="featured-scroll" v-dragscroll.x v-on:dragscrollmove="move($event.detail.deltaX)">
+        <div class="featured-content">
+          <h5>FEATURED</h5>
+          <h1 class="featured-name">DSC Loyola Website</h1>
+          <p class="description">
+            Oat cake I love marshmallow candy canes pie fruitcake I love. Pastry
+            cheesecake dragée pastry I love jelly chocolate bar jelly beans carrot
+            cake. Gingerbread apple pie halvah danish donut jujubes sugar dessert.
+            dessert. Biscuit brownie powder bonbon I love. Topping liquorice
+            biscuit liquorice.
+          </p>
+          <p class="contributors">
+            Contributors: <span>Harvey Jay Sison, Rafael Dytoc, Bea Sison</span> 
+          </p>
+          <div class="buttons">
+            <a href="#" class="visit-btn"> Visit site </a>
+            <a href="#" class="read-btn"> Read Article </a>
+          </div>
+        </div>
+        <div class="featured-pic">
+          <img
+            src="../assets/images/featured-web.png"
+            alt="name"
+          />
         </div>
       </div>
-      <img
-        src="../assets/images/featured-web.png"
-        class="featured-pic"
-        alt="name"
-      />
     </section>
     <section class="library">
       <div class="library-header">
@@ -289,16 +296,65 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    move: function(scroll){
+            var featureScroll = document.querySelector(".featured-scroll");
+            var circle1 = document.querySelector(".circle1");
+            var circle2 = document.querySelector(".circle2");
+            if(scroll > 5){
+              featureScroll.style.left = "-100vw";
+              circle2.style.backgroundColor = "#FBBC04";
+              circle1.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
+            } else if (scroll < -5) {
+              featureScroll.style.left = "0";
+              circle1.style.backgroundColor = "#FBBC04";
+              circle2.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
+            }            
+          }
+  }
+}
 </script>
 
 <style scoped>
-
-.featured {
-  display: flex;
-  width: 100%;
+.featured{
   padding: 0;
   margin-top: 60px;
+  overflow: hidden;
+  background-color: #FFFBF2;
+}
+
+.scroll-indicator{
+  position: absolute;
+  display: none;
+  justify-content: flex-end;
+  width: 95vw;
+  padding: 50px 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.circle1{
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #FBBC04;
+  margin-right: 5px;
+}
+
+.circle2{
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: rgba(251, 188, 4, 0.25);
+  margin-right: 30px;
+}
+
+.featured-scroll {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  padding: 0;
   background-color: #FFFBF2;
 }
 
@@ -316,6 +372,7 @@ export default {};
   line-height: 25px;
   letter-spacing: 0.1em;
   color: #FBBC04;
+  margin-top: 30px;
 }
 
 .featured-name{
@@ -346,7 +403,8 @@ export default {};
 }
 
 .buttons{
-  margin-top: 30px;
+  margin: 30px 0;
+
 }
 
 .visit-btn{
@@ -358,6 +416,11 @@ export default {};
   background-color: #FBBC04;
   border: 1px solid #FBBC04;
   border-radius: 4px;
+}
+
+.visit-btn:hover{
+  color: #FBBC04;
+  background-color: #FFFFFF;
 }
 
 .read-btn{
@@ -373,8 +436,20 @@ export default {};
   margin-left: 16px;
 }
 
+.read-btn:hover{
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
 .featured-pic{
-  align-self: start;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.featured-pic img{
+  align-self: flex-end;
+  width: 100%;
 }
 
 .library{
@@ -495,6 +570,11 @@ export default {};
   border-radius: 4px;
 }
 
+.download-btn:hover{
+  color: #F8F8F8;
+  background-color: #333333;
+}
+
 .services-content{
   display: flex;
   flex-wrap: wrap;
@@ -504,7 +584,7 @@ export default {};
   width: 49%;
   background-color: white;
   margin-bottom: 2%;
-  padding: 3%;
+  padding: 20px;
 }
 
 .service:nth-child(odd){
@@ -527,6 +607,7 @@ export default {};
 
 .sub-services{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -537,6 +618,7 @@ export default {};
   letter-spacing: 0.02em;
   padding: 7px 14px;
   margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 2px;
 }
 
@@ -566,13 +648,110 @@ export default {};
 }
 
 @media screen and (max-width: 1100px) {
-  .featured-content{
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  .scroll-indicator{
+    display: flex;
   }
+  
+  .featured-scroll{
+    align-items: center;
+  }
+
+  .featured-content{
+    min-width: 100%;
+    padding: 0 30px 20px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .featured-content h5{
+    margin-top: 50px;
+  }
+
   .featured-pic{
+    min-width: 100%;;
+    align-self: flex-end;
+  }
+
+  .library{
+    padding: 0 5% 4%;
+  }
+
+  .library-content{
+    justify-content: space-around;
+  }
+
+  .project{
+    width: 45%;
+  }
+
+  .project:nth-child(3n-1){
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .services{
+    padding: 0 5% 4%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .services-header h1, .services-header p{
+    text-align: center;
+  }
+
+  .services-header a{
     display: none;
+  }
+
+  .services-content{
+    justify-content: space-around;
+  }
+  
+  .service{
+    width: 90%;
+  }
+
+  .service:nth-child(odd){
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .project{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project{
+    width: 90%;
+  }
+
+  .project img{
+    object-fit: contain;
+  }
+
+  .services-header p{
+    font-size: 12px;
+  }
+
+  .service-name{
+    font-size: 15px;
+  }
+
+  .service-description{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .sub-services h5{
+    font-size: 12px;
   }
 
 }
