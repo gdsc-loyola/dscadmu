@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <img :src="image" class="project-pic" :alt="name" />
+    <img :src="img" class="project-pic" :alt="name" />
     <h5 class="project-name">{{ name }}</h5>
     <p class="project-description">{{ description }}</p>
     <div class="love-view">
