@@ -11,24 +11,22 @@
           <h1 class="featured-name">DSC Loyola Website</h1>
           <p class="description">
             Oat cake I love marshmallow candy canes pie fruitcake I love. Pastry
-            cheesecake dragée pastry I love jelly chocolate bar jelly beans carrot
-            cake. Gingerbread apple pie halvah danish donut jujubes sugar dessert.
-            dessert. Biscuit brownie powder bonbon I love. Topping liquorice
-            biscuit liquorice.
+            cheesecake dragée pastry I love jelly chocolate bar jelly beans
+            carrot cake. Gingerbread apple pie halvah danish donut jujubes sugar
+            dessert. dessert. Biscuit brownie powder bonbon I love. Topping
+            liquorice biscuit liquorice.
           </p>
           <p class="contributors">
-            Contributors: <span>Harvey Jay Sison, Rafael Dytoc, Bea Sison</span> 
+            Contributors:
+            <span>Harvey Jay Sison, Rafael Dytoc, Bea Sison</span>
           </p>
           <div class="buttons">
-            <a href="#" class="visit-btn"> Visit site </a>
-            <a href="#" class="read-btn"> Read Article </a>
+            <a href="#" class="visit-btn">Visit site</a>
+            <a href="#" class="read-btn">Read Article</a>
           </div>
         </div>
         <div class="featured-pic">
-          <img
-            src="../assets/images/featured-web.png"
-            alt="name"
-          />
+          <img src="../assets/images/featured-web.png" alt="name" />
         </div>
       </div>
     </section>
@@ -38,35 +36,15 @@
         <p>Lorem ipsum dolor sit amet consectetur ad Lorem, ipsum dolor</p>
       </div>
       <div class="library-content">
-        <div v-for="project in projectPage" :key="project.name" class="project">
-          <img
-            :src="project.image"
-            class="project-pic"
-            :alt="project.name"
-          />
-          <h5 class="project-name">{{ project.name }}</h5>
-          <p class="project-description">
-            {{ project.description }}
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>{{ project.likes }}</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>{{ project.views }}</p>
-            </div>
-          </div>
-        </div>
+        <project-card
+          v-for="project in projectPage"
+          :key="project.name"
+          :name="project.name"
+          :image="project.image"
+          :description="project.description"
+          :likes="project.likes"
+          :views="project.views"
+        ></project-card>
       </div>
     </section>
     <section class="services">
@@ -92,8 +70,8 @@
         <div class="service">
           <h3 class="service-name">Full Stack Mobile App Development</h3>
           <p class="service-description">
-            We offer services that aims to help leverage mobile technologies
-            for personal or business use through the use of the Flutter framework.
+            We offer services that aims to help leverage mobile technologies for
+            personal or business use through the use of the Flutter framework.
           </p>
           <div class="sub-services">
             <h5>Project Consultancy</h5>
@@ -145,10 +123,11 @@
 </template>
 
 <script>
+import ProjectCard from "@/components/ProjectCard";
 import { app } from "../main";
 
 export default {
-    async created() {
+  async created() {
     app.content
       .get({
         schemaKey: "projectPage",
@@ -178,7 +157,6 @@ export default {
       })
       .then(projectPage => {
         this.projectPage = projectPage;
-        // console.log(projectPage)
         // Object.entries(projectPage).map(item => {
         //   if(item[1].featured === "false"){
         //     console.log(item)
@@ -190,6 +168,9 @@ export default {
       })
       .catch(error => console.log(error));
   },
+  components: {
+    ProjectCard
+  },
   data() {
     return {
       projectPage: [],
@@ -197,33 +178,33 @@ export default {
     };
   },
   methods: {
-    move: function(scroll){
-            var featureScroll = document.querySelector(".featured-scroll");
-            var circle1 = document.querySelector(".circle1");
-            var circle2 = document.querySelector(".circle2");
-            if(scroll > 5){
-              featureScroll.style.left = "-100vw";
-              circle2.style.backgroundColor = "#FBBC04";
-              circle1.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
-            } else if (scroll < -5) {
-              featureScroll.style.left = "0";
-              circle1.style.backgroundColor = "#FBBC04";
-              circle2.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
-            }            
-          }
+    move: function(scroll) {
+      var featureScroll = document.querySelector(".featured-scroll");
+      var circle1 = document.querySelector(".circle1");
+      var circle2 = document.querySelector(".circle2");
+      if (scroll > 5) {
+        featureScroll.style.left = "-100vw";
+        circle2.style.backgroundColor = "#FBBC04";
+        circle1.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
+      } else if (scroll < -5) {
+        featureScroll.style.left = "0";
+        circle1.style.backgroundColor = "#FBBC04";
+        circle2.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
+      }
+    }
   }
-}
+};
 </script>
 
 <style scoped>
-.featured{
+.featured {
   padding: 0;
   margin-top: 60px;
   overflow: hidden;
-  background-color: #FFFBF2;
+  background-color: #fffbf2;
 }
 
-.scroll-indicator{
+.scroll-indicator {
   position: absolute;
   display: none;
   justify-content: flex-end;
@@ -233,15 +214,15 @@ export default {
   box-sizing: border-box;
 }
 
-.circle1{
+.circle1 {
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  background-color: #FBBC04;
+  background-color: #fbbc04;
   margin-right: 5px;
 }
 
-.circle2{
+.circle2 {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -254,10 +235,10 @@ export default {
   display: flex;
   width: 100vw;
   padding: 0;
-  background-color: #FFFBF2;
+  background-color: #fffbf2;
 }
 
-.featured-content{
+.featured-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,16 +246,16 @@ export default {
   padding-bottom: 50px;
 }
 
-.featured-content h5{
+.featured-content h5 {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.1em;
-  color: #FBBC04;
+  color: #fbbc04;
   margin-top: 30px;
 }
 
-.featured-name{
+.featured-name {
   font-weight: 500;
   font-size: 31.25px;
   line-height: 40px;
@@ -282,13 +263,13 @@ export default {
   margin: 10px 0;
 }
 
-.description{
+.description {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
 }
 
-.contributors{
+.contributors {
   font-weight: bold;
   color: #333333;
   font-size: 16px;
@@ -296,34 +277,33 @@ export default {
   margin: 5px 0;
 }
 
-.contributors span{
+.contributors span {
   font-weight: normal;
   text-decoration: underline;
 }
 
-.buttons{
+.buttons {
   margin: 30px 0;
-
 }
 
-.visit-btn{
+.visit-btn {
   display: none;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 16px 22px;
-  background-color: #FBBC04;
-  border: 1px solid #FBBC04;
+  background-color: #fbbc04;
+  border: 1px solid #fbbc04;
   border-radius: 4px;
 }
 
-.visit-btn:hover{
-  color: #FBBC04;
-  background-color: #FFFFFF;
+.visit-btn:hover {
+  color: #fbbc04;
+  background-color: #ffffff;
 }
 
-.read-btn{
+.read-btn {
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
@@ -336,34 +316,34 @@ export default {
   /* margin-left: 16px; */
 }
 
-.read-btn:hover{
-  color: #FFFFFF;
+.read-btn:hover {
+  color: #ffffff;
   background-color: #333333;
 }
 
-.featured-pic{
+.featured-pic {
   display: flex;
   justify-content: center;
   width: 100vw;
 }
 
-.featured-pic img{
+.featured-pic img {
   align-self: flex-end;
   width: 100%;
 }
 
-.library{
+.library {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0 10% 4%;
 }
 
-.library-header{
+.library-header {
   margin: 70px 0 50px;
 }
 
-.library-header h2{
+.library-header h2 {
   font-weight: bold;
   font-size: 31.25px;
   line-height: 40px;
@@ -372,7 +352,7 @@ export default {
   text-align: center;
 }
 
-.library-header p{
+.library-header p {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
@@ -380,84 +360,38 @@ export default {
   text-align: center;
 }
 
-.library-content{
+.library-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin-bottom: 40px;
-}
-
-.project:nth-child(3n-1){
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.project-name{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 5px;
-}
-
-.project-description{
-  font-size: 16px;
-  line-height: 22px;
-  color: #333333;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.love-view{
-  /* display: flex; */
-  display: none;
-  margin-top: 7px;
-}
-
-.love, .view{
-  display: flex;
-  align-items: center;
-}
-
-.love{
-  margin-right: 20px;
-}
-
-.love img, .view img{
-  margin-right: 5px;
-}
-
-.services{
+.services {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0 10% 4%;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
-.services-header{
+.services-header {
   margin: 70px 0 50px;
 }
 
-.services-header h1{
+.services-header h1 {
   font-weight: bold;
   font-size: 31.25px;
   line-height: 40px;
   color: #333333;
 }
 
-.services-header p{
+.services-header p {
   font-size: 20px;
   line-height: 25px;
   color: #333333;
   margin-top: 10px;
 }
 
-.download-btn{
+.download-btn {
   float: right;
   font-weight: bold;
   font-size: 16px;
@@ -471,48 +405,48 @@ export default {
   border-radius: 4px;
 }
 
-.download-btn:hover{
-  color: #F8F8F8;
+.download-btn:hover {
+  color: #f8f8f8;
   background-color: #333333;
 }
 
-.services-content{
+.services-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.service{
+.service {
   width: 49%;
   background-color: white;
   margin-bottom: 2%;
   padding: 20px;
 }
 
-.service:nth-child(odd){
+.service:nth-child(odd) {
   margin-right: 2%;
 }
 
-.service-name{
+.service-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   color: #333333;
 }
 
-.service-description{
+.service-description {
   font-size: 16px;
   line-height: 19px;
   color: #333333;
   margin: 15px 0;
 }
 
-.sub-services{
+.sub-services {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.sub-services h5{
+.sub-services h5 {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -523,137 +457,137 @@ export default {
   border-radius: 2px;
 }
 
-.service:nth-child(1) h5{
+.service:nth-child(1) h5 {
   color: rgba(234, 67, 53, 0.8);
   background: rgba(234, 67, 53, 0.15);
 }
 
-.service:nth-child(2) h5{
+.service:nth-child(2) h5 {
   color: rgba(15, 157, 88, 0.8);
   background: rgba(15, 157, 88, 0.15);
 }
 
-.service:nth-child(3) h5{
+.service:nth-child(3) h5 {
   color: rgba(234, 175, 3, 0.8);
   background: rgba(251, 188, 4, 0.15);
 }
 
-.service:nth-child(4) h5{
+.service:nth-child(4) h5 {
   color: rgba(213, 121, 45, 0.8);
   background: rgba(213, 121, 45, 0.15);
 }
 
-.service:nth-child(5) h5{
+.service:nth-child(5) h5 {
   color: rgba(66, 133, 244, 0.8);
   background: rgba(66, 133, 244, 0.15);
 }
 
 @media screen and (max-width: 1100px) {
-  .scroll-indicator{
+  .scroll-indicator {
     display: flex;
   }
-  
-  .featured-scroll{
+
+  .featured-scroll {
     align-items: center;
   }
 
-  .featured-content{
+  .featured-content {
     min-width: 100%;
     padding: 0 30px 20px;
     margin: 0;
     box-sizing: border-box;
   }
 
-  .featured-content h5{
+  .featured-content h5 {
     margin-top: 50px;
   }
 
-  .featured-pic{
-    min-width: 100%;;
+  .featured-pic {
+    min-width: 100%;
     align-self: flex-end;
   }
 
-  .library{
+  .library {
     padding: 0 5% 4%;
   }
 
-  .library-content{
+  .library-content {
     justify-content: space-around;
   }
 
-  .project{
+  .project {
     width: 45%;
   }
 
-  .project:nth-child(3n-1){
+  .project:nth-child(3n-1) {
     margin-left: 0;
     margin-right: 0;
   }
-  
-  .services{
+
+  .services {
     padding: 0 5% 4%;
   }
 }
 
 @media screen and (max-width: 990px) {
-  .services-header h1, .services-header p{
+  .services-header h1,
+  .services-header p {
     text-align: center;
   }
 
-  .services-header a{
+  .services-header a {
     display: none;
   }
 
-  .services-content{
+  .services-content {
     justify-content: space-around;
   }
-  
-  .service{
+
+  .service {
     width: 90%;
   }
 
-  .service:nth-child(odd){
+  .service:nth-child(odd) {
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 770px) {
-  .project{
+  .project {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .project{
+  .project {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .project{
+  .project {
     width: 90%;
   }
 
-  .project img{
+  .project img {
     object-fit: contain;
   }
 
-  .services-header p{
+  .services-header p {
     font-size: 12px;
   }
 
-  .service-name{
+  .service-name {
     font-size: 15px;
   }
 
-  .service-description{
+  .service-description {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .sub-services h5{
+  .sub-services h5 {
     font-size: 12px;
   }
-
 }
 </style>

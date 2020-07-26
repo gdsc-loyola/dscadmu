@@ -85,7 +85,6 @@ export default {
       })
       .then(teamPage => {
         this.teamPage = teamPage;
-        console.log(this.teamPage.joinSection.title);
       })
       .catch(error => console.log(error));
   },
