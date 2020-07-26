@@ -5,30 +5,14 @@
         <div class="circle1"></div>
         <div class="circle2"></div>
       </div>
-      <div class="featured-scroll" v-dragscroll.x v-on:dragscrollmove="move($event.detail.deltaX)">
-        <div class="featured-content">
-          <h5>FEATURED</h5>
-          <h1 class="featured-name">DSC Loyola Website</h1>
-          <p class="description">
-            Oat cake I love marshmallow candy canes pie fruitcake I love. Pastry
-            cheesecake dragée pastry I love jelly chocolate bar jelly beans
-            carrot cake. Gingerbread apple pie halvah danish donut jujubes sugar
-            dessert. dessert. Biscuit brownie powder bonbon I love. Topping
-            liquorice biscuit liquorice.
-          </p>
-          <p class="contributors">
-            Contributors:
-            <span>Harvey Jay Sison, Rafael Dytoc, Bea Sison</span>
-          </p>
-          <div class="buttons">
-            <a href="#" class="visit-btn">Visit site</a>
-            <a href="#" class="read-btn">Read Article</a>
-          </div>
-        </div>
-        <div class="featured-pic">
-          <img src="../assets/images/featured-web.png" alt="name" />
-        </div>
-      </div>
+      <featured-project v-dragscroll.x v-on:dragscrollmove="move($event.detail.deltaX)"
+        v-for="project in featured"
+        :key="project[1].name"
+        :name="project[1].name"
+        :image="project[1].image[0].id"
+        :description="project[1].description"
+        :contributors="project[1].contributors"
+      ></featured-project>
     </section>
     <section class="library">
       <div class="library-header">
@@ -37,13 +21,13 @@
       </div>
       <div class="library-content">
         <project-card
-          v-for="project in projectPage"
-          :key="project.name"
-          :name="project.name"
-          :image="project.image"
-          :description="project.description"
-          :likes="project.likes"
-          :views="project.views"
+          v-for="project in unfeatured"
+          :key="project[1].name"
+          :name="project[1].name"
+          :image="project[1].image[0].id"
+          :description="project[1].description"
+          :likes="project[1].likes"
+          :views="project[1].views"
         ></project-card>
       </div>
     </section>
@@ -123,6 +107,7 @@
 </template>
 
 <script>
+import FeaturedProject from "@/components/FeaturedProject";
 import ProjectCard from "@/components/ProjectCard";
 import { app } from "../main";
 
@@ -157,23 +142,26 @@ export default {
       })
       .then(projectPage => {
         this.projectPage = projectPage;
-        // Object.entries(projectPage).map(item => {
-        //   if(item[1].featured === "false"){
-        //     console.log(item)
-        //   } else {
-        //     console.log("featured" + item)
-        //     this.featured = item;
-        //   }
-        // })
+        console.log(this.projectPage);
+        Object.entries(projectPage).map(item => {
+          if(item[1].featured === false){
+            this.unfeatured.push(item);
+          } else {
+            this.featured.push(item);
+          }
+        });
+        console.log(this.unfeatured);
+        console.log(this.featured);
       })
       .catch(error => console.log(error));
   },
   components: {
-    ProjectCard
+    ProjectCard,
+    FeaturedProject
   },
   data() {
     return {
-      projectPage: [],
+      unfeatured: [],
       featured: []
     };
   },
@@ -228,108 +216,6 @@ export default {
   border-radius: 100%;
   background-color: rgba(251, 188, 4, 0.25);
   margin-right: 30px;
-}
-
-.featured-scroll {
-  position: relative;
-  display: flex;
-  width: 100vw;
-  padding: 0;
-  background-color: #fffbf2;
-}
-
-.featured-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 8%;
-  padding-bottom: 50px;
-}
-
-.featured-content h5 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.1em;
-  color: #fbbc04;
-  margin-top: 30px;
-}
-
-.featured-name {
-  font-weight: 500;
-  font-size: 31.25px;
-  line-height: 40px;
-  color: #333333;
-  margin: 10px 0;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-}
-
-.contributors {
-  font-weight: bold;
-  color: #333333;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 5px 0;
-}
-
-.contributors span {
-  font-weight: normal;
-  text-decoration: underline;
-}
-
-.buttons {
-  margin: 30px 0;
-}
-
-.visit-btn {
-  display: none;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  padding: 16px 22px;
-  background-color: #fbbc04;
-  border: 1px solid #fbbc04;
-  border-radius: 4px;
-}
-
-.visit-btn:hover {
-  color: #fbbc04;
-  background-color: #ffffff;
-}
-
-.read-btn {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #333333;
-  padding: 15px 21px;
-  border: 2px solid #333333;
-  box-sizing: border-box;
-  border-radius: 4px;
-  /* margin-left: 16px; */
-}
-
-.read-btn:hover {
-  color: #ffffff;
-  background-color: #333333;
-}
-
-.featured-pic {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
-.featured-pic img {
-  align-self: flex-end;
-  width: 100%;
 }
 
 .library {
@@ -483,28 +369,9 @@ export default {
 }
 
 @media screen and (max-width: 1100px) {
+
   .scroll-indicator {
     display: flex;
-  }
-
-  .featured-scroll {
-    align-items: center;
-  }
-
-  .featured-content {
-    min-width: 100%;
-    padding: 0 30px 20px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .featured-content h5 {
-    margin-top: 50px;
-  }
-
-  .featured-pic {
-    min-width: 100%;
-    align-self: flex-end;
   }
 
   .library {

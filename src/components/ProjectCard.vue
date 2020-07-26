@@ -23,7 +23,7 @@ export default {
   created() {
     app.storage
       .getURL({
-        fileId: this.image.split("/")[1]
+        fileId: this.image
       })
       .then(image => {
         console.log(image);
