@@ -38,16 +38,15 @@
         <p>Lorem ipsum dolor sit amet consectetur ad Lorem, ipsum dolor</p>
       </div>
       <div class="library-content">
-        <div class="project">
+        <div v-for="project in projectPage" :key="project.name" class="project">
           <img
-            src="../assets/images/project-pic.png"
+            :src="project.image"
             class="project-pic"
-            alt="name"
+            :alt="project.name"
           />
-          <h5 class="project-name">Bantay Bayan</h5>
+          <h5 class="project-name">{{ project.name }}</h5>
           <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
+            {{ project.description }}
           </p>
           <div class="love-view">
             <div class="love">
@@ -56,7 +55,7 @@
                 class="heart-icon"
                 alt="heart-icon"
               />
-              <p>24</p>
+              <p>{{ project.likes }}</p>
             </div>
             <div class="view">
               <img
@@ -64,157 +63,7 @@
                 class="view-icon"
                 alt="view-icon"
               />
-              <p>67</p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img
-            src="../assets/images/project-pic.png"
-            class="project-pic"
-            alt="name"
-          />
-          <h5 class="project-name">Bantay Bayan</h5>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>24</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>67</p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img
-            src="../assets/images/project-pic.png"
-            class="project-pic"
-            alt="name"
-          />
-          <h5 class="project-name">Bantay Bayan</h5>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>24</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>67</p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img
-            src="../assets/images/project-pic.png"
-            class="project-pic"
-            alt="name"
-          />
-          <h5 class="project-name">Bantay Bayan</h5>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>24</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>67</p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img
-            src="../assets/images/project-pic.png"
-            class="project-pic"
-            alt="name"
-          />
-          <h5 class="project-name">Bantay Bayan</h5>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>24</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>67</p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img
-            src="../assets/images/project-pic.png"
-            class="project-pic"
-            alt="name"
-          />
-          <h5 class="project-name">Bantay Bayan</h5>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            eligendi esse aperiam cum voluptatum beatae!
-          </p>
-          <div class="love-view">
-            <div class="love">
-              <img
-                src="../assets/images/heart-icon.png"
-                class="heart-icon"
-                alt="heart-icon"
-              />
-              <p>24</p>
-            </div>
-            <div class="view">
-              <img
-                src="../assets/images/eye-icon.png"
-                class="view-icon"
-                alt="view-icon"
-              />
-              <p>67</p>
+              <p>{{ project.views }}</p>
             </div>
           </div>
         </div>
@@ -296,7 +145,57 @@
 </template>
 
 <script>
+import { app } from "../main";
+
 export default {
+    async created() {
+    app.content
+      .get({
+        schemaKey: "projectPage",
+        populate: [
+          {
+            field: "name"
+          },
+          {
+            field: "description"
+          },
+          {
+            field: "views"
+          },
+          {
+            field: "likes"
+          },
+          {
+            field: "image"
+          },
+          {
+            field: "featured"
+          },
+          {
+            field: "contributors"
+          }
+        ]
+      })
+      .then(projectPage => {
+        this.projectPage = projectPage;
+        // console.log(projectPage)
+        // Object.entries(projectPage).map(item => {
+        //   if(item[1].featured === "false"){
+        //     console.log(item)
+        //   } else {
+        //     console.log("featured" + item)
+        //     this.featured = item;
+        //   }
+        // })
+      })
+      .catch(error => console.log(error));
+  },
+  data() {
+    return {
+      projectPage: [],
+      featured: []
+    };
+  },
   methods: {
     move: function(scroll){
             var featureScroll = document.querySelector(".featured-scroll");
@@ -408,6 +307,7 @@ export default {
 }
 
 .visit-btn{
+  display: none;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -433,7 +333,7 @@ export default {
   border: 2px solid #333333;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .read-btn:hover{
@@ -513,7 +413,8 @@ export default {
 }
 
 .love-view{
-  display: flex;
+  /* display: flex; */
+  display: none;
   margin-top: 7px;
 }
 
