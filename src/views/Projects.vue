@@ -5,7 +5,7 @@
         <div class="circle1"></div>
         <div class="circle2"></div>
       </div>
-      <featured-project v-dragscroll.x v-on:dragscrollmove="move($event.detail.deltaX)"
+      <featured-project
         v-for="project in featured"
         :key="project[1].name"
         :name="project[1].name"
@@ -164,22 +164,6 @@ export default {
       unfeatured: [],
       featured: []
     };
-  },
-  methods: {
-    move: function(scroll) {
-      var featureScroll = document.querySelector(".featured-scroll");
-      var circle1 = document.querySelector(".circle1");
-      var circle2 = document.querySelector(".circle2");
-      if (scroll > 5) {
-        featureScroll.style.left = "-100vw";
-        circle2.style.backgroundColor = "#FBBC04";
-        circle1.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
-      } else if (scroll < -5) {
-        featureScroll.style.left = "0";
-        circle1.style.backgroundColor = "#FBBC04";
-        circle2.style.backgroundColor = "rgba(251, 188, 4, 0.25)";
-      }
-    }
   }
 };
 </script>
