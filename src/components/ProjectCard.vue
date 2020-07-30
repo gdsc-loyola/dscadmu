@@ -26,7 +26,6 @@ export default {
         fileId: this.image
       })
       .then(image => {
-        console.log(image);
         this.img = image;
       })
       .catch(error => console.log(error));

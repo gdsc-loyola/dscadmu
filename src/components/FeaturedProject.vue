@@ -31,7 +31,6 @@ export default {
         fileId: this.image
       })
       .then(image => {
-        console.log(image);
         this.img = image;
       })
       .catch(error => console.log(error));
@@ -43,9 +42,9 @@ export default {
   },
   methods: {
     move: function(scroll) {
-      var featureScroll = document.querySelector(".featured-scroll");
-      var circle1 = document.querySelector(".circle1");
-      var circle2 = document.querySelector(".circle2");
+      const featureScroll = document.querySelector(".featured-scroll");
+      const circle1 = document.querySelector(".circle1");
+      const circle2 = document.querySelector(".circle2");
       if (scroll > 5) {
         featureScroll.style.left = "-100vw";
         circle2.style.backgroundColor = "#FBBC04";
