@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-//import InProgress from "./views/InProgress.vue";
+import InProgress from "./views/InProgress.vue";
 import NotFound from "./views/NotFound.vue";
 
 Vue.use(Router);
@@ -22,8 +22,8 @@ const router = new Router({
     },
     {
       path: "/projects",
-      //component: InProgress
-      component: () => import("./views/Projects.vue")
+      component: InProgress
+      // component: () => import("./views/Projects.vue")
     },
     {
       path: "/team",
