@@ -5,16 +5,17 @@
 	"display": "standalone",
 	"theme_color": "#2f80ed",
 	"background_color": "#fff",
+	"prefer_related_applications": true,
 	"icons": [
 		{
-			"src": "/icons/favicon-16.ico",
+			"src": "/logo.png",
 			"sizes": "16x16",
-			"type": "image/x-icon"
+			"type": "image/png"
 		},
 		{
-			"src": "/icons/favicon-32.ico",
+			"src": "/logo.png",
 			"sizes": "32x32",
-			"type": "image/x-icon"
+			"type": "image/png"
 		},
 		{
 			"src": "/icons/icon-72x72.png",
