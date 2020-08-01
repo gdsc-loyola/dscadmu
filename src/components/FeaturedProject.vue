@@ -188,4 +188,10 @@ export default {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .contributors {
+    flex-direction: column;
+  }
+}
+
 </style>
