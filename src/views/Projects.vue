@@ -144,7 +144,7 @@ export default {
         this.projectPage = projectPage;
         console.log(this.projectPage);
         Object.entries(projectPage).map(item => {
-          if(item[1].featured === false){
+          if (item[1].featured === false) {
             this.unfeatured.push(item);
           } else {
             this.featured.push(item);
@@ -353,7 +353,6 @@ export default {
 }
 
 @media screen and (max-width: 1100px) {
-
   .scroll-indicator {
     display: flex;
   }
