@@ -15,7 +15,8 @@
             :facebook="board.facebook"
             :linkedin="board.linkedin"
             :github="board.github"
-          >{{ board.position }}</team-circle>
+            >{{ board.position }}</team-circle
+          >
         </div>
       </div>
     </section>
@@ -36,7 +37,11 @@
           <div class="col-12 col-sm-4">
             <h2>{{ teamPage.joinSection.title }}</h2>
             <p>{{ teamPage.joinSection.description }}</p>
-            <a :href="teamPage.joinSection.link" target="_blank" rel="noopener noreferrer">
+            <a
+              :href="teamPage.joinSection.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="green">Join us</button>
             </a>
           </div>
