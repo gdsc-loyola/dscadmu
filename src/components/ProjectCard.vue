@@ -5,11 +5,19 @@
     <p class="project-description">{{ description }}</p>
     <div class="love-view">
       <div class="love">
-        <img src="../assets/images/heart-icon.png" class="heart-icon" alt="heart-icon" />
+        <img
+          src="../assets/images/heart-icon.png"
+          class="heart-icon"
+          alt="heart-icon"
+        />
         <p>{{ likes }}</p>
       </div>
       <div class="view">
-        <img src="../assets/images/eye-icon.png" class="view-icon" alt="view-icon" />
+        <img
+          src="../assets/images/eye-icon.png"
+          class="view-icon"
+          alt="view-icon"
+        />
         <p>{{ views }}</p>
       </div>
     </div>

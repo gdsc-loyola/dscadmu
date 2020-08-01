@@ -1,24 +1,30 @@
 <template>
-    <div class="featured-scroll" v-dragscroll.x v-on:dragscrollmove="move($event.detail.deltaX)">
-        <div class="featured-content">
-          <h5>FEATURED</h5>
-          <h1 class="featured-name">{{ name }}</h1>
-          <p class="description">
-            {{ description }}
-          </p>
-          <div class="contributors">
-            Contributors:
-            <div v-for="contributor in contributors" :key="contributor">{{ contributor.contributor }} </div>
-          </div>
-          <div class="buttons">
-            <a href="#" class="visit-btn">Visit site</a>
-            <a href="#" class="read-btn">Read Article</a>
-          </div>
+  <div
+    class="featured-scroll"
+    v-dragscroll.x
+    v-on:dragscrollmove="move($event.detail.deltaX)"
+  >
+    <div class="featured-content">
+      <h5>FEATURED</h5>
+      <h1 class="featured-name">{{ name }}</h1>
+      <p class="description">
+        {{ description }}
+      </p>
+      <div class="contributors">
+        Contributors:
+        <div v-for="contributor in contributors" :key="contributor">
+          {{ contributor.contributor }}
         </div>
-        <div class="featured-pic">
-          <img :src="img" :alt="name" />
-        </div>
+      </div>
+      <div class="buttons">
+        <a href="#" class="visit-btn">Visit site</a>
+        <a href="#" class="read-btn">Read Article</a>
+      </div>
     </div>
+    <div class="featured-pic">
+      <img :src="img" :alt="name" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -60,7 +66,6 @@ export default {
 </script>
 
 <style scoped>
-
 .featured-scroll {
   position: relative;
   display: flex;
@@ -166,7 +171,6 @@ export default {
 }
 
 @media screen and (max-width: 1100px) {
-
   .featured-scroll {
     align-items: center;
   }
@@ -187,5 +191,4 @@ export default {
     align-self: flex-end;
   }
 }
-
 </style>
