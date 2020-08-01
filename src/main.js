@@ -20,9 +20,16 @@ import flamelink from "flamelink/app";
 // Add additional modules that you want to use
 import "flamelink/content";
 import "flamelink/storage";
+
 // import 'flamelink/settings'
 // import 'flamelink/navigation'
 // import 'flamelink/users'
+
+import wb from "./registerServiceWorker";
+
+import "./registerServiceWorker";
+
+Vue.prototype.$workbox = wb;
 
 const firebaseConfig = {
   apiKey: "AIzaSyDCG_NW0-VXjG98jwhAxfk1Sslq3WfVzyM",

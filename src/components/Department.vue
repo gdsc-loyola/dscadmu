@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section class="department" v-bind:style="{ backgroundImage: 'url(' + img + ')' }">
+    <section
+      class="department"
+      v-bind:style="{ backgroundImage: 'url(' + img + ')' }"
+    >
       <div class="container">
         <h4 v-bind:style="{ color: color }">Departments</h4>
         <h2>{{ name }}</h2>
@@ -19,7 +22,8 @@
             :facebook="lead.facebook"
             :linkedin="lead.linkedin"
             :github="lead.github"
-          >{{ lead.position }}</team-circle>
+            >{{ lead.position }}</team-circle
+          >
         </div>
       </div>
     </section>
